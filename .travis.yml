@@ -24,7 +24,7 @@ jobs:
         sonarcloud:
           organization: dexpenses
           token:
-            secure: QAxtfXu83C9L4SNuNNlNKhFuqxVs1VGeJyUWDytgHyMfo2297HVTBEl0QYOTwtJg3x8XkOptXx71fzB+wKiY/uhhhT+hafSYgZKDz4lMMywuAlV5YEioMrsRv+4EEh5o3ucnCtWPTm3zV3wttxvx2ZunK/q94w6WH0R4Otuh9HCS4ZMWFy8EhiRD9tsKuLDuNhERlIejUbSvtA7MS32pzE4hqEWBM1vEu8whZ4zDEh2EawVvtwmJ/gDFz/GGfkcEKmLzu8lzAy4zjj5U9MRKsYgd0GjiIJLGVAs3DLEw0Y4+U+rss0/nD4Ar1zLDX+Q3T02tXTj+r3jzhGQMZ39AkfDGQLC3Y60gUUNWbGInvsGkOqXhLOZjJ1AJG4Xev77fowydPmACM6uzfJQyCvIwkIbZuPc9WN45Be/qIpik84W9p3Fvq6GrOSOilk4GwceVJ0MMJhlNnE0z4Vey/xPh/PWNUe0nWUpH4cNJJeX511LFSIamtx0sL8TuMUi17BzzEmmL3pyhTFb3XOfM7Cfv3nZwbuTmkKeM1KUH5aTfeDAit2hiFNrjQdJz6JyFsvgW5Xl6DoKG+ypFOgzStHcmDAPn8S+R9RBrfnovuYqjSJ8e1U+/GC7rk6+ut9OeL5x252F6FYtRCcxo427x1mnUrOVWSzouoSB/m3Ka7OZ7HmA=
+            secure: e/AZM448K6otV0awOy1QBNw+85nQK2n2lfxqvqiHUzwdn2vA7u6FgNQ/hEcxsJ5qhi7cJsCxDiiUbnxaK8U3go3fQ/2YLjSYLB+r3uD1q/fw2hMHImgGJwUdpZxk9KKJfHwDz8jLU19AV95WGcqZ6zUP8FWejBtEO4nOQ6M81y2UK3/sN/pcnzCT/7QGOk90zADkdaUHuZxz8o0HiyIhIgyno+0Vi7XawYvKQI7bNQgUOWp4ZcOAYG8hk2lLzZG1U2OQ0kK0WUj9HuDzdm8ox3FSQkgZeT/4ijKynYmTHuXeyG5yd4DL4vfC4aKqAb5iEThPXmcof602Qmjy4G2OhnSqsHiLeglDz6/3BDMvxcvfr7VvNHP+nH1L13C4IDl9DieEyxU8zMYDloc/ITwvZRZyvwpBr2VZQaD6eFpIEpfRKfrzdJTs88Ib5QFqtU3efdxcXUW4EW4yKslbPQ42JRqfv8Mcktdifnf59QXcOOYZ7icUOFstBhZLTaT3VAz1ZYg+W3w3gJmv5dZOefVkPuHw1/SUIOGGIdOzw4LMvRrXQ3xS47SEMoWgjwCbZA5sDJ1uLtnUK6I0ZnK2NRfZLFb9pH1QCe9enGSdKEwDWaD3G5v4hWjm4EfgvMg99xtcO9ArNXrmvxTVV1cPcu4IzdxmkJCbYVMQQVp9nX9UaU0=
       script:
         - npm run test:coverage
         - npm run lint:sonar
