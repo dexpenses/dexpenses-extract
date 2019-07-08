@@ -1,0 +1,34 @@
+* *Kundenbeleg *
+Dänisches
+Bettenlager
+Brandgehäge 5
+38440 Wolfsburg
+15.12.2018
+18:10: 31 Uhr
+5856
+123582
+Datum:
+Uhrzeit:
+Beleg -Nr.
+Trace Nr
+Kartenzahlung
+girocarc
+Nr
+VU Nr.
+Genehmigungs -Nr. 181044
+Terminal-ID
+Pos In fo
+AS Zeit 15.12. 18:10 Uhr
+0653354237
+65354237
+00 055 00
+294,54
+Betrag EUR
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+Informationen zur
+Datenverarbeitung durch
+Ingenico Payment
+rvices www.1ingenico.de
+/datenschutz
+

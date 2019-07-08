@@ -1,0 +1,47 @@
+DEPOT
+dti
+eihaach
+Lange Herzogstrae 61 62
+38300 Wolfenbuttel
+el. +49 5331 856 029 1 / depot onine co
+Steuernummerxx
+x*xDE132085427**
+Art/Ean CAC0228080
+Weinkorken-Samme lbox, L
+Art/Ean MRT001 7240
+Photo Booth Sweet Nikola
+Ar t/Ean TUT0033240
+Tute DEPOT 460x520 120 R
+9,99 1
+9,99 1
+0,10 1
+EUR
+EUR
+20,08
+20,08
+SUMME 31
+Karte (EuroMaster,
+K-U-N D-E-N-B E-L-E-G
+Depot Wolfenbuttel
+.ange Herzogstr. 61 62
+38300 Wolfenbuttel
+65458786
+BNr 5925
+Terminal-ID
+TANr 083932
+Kartenzahlung
+Visa kontaktlos
+Visa Credit
+ELUR 20, O8
+PAN
+Karte 0
+EMV-AID A0000000031010
+VU-Nr
+Genehmi gungs-Nr 323737
+Datum 01.12.18 10: 35 Uhr
+200300279
+xxx Zahlung erfolgt xx
+AS-Proc-Code 00 075
+Capt.-Ref 1799
+AID59 179614
+

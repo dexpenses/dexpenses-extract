@@ -1,0 +1,62 @@
+EDEKA
+Wir Lebensmittel
+Edeka Fi1. 2129
+Grauhorststr. 1
+38440 Wolfsburg OT Hageberg
+MILKANA KRAEUTER
+MOEVENP. PUDDING
+OETK.CREME FRAICHE
+HANSAN. SAURE SAHNE
+DEVEL.BBO SAUCE
+THOMY MAYONNAISE
+HANSAN. SPEISEQUARK
+E.CHILI-SAUCE
+Posten: 8
+EUR
+1,39 Aw
+0,79 A
+0,99 A
+0,79 A
+1,49 A
+1,19 A
+0,69 A
+0,99 A
+SUMME EUR
+8,32
+Visa
+EUR
+8,32
+x x Kundenbeleg x x
+EDEKA 2129
+Grauhorststr. 1
+38440 Wolfsburg
+Datum:
+Uhrzeit:
+Beleg-Nr
+Trace-Nn
+22.02.2019
+16:58:57 Uhr
+6974
+090467
+Bezahlung
+kontaktlos
+Visa Credit
+VU-Nr
+Genehmigungs-Nr
+Terminal -ID
+Pos-Info
+AS-Zeit 22.02
+EMV-Daten 0000000000////////372BE468/80
+144198018
+640264
+52097312
+00 073 00
+16:58 Uhr
+AS-Proc-Code 00 073 00
+Capt.-Ref. 0407
+AID59: 229492
+Betrag EUR
+8,32
+Autorisierung erfolgt
+Bitte Beleg aufbewahren
+

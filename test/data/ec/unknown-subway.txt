@@ -1,0 +1,36 @@
+**Händlerbeleg *
+K t
+Vielen Dank , dass Sie
+sich entschieden haben
+gesund & lecker zu essen
+Wir freuen uns auf Ihren
+nächsten Besuch!
+Datum:
+Uhrzeit:
+Beleg -Nr
+Trace-Nr
+23.05.2018
+18:58:48 Uhr
+5101
+086011
+Kartenzahlung
+girocard
+4822568015169638710 0000
+gültig bis
+VU-Nr
+Genehmigungs - Nr. 185907
+Terminal-ID
+Pos Info
+AS -Zeit 23.05. 18:58 Uhir
+12/2θ
+8000168701
+52095964
+00 055 00
+Weitere Daten 0000 000000
+/E800////440302//9002900
+00230300000000000E 80001
+Betrag EUR
+18,58
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+

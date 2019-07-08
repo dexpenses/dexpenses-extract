@@ -1,0 +1,30 @@
+TEDI GmbH & Co. KG
+96047 Bamberg
+Fleischstrale 11-13
+Fil lale 5178
+Kasio 1
+1,00
+1,00
+1,50
+3423700202 Animal Cook ies
+2945100124 Jojo
+3919700134 Malblock A4
+3.50-
+Kaufsumme:
+5,00
+1,50
+BAR
+Rückgeld:
+Netto MWST Brutto
+2,10 0,40 2.50
+MwST %
+MwSt 19%
+Netto MWSTBrutto
+1,00
+MWST%
+MwSt. 7 %
+0.93 0.07
+Filialel BonNrI BedNrI Datum lUhrzeit
+F 5178 |148010 (065378 |17,12.181 14:30
+Steuernummer: 316/5953/0703
+

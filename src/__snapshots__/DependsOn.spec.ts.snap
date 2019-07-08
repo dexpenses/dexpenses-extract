@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DependsOn should fail if dependency of an extractor is placed after the extractor in the pipeline 1`] = `"Dependency 'ExtractorA' not satisfied on ExtractorB"`;
+
+exports[`DependsOn should fail if second dependency of an extractor is placed after the extractor in the pipeline 1`] = `"Dependency 'ExtractorB' not satisfied on ExtractorC"`;

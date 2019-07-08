@@ -1,0 +1,35 @@
+**Kundenbeleg **
+MAENNERMODE RADZIWINSK
+LANGE STR. 71
+34346 HANN, MUENDEN
+05541/2873
+05. 08.2018
+Datum:
+Uhrzeit
+Beleg Nr
+Trace -Nr.
+15:38:23 Uhr
+1948
+058961
+Kartenzahlung
+girocarcd
+Nr
+VU Nr
+Genehmigungs -Nr. 153859
+Terminal-ID
+Pos-Info
+AS -Zeit 05.08. 15:38 Uhr
+7003210882
+64032684
+00 055 00
+Weitere Daten 0000000000
+/E 800////440302//9002900
+00230300000000000 E 80001
+Betrag EUR
+167,85
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+Datenschutzinfo
+nach DSGV0 unter:
+https://vr-pay. de/pos
+

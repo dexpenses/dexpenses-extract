@@ -1,0 +1,27 @@
+K-U N-D -E-N B-E-L E-G
+0il&Vinegar Braunschwei
+Platz am Ritterbrunnen
+38100 Braunschweig
+Terminal-ID52084988
+TA-Nr 028722 BNr 4950
+Kartenzahlung
+Visa kontaktlos
+Visa Credit
+EUR 15,95
+PAN
+Karte
+EMV -AID A0000000031010
+VU-Nr
+Genehmiqungs-Nr 464343
+600254707
+Pat.Va20. 12. 18 16:37 Uhr
+EMV -Daten
+0000000000/0000/5C400000
+00/A0109C9800/A4109C8000
+////0C0469EC/80
+Zahlung erfolgt
+AS-Proc-Code 00 075
+Capt. -Ref.0375
+AID59: 374059
+BITTE BELEG AUFBEWAHREN
+

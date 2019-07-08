@@ -1,0 +1,22 @@
+## Compiled JavaScript files
+**/*.js
+!test/gen-bq-data.js
+!test/algolia_import.js
+!jest.config.js
+**/*.js.map
+lib/
+
+# Test coverage
+.nyc_output/
+coverage/
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/
+
+.scannerwork/
+.sonar/
+
+# Firebase
+firebase-debug.log

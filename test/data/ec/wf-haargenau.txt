@@ -1,0 +1,24 @@
+K-U-N-D-E-N-B-E-L-E-G
+Breslauer Str 2 d
+38302 Wofenbuettel
+Tel 05331 33838
+Kartenzahlung girocard
+Betrag
+15,00 EUR
+16:5
+68060083
+Be leg-Nr. 2320
+31.08.2017
+Terminal- ID
+A-Nr. 023591
+kartennr
+K folg.Nr 0000 gultig bis 12/20
+VU-Nummer
+Autorisierungsnummer
+0000060083
+1b525
+EMV Daten
+0000008000/E800////440302//90029
+0000230300000008000E80001
+Zahlung erfolgt
+

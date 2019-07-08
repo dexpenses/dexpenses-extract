@@ -1,0 +1,28 @@
+* Kundenbeleg
+Barrique
+Lange-Herzoastr.58
+38300 Wolfenbuettel
+05331/984942
+28.08. 2018
+Datum
+Uhrzeit: 18:02:51 Uhr
+Beleg Nr.
+Trace Nr
+3341
+086918
+Kartenzahlung
+girocard
+Nr
+VU-Nr
+Terminal ID
+Pos -Info
+2796300001
+54185073
+00 053 00
+Betrag EUR
+21,90
+Zahlung erfolgt**
+kxx
+k*x
+Bitte Beleg aufbewahren
+

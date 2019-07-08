@@ -1,0 +1,33 @@
+KUNDENBELEG
+Kienast Schuhe
+Muehlenstr. 5
+38300 Wolfenbuettel
+54040794
+032450
+2476
+Terminal-Ref
+Transaktions Nr.
+Beleg Nr
+KARTENZAHLUNG
+Visa Contactless
+*9358
+69.99
+EUR
+141960204
+351068
+0100000002
+075
+08.12.18 12:42
+Ver trags Nr
+Genehmi gungs Nr
+AID Para
+POS Info
+Datum/Uhrzeit
+EMV -Daten
+0000000000/////020000///B7E2A0AC/80
+AS-Proc-Code = 00 075 00
+Capt. -Ref. 0451
+AID59: 609747
+Zahlung er folgt
+BITTE BELEG AUFBEWAHREN
+

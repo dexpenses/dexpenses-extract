@@ -1,0 +1,37 @@
+* Kundenbeleg **
+BURGER
+ING
+Burger King
+Deuts chland GmbH
+Heinrich Nordhoff -Straße
+38440 Wolfsburg
+Datum
+Uhrzeit
+Beleg -Nr.
+Trace Nr
+16.12. 2018
+17:36:47 Uhr
+6740
+118597
+Bezahlung
+kontaktlos
+Visa Credit
+Nr
+VU -Nr
+Genehmigungs -Nr 045565
+Terminal ID
+Pos Info
+AS-Zeit 16. 12. 17:36 Uhtr
+600095007
+52081642
+00 075 00
+EMV Daten 0000000000/11/
+//1/44737E68/8o
+AS - Proc -Code 00 075 00
+Capt.-Ref .# 0925
+AID59 164736
+Betrag EUR
+9,98
+Autorisierung erfolgt
+Bitte Beleg aufbewahren
+

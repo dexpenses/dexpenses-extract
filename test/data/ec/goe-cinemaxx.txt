@@ -1,0 +1,29 @@
+*Kundenbeleg * *
+Cinemaxx Entertainment
+CxX Göttingen
+Bahnhofsallee 3
+37081 Göttingen
+Datum:
+Uhrzeit
+Beleg- Nr
+Trace-Nr.
+23.05. 2018
+19:47 :44 Uhr
+1884
+016609
+Kartenzahlung
+girocard
+Nr
+VU-Nr.
+Terminal ID
+Pos Info
+2671101252
+65101252
+00 055 00
+Betrag EUR
+k*x
+Bitte Beleg aufbewahren
+11,10
+Zahlung erfolgt
+k*x
+

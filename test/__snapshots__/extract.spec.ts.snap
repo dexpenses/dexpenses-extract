@@ -1,0 +1,2666 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bamberg-spaghetteria.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 20,
+      },
+      "date": 2019-04-26T22:00:00.000Z,
+      "header": Array [
+        "Spaghetteria 0rlando",
+        "Jésuitenstraße 3",
+        "96047 Bamber",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49951208322",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 0,
+        "second": null,
+      },
+      "timestamp": 2019-04-27T17:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-bolero.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 25,
+      },
+      "date": 2018-08-10T22:00:00.000Z,
+      "header": Array [
+        "Bolero Braunschweig GmbH",
+        "Lange Str. 60",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0531- 6180168",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 42,
+        "second": 48,
+      },
+      "timestamp": 2018-08-11T17:42:48.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-c1-cinema.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 14,
+      },
+      "date": 2018-08-26T22:00:00.000Z,
+      "header": Array [
+        "Cl Cinema",
+        "Lange Str. 60",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 43,
+        "second": null,
+      },
+      "timestamp": 2018-08-27T18:43:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-c1-cinema-drink.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 5,
+      },
+      "date": 2019-05-05T22:00:00.000Z,
+      "header": Array [
+        "C1 Cinema",
+        "Lange Straße 60",
+        "38100 Braunschweg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 33,
+        "second": 32,
+      },
+      "timestamp": 2019-05-06T18:33:32.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-elbenwald.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "ELBENWALD",
+        "Braunschwei",
+        "Schloss Arkaden",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 57,
+        "second": null,
+      },
+      "timestamp": 2018-12-20T14:57:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-oil_and_vinegar.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15.95,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "0il&Vinegar Braunschwei",
+        "Platz am Ritterbrunnen",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 37,
+        "second": null,
+      },
+      "timestamp": 2018-12-20T15:37:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-sausalitos.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 44,
+      },
+      "date": 2018-06-16T22:00:00.000Z,
+      "header": Array [
+        "Sausalitos GmbH",
+        "Betrieb Braunschweig",
+        "Hagenmarkt 2",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0531/ 123 30 87",
+      "place": null,
+      "time": Object {
+        "hour": 1,
+        "minute": 20,
+        "second": 48,
+      },
+      "timestamp": 2018-06-16T23:20:48.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'dresden-figaro-salon.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.5,
+      },
+      "date": 2016-12-07T23:00:00.000Z,
+      "header": Array [
+        "FIGAR0 Dresden e G",
+        "Salon Schweizer Strasse",
+        "Schweizer Str, 2",
+        "01169 Dresden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0351-47 11 295",
+      "place": null,
+      "time": Object {
+        "hour": 11,
+        "minute": 56,
+        "second": null,
+      },
+      "timestamp": 2016-12-08T10:56:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'goe-cinemaxx.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 11.1,
+      },
+      "date": 2018-05-22T22:00:00.000Z,
+      "header": Array [
+        "Cinemaxx Entertainment",
+        "CxX Göttingen",
+        "Bahnhofsallee 3",
+        "37081 Göttingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 47,
+        "second": 44,
+      },
+      "timestamp": 2018-05-23T17:47:44.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-Salon-haargenau.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15,
+      },
+      "date": 2019-04-12T22:00:00.000Z,
+      "header": Array [
+        "Salon haargenau",
+        "Bahnhofstraße 1",
+        "34346 Hann Münden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541/6241",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 3,
+        "second": null,
+      },
+      "timestamp": 2019-04-13T11:03:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-Vockeroth.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 117.95,
+      },
+      "date": 2019-04-12T22:00:00.000Z,
+      "header": Array [
+        "Bek leidungshaeuser",
+        "Vockeroth GmbH",
+        "Lange Str.73",
+        "34346 Hann Muenden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 3,
+        "second": null,
+      },
+      "timestamp": 2019-04-13T12:03:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-cafe_Zimt_und_Zucker.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.4,
+      },
+      "date": 2019-04-12T22:00:00.000Z,
+      "header": Array [
+        "Zimt & Zucker",
+        "An der Werrabrücke",
+        "Lange Str. 1",
+        "34346 Hann o Münden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 1,
+        "second": 6,
+      },
+      "timestamp": 2019-04-13T13:01:06.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-carmines-pizza.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 11,
+      },
+      "date": 2019-04-19T22:00:00.000Z,
+      "header": Array [
+        "Carmies P1zza",
+        "Hann. Munden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541/90 333 22",
+      "place": null,
+      "time": null,
+      "timestamp": 2019-04-19T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-radziwinski.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 167.85,
+      },
+      "date": 2018-08-04T22:00:00.000Z,
+      "header": Array [
+        "MAENNERMODE RADZIWINSK",
+        "LANGE STR. 71",
+        "34346 HANN, MUENDEN",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541/2873",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 38,
+        "second": 23,
+      },
+      "timestamp": 2018-08-05T13:38:23.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'unknown-subway.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 18.58,
+      },
+      "date": 2018-05-22T22:00:00.000Z,
+      "header": Array [
+        "K t",
+        "sich entschieden haben",
+        "gesund & lecker zu essen",
+        "Wir freuen uns auf Ihren",
+        "nächsten Besuch!",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 58,
+        "second": 48,
+      },
+      "timestamp": 2018-05-23T16:58:48.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wf-barrique.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 21.9,
+      },
+      "date": 2018-08-27T22:00:00.000Z,
+      "header": Array [
+        "Barrique",
+        "Lange-Herzoastr.58",
+        "38300 Wolfenbuettel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331/984942",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 2,
+        "second": 51,
+      },
+      "timestamp": 2018-08-28T16:02:51.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wf-barrique-bad-quality.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 23.7,
+      },
+      "date": null,
+      "header": Array [
+        "Barrique",
+        "38300 Woifenbuette l",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331/84942",
+      "place": null,
+      "time": null,
+    },
+    "state": "partial",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wf-buergeramt.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 37.5,
+      },
+      "date": 2018-12-12T23:00:00.000Z,
+      "header": Array [
+        "Stadt Wolfenbuettel",
+        "Buergeramt",
+        "Stadtmarkt 3-6",
+        "38300 Wolfenbuettel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 7,
+        "minute": 45,
+        "second": null,
+      },
+      "timestamp": 2018-12-13T06:45:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wf-haargenau.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15,
+      },
+      "date": 2017-08-30T22:00:00.000Z,
+      "header": Array [
+        "Breslauer Str 2 d",
+        "38302 Wofenbuettel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331 33838",
+      "place": null,
+      "time": null,
+      "timestamp": 2017-08-30T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wf-landkreis.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15,
+      },
+      "date": 2018-12-12T23:00:00.000Z,
+      "header": Array [
+        "Landkreis Wolfenbuettel",
+        "- Abt. Straßenverkehr",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331 / 84 562",
+      "place": null,
+      "time": Object {
+        "hour": 8,
+        "minute": 12,
+        "second": 46,
+      },
+      "timestamp": 2018-12-13T07:12:46.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-burger-king.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 9.98,
+      },
+      "date": 2018-12-15T23:00:00.000Z,
+      "header": Array [
+        "BURGER",
+        "ING",
+        "Burger King",
+        "Deuts chland GmbH",
+        "Heinrich Nordhoff -Straße",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 36,
+        "second": 47,
+      },
+      "timestamp": 2018-12-16T16:36:47.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-daenisches-bettenlager.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 294.54,
+      },
+      "date": 2018-12-14T23:00:00.000Z,
+      "header": Array [
+        "Dänisches",
+        "Bettenlager",
+        "Brandgehäge 5",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 10,
+        "second": 31,
+      },
+      "timestamp": 2018-12-15T17:10:31.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-sausalitos-2017.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 28.8,
+      },
+      "date": 2017-08-27T22:00:00.000Z,
+      "header": Array [
+        "Sausalitos Holding GmbH",
+        "Betrieb Wolfsburg",
+        "Porschestr. 32",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 33,
+        "second": null,
+      },
+      "timestamp": 2017-08-28T18:33:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-sausalitos-2018.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 23,
+      },
+      "date": 2018-08-29T22:00:00.000Z,
+      "header": Array [
+        "Sausalitos Holding GmbH",
+        "Betrieb Wolfsburg",
+        "Porschestr. 32",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 28,
+        "second": 35,
+      },
+      "timestamp": 2018-08-30T18:28:35.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-smileys.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 14,
+      },
+      "date": 2019-03-13T23:00:00.000Z,
+      "header": Array [
+        "Smileys Pizza Wolfsbur g",
+        "Kantallee 1a",
+        "38440 Wolfs burg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05361 -272666",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 53,
+        "second": null,
+      },
+      "timestamp": 2019-03-14T17:53:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'esso-rueden.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 46.18,
+      },
+      "date": 2019-04-18T22:00:00.000Z,
+      "header": Array [
+        "Esso",
+        "ESSO Station",
+        "KMS Autohofbetriebsgesel lschafft",
+        "Am Zainer Berg 2",
+        "38723 Rhüden",
+      ],
+      "paymentMethod": "DKV_CARD",
+      "phone": "05384/96660",
+      "place": null,
+      "time": Object {
+        "hour": 9,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2019-04-19T07:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'hem-cremlingen.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 53.04,
+      },
+      "date": 2018-07-31T22:00:00.000Z,
+      "header": Array [
+        "HEM Tankstelle",
+        "Ali Can Keceyapan",
+        "Im Moorbusche 103",
+        "38162 Cremlingen",
+      ],
+      "paymentMethod": "DKV_CARD",
+      "phone": "05306 9309007",
+      "place": null,
+      "time": Object {
+        "hour": 6,
+        "minute": 24,
+        "second": 29,
+      },
+      "timestamp": 2018-08-01T04:24:29.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'wob-sb_tankstelle.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 69.41,
+      },
+      "date": 2019-04-29T22:00:00.000Z,
+      "header": Array [
+        "SB TANKSTELLE",
+        "Sedat Kurtulus",
+        "Breslauer Str. 45",
+        "38440 Wolfsburg",
+        "Tankstellen-Nr. 141170",
+      ],
+      "paymentMethod": "DKV_CARD",
+      "phone": "05361 39000",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 37,
+        "second": 8,
+      },
+      "timestamp": 2019-04-30T15:37:08.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-asian-shop.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 1.5,
+      },
+      "date": 2019-01-17T23:00:00.000Z,
+      "header": Array [
+        "ASIAN SHOP",
+        "Obere Konigstr.16",
+        "96052 Bamberg",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0951-18557292",
+      "place": null,
+      "time": null,
+      "timestamp": 2019-01-17T23:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-city-market.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 4.91,
+      },
+      "date": 2018-11-05T23:00:00.000Z,
+      "header": Array [
+        "CITY-MARKT",
+        "96047 BAMBERG LANGE STR, 12-14",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0951/9230775",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 16,
+        "second": null,
+      },
+      "timestamp": 2018-11-06T15:16:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-comixart.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.99,
+      },
+      "date": 2019-04-26T22:00:00.000Z,
+      "header": Array [
+        "comixart",
+        "Comicfachhandel",
+        "96047 Bamberg",
+        "Austraße 21",
+      ],
+      "paymentMethod": null,
+      "phone": "0951/ 21655",
+      "place": null,
+      "time": null,
+      "timestamp": 2019-04-26T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-cunda.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12,
+      },
+      "date": 2019-01-30T23:00:00.000Z,
+      "header": Array [
+        "C&A D",
+        "Bamberg",
+        "Franz-Ludwig-Strasse 4",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 54,
+        "second": 53,
+      },
+      "timestamp": 2019-01-31T12:54:53.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-denns-biomarkt.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 13.37,
+      },
+      "date": 2018-11-06T23:00:00.000Z,
+      "header": Array [
+        "denns",
+        "denn's Biomarkt GmbH",
+        "Obere Königstrasse 18-22",
+        "96047 Bambers",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0951 2080125",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 14,
+        "second": 29,
+      },
+      "timestamp": 2018-11-07T15:14:29.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-dunkin-donuts.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 3.6,
+      },
+      "date": 2019-04-26T22:00:00.000Z,
+      "header": Array [
+        "DFNBG Gastro GmbH & Co. KG",
+        "Franz-Ludwig-Straße8",
+        "96047 Bamberg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0951 30900892",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 26,
+        "second": null,
+      },
+      "timestamp": 2019-04-27T13:26:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-karstadt.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 16.99,
+      },
+      "date": 2019-02-07T23:00:00.000Z,
+      "header": Array [
+        "KARSTADT",
+        "Karstadt Warenhaus GmbH",
+        "Grüner Markt 23",
+        "96047 Bambers",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 59,
+        "second": null,
+      },
+      "timestamp": 2019-02-08T09:59:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-mayerische.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 11,
+      },
+      "date": 2019-04-01T22:00:00.000Z,
+      "header": Array [
+        "Mayersche Droste GmbH & Co. KG",
+        "Königsallee 18",
+        "40212 Düsseldorf",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0211 542569-0",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2019-04-02T10:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-mueller.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 4.82,
+      },
+      "date": 2019-04-23T22:00:00.000Z,
+      "header": Array [
+        "MMüller",
+        "Maxiniliansplatz 14, 96047 Banberg",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "+49 951/5193936-0",
+      "place": null,
+      "time": Object {
+        "hour": 9,
+        "minute": 32,
+        "second": null,
+      },
+      "timestamp": 2019-04-24T07:32:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-osianderische-buchhandlung.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 14.99,
+      },
+      "date": 2019-02-07T23:00:00.000Z,
+      "header": Array [
+        "os 1andersche Buchhandlung GmbH",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49 951 297925 0",
+      "place": null,
+      "time": Object {
+        "hour": 11,
+        "minute": 8,
+        "second": null,
+      },
+      "timestamp": 2019-02-08T10:08:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-rewe.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 17.28,
+      },
+      "date": 2019-04-26T22:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Lange Str. 25-27",
+        "96047 Bamberg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 22,
+        "second": 13,
+      },
+      "timestamp": 2019-04-27T13:22:13.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-stoffideen.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12.85,
+      },
+      "date": 2018-12-16T23:00:00.000Z,
+      "header": Array [
+        "STOFF",
+        "Ihr Stoff- und Nähexpertegn",
+        "Stoff-Ideen KMR GmbH",
+        "Filiale Bamberg",
+        "Fleischstraße 17",
+        "96047 Bamberg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0951 50904990",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2018-12-17T13:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-tedi.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 3.5,
+      },
+      "date": 2018-12-16T23:00:00.000Z,
+      "header": Array [
+        "TEDI GmbH & Co. KG",
+        "96047 Bamberg",
+        "Fleischstrale 11-13",
+        "Fil lale 5178",
+        "Kasio 1",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 30,
+        "second": null,
+      },
+      "timestamp": 2018-12-17T13:30:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-wollstudio.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.15,
+      },
+      "date": 2018-11-26T23:00:00.000Z,
+      "header": Array [
+        "ww",
+        "WOLLSTUDI0",
+        "FRIEDERIKE PFUND",
+        "PROMENADE 18 96047 BAMBER",
+        "粖 IELEHN:",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0951-202173",
+      "place": null,
+      "time": null,
+      "timestamp": 2018-11-26T23:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-wong-asia-markt.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 3.89,
+      },
+      "date": 2013-01-17T23:00:00.000Z,
+      "header": Array [
+        "WONG S ASIA MARKT",
+        "Luitpoldstr.43",
+        "96052 Baiberg",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0951-9179681",
+      "place": null,
+      "time": Object {
+        "hour": 11,
+        "minute": 55,
+        "second": null,
+      },
+      "timestamp": 2013-01-18T10:55:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-zeis-restaurant.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 38.9,
+      },
+      "date": 2019-04-25T22:00:00.000Z,
+      "header": Array [
+        "testa",
+        "tontat",
+        "Hager u, Etterer GbR",
+        "Cafe Restaurant Zeis",
+        "Obstmarkt 3-96047 Bamberg",
+      ],
+      "paymentMethod": null,
+      "phone": "0951 2082466",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 54,
+        "second": null,
+      },
+      "timestamp": 2019-04-26T18:54:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bielefeld-rancho-steakhouse.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 61.9,
+      },
+      "date": 2019-02-24T23:00:00.000Z,
+      "header": Array [
+        "RANCHO",
+        "STEAKHOUSE",
+        "Niederwalle 37",
+        "33602 Bielefed",
+      ],
+      "paymentMethod": null,
+      "phone": "0521-96 79 79 79",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2019-02-25T19:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-elbenwald.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "ELBENWALD",
+        "FANTASTISCH EINKAUFEN",
+        "Elbenwald Store Braunschweig",
+        "Schloss Arkaden",
+        "Platz am Ritterbrunnen",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531 21965536",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 58,
+        "second": 12,
+      },
+      "timestamp": 2018-12-20T14:58:12.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-ikea.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 13.38,
+      },
+      "date": 2019-01-04T23:00:00.000Z,
+      "header": Array [
+        "KEA",
+        "IKEA Deutschland GmbH & Co.KG",
+        "Hansestrasse 27, 38112 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "06192 /93 999 99",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2019-01-05T09:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-oil_and_vinegar.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15.95,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "IL",
+        "INEGAR",
+        "0il & Vinegar Brau schweig",
+        "Platz am Ritterbrunnen 1",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "+49 (0)531 26152500",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 37,
+        "second": null,
+      },
+      "timestamp": 2018-12-20T15:37:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-penny.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 7.53,
+      },
+      "date": 2018-08-10T22:00:00.000Z,
+      "header": Array [
+        "PENN Y MAR KT GmbH",
+        "Goslarsche Str. 21A",
+        "38118 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 13,
+        "second": 48,
+      },
+      "timestamp": 2018-08-11T10:13:48.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-rewe-goslarsche.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 52.52,
+      },
+      "date": 2018-08-02T22:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Goslarsche Str. 61",
+        "38118 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0531/55472",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 43,
+        "second": 4,
+      },
+      "timestamp": 2018-08-03T17:43:04.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-rewe-schloss.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 22.51,
+      },
+      "date": 2018-12-07T23:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Schlossarkaden",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 59,
+        "second": 22,
+      },
+      "timestamp": 2018-12-08T14:59:22.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-saturn.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 74.93,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "SATURN BRAUNSCHWETG",
+        "Schlossarkaden",
+        "Platz am Ritterbrunnen 1",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0531-12949-0",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 31,
+        "second": 6,
+      },
+      "timestamp": 2018-12-20T15:31:06.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-tee-gschwendner.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 23.6,
+      },
+      "date": 2018-12-19T23:00:00.000Z,
+      "header": Array [
+        "Gschwendner",
+        "Schloss Arkaden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531/6183036",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 44,
+        "second": 14,
+      },
+      "timestamp": 2018-12-20T15:44:14.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-tommy-hilfiger.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 219.8,
+      },
+      "date": 2018-12-07T23:00:00.000Z,
+      "header": Array [
+        "TOMMY E HILFIGER",
+        "TJ BRAUNSCHWEIG",
+        "Platz am Ritterbrunnen 1",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "+49 (0) 531 618 3341",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 39,
+        "second": 22,
+      },
+      "timestamp": 2018-12-08T14:39:22.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'dbahn-bistro.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 6.4,
+      },
+      "date": 2018-06-05T22:00:00.000Z,
+      "header": Array [
+        "DB FERNVERKEHR AG",
+        "STEPHENSONSTR. 1",
+        "60326 FRANK-URI AM MAIN",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 3,
+        "second": null,
+      },
+      "timestamp": 2018-06-06T18:03:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'dresden-butlers.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 7.99,
+      },
+      "date": 2016-12-08T23:00:00.000Z,
+      "header": Array [
+        "BUTILERS Dresden 1",
+        "Altmarkt-Galerie",
+        "Webergasse 1",
+        "01067 Dresden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49 351 49768812",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 9,
+        "second": null,
+      },
+      "timestamp": 2016-12-09T12:09:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'duesseldorf-le-crobag.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 8.18,
+      },
+      "date": 2019-03-31T22:00:00.000Z,
+      "header": Array [
+        "LE CROBAG",
+        "Fr anchisepar tner: Patrizia Laudani di Nar do",
+        "Düssel dor f Hauptbahnhof",
+        "Konr ad-Adenauer-Platz 1, 40210 Düsseldorf",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 35,
+        "second": null,
+      },
+      "timestamp": 2019-04-01T16:35:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-goertz.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 80.9,
+      },
+      "date": 2018-03-28T22:00:00.000Z,
+      "header": Array [
+        "GORTZ 17",
+        "Gm",
+        "Re",
+        "Kornmarkt 9",
+        "37073 Gottingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49 (551) 44035",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 23,
+        "second": 14,
+      },
+      "timestamp": 2018-03-29T10:23:14.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-akia-handyshop.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 17.99,
+      },
+      "date": 2017-08-31T22:00:00.000Z,
+      "header": Array [
+        "AKIA HANDYSHOP",
+        "Hannover HBF",
+        "Ernst-August-Platz",
+        "Im Hauptbahnhof( Osthalle)",
+        "30159 Hannover",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0511/23523333",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 23,
+        "second": null,
+      },
+      "timestamp": 2017-09-01T13:23:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-marche.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 13,
+      },
+      "date": 2019-03-16T23:00:00.000Z,
+      "header": Array [
+        "marche",
+        "MOVENPICK",
+        "Gastrononie Flughafen",
+        "Hannover GnbH",
+        "30669 Hannover",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "+49 511 977 2509",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 6,
+        "second": null,
+      },
+      "timestamp": 2019-03-17T09:06:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'kassel-ikea-full.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 230.69,
+      },
+      "date": 2018-12-21T23:00:00.000Z,
+      "header": Array [
+        "EA Deutschland GmbH & Co.KG",
+        "nrich",
+      ],
+      "paymentMethod": null,
+      "phone": "06192/93999",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 38,
+        "second": null,
+      },
+      "timestamp": 2018-12-22T13:38:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'leipzip-messebuchhandlung.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12.99,
+      },
+      "date": 2019-03-22T23:00:00.000Z,
+      "header": Array [
+        "Messebuchhandlung",
+        "powered by Haufe",
+        "Lieferdatum = Rechnungsdatum",
+      ],
+      "paymentMethod": null,
+      "phone": "+49 341 9954 250",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 20,
+        "second": 46,
+      },
+      "timestamp": 2019-03-23T15:20:46.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-apotheke.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 27.87,
+      },
+      "date": 2017-09-26T22:00:00.000Z,
+      "header": Array [
+        "Akazien-Apotheke oHG",
+        "Uta und Thomas Eckert",
+        "Danziger Str. 14",
+        "38302 Wolfenbūttel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331/72817",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 16,
+        "second": null,
+      },
+      "timestamp": 2017-09-27T15:16:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-barrique.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 20,
+      },
+      "date": 2018-11-30T23:00:00.000Z,
+      "header": Array [
+        "Barrique Wolfenbuttel",
+        "Lange Herzog Str. 58",
+        "8300 Wolfenbuttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331 984942",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 48,
+        "second": 28,
+      },
+      "timestamp": 2018-12-01T09:48:28.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-buecher-behr.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.49,
+      },
+      "date": 2018-08-27T22:00:00.000Z,
+      "header": Array [
+        "Bücher Behr",
+        "Die Buchhandiung am Kornmark:",
+        "Die Buchhandlung am Kor nmarkt",
+        "Kornmarkt 4-5",
+        "38300 Wolfenhüttel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331-98890",
+      "place": null,
+      "time": null,
+      "timestamp": 2018-08-27T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-depot.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 20.08,
+      },
+      "date": 2018-11-30T23:00:00.000Z,
+      "header": Array [
+        "DEPOT",
+        "dti",
+        "eihaach",
+        "Lange Herzogstrae 61 62",
+        "38300 Wolfenbuttel",
+        "depot onine co",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "+49 5331 856 029 1",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 35,
+        "second": null,
+      },
+      "timestamp": 2018-12-01T09:35:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-dm.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.5,
+      },
+      "date": 2018-12-04T23:00:00.000Z,
+      "header": Array [
+        "dm-drogerie markt",
+        "Schweigerstraße 9a",
+        "38302 Wolfenbüttel",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05331/9028264",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 21,
+        "second": null,
+      },
+      "timestamp": 2018-12-05T16:21:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-edeka.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 44.13,
+      },
+      "date": 2018-05-25T22:00:00.000Z,
+      "header": Array [
+        "cente",
+        "E CENTER Denis Brueggendick",
+        "Schweigerstr.5",
+        "38302 Wolfenbüttel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05331/90570",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 5,
+        "second": 16,
+      },
+      "timestamp": 2018-05-26T10:05:16.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-fleischerei-hass.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 7.6,
+      },
+      "date": 2017-09-22T22:00:00.000Z,
+      "header": Array [
+        "Fieischerei & Partyservice",
+        "Peter Haß",
+        "Der Anger 1",
+        "38302 Wolfenbüttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331 - 71845",
+      "place": null,
+      "time": null,
+      "timestamp": 2017-09-22T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-fleischerei-heine.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 8.97,
+      },
+      "date": 2017-09-27T22:00:00.000Z,
+      "header": Array [
+        "Fleischerei Frank Heine",
+        "Kornmarkt 15",
+        "38300 Wolfenbüttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331/2818",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 47,
+        "second": 42,
+      },
+      "timestamp": 2017-09-28T13:47:42.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-hellweg.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.99,
+      },
+      "date": 2018-10-26T22:00:00.000Z,
+      "header": Array [
+        "HELLWEG",
+        "Dle Proh-Bauunarkte IDEEN MUSS MAN HABEN",
+        "Schhweigerstrasse 13",
+        "38302 Wolfenbüttel",
+        "HELLWEG Die Profi-Baumärkte GmbH&Co.KG",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05331/900810",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 17,
+        "second": 32,
+      },
+      "timestamp": 2018-10-27T10:17:32.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-kienast-schuhe-1.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 69.99,
+      },
+      "date": 2018-12-07T23:00:00.000Z,
+      "header": Array [
+        "Kienast Schuhe",
+        "Muehlenstraße 5",
+        "38300 Wolfenbüttel",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 39,
+        "second": null,
+      },
+      "timestamp": 2018-12-08T11:39:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-kienast-schuhe-2.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 69.99,
+      },
+      "date": 2018-12-07T23:00:00.000Z,
+      "header": Array [
+        "Kienast Schuhe",
+        "Muehlenstr. 5",
+        "38300 Wolfenbuettel",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 42,
+        "second": null,
+      },
+      "timestamp": 2018-12-08T11:42:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-klier.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19,
+      },
+      "date": 2018-12-18T23:00:00.000Z,
+      "header": Array [
+        "KLIER",
+        "KLIER #1561",
+        "im E Center",
+        "Schweigerstr. 5",
+        "38302 Wolfenbüttel",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0 53 31/9 35 91 28",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 23,
+        "second": null,
+      },
+      "timestamp": 2018-12-19T16:23:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-nanu-nana.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 4.45,
+      },
+      "date": 2018-08-27T22:00:00.000Z,
+      "header": Array [
+        "suchenstobern finden",
+        "NANU NANA",
+        "Lange Herzogstr, 57",
+        "38300 Wolfenbütte",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331-8560085",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 3,
+        "second": 25,
+      },
+      "timestamp": 2018-08-28T16:03:25.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-post.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 3.6,
+      },
+      "date": 2018-07-27T22:00:00.000Z,
+      "header": Array [
+        "Deutsche Post AG",
+        "38302 Wolfenbittel",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": null,
+      "timestamp": 2018-07-27T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-rewe-rodeland.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.97,
+      },
+      "date": 2018-11-05T23:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Am Rodeland",
+        "38302 Wolfenbüttel",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05331/907026",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 7,
+        "second": 21,
+      },
+      "timestamp": 2018-11-06T16:07:21.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-wurst-basar.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 6.32,
+      },
+      "date": 2018-12-07T23:00:00.000Z,
+      "header": Array [
+        "wurst-Basar",
+        "Nolfenbüttel",
+        "Lange Herzogstraße 3",
+        "38300 Wolfenbüttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331-8560268",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 43,
+        "second": 17,
+      },
+      "timestamp": 2018-12-08T11:43:17.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-burgerme.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 18.47,
+      },
+      "date": 2019-04-04T22:00:00.000Z,
+      "header": Array [
+        "Inh. D. Schmerling",
+        "Rothenfelderstraße 12",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "ONLINE",
+      "phone": "(05361) 22 192 22",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 56,
+        "second": null,
+      },
+      "timestamp": 2019-04-05T16:56:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-daenisches-bettenlager.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 294.54,
+      },
+      "date": 2018-12-14T23:00:00.000Z,
+      "header": Array [
+        "BETTENLAGE",
+        "Gualitat sehr preiswert",
+        "Danisches BETTENLAGER",
+        "GmbH &Co KG",
+        "Brandgehäge 5",
+        "38444 Wolfsbur",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05308 93030",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 10,
+        "second": 49,
+      },
+      "timestamp": 2018-12-15T17:10:49.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-edeka.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 8.32,
+      },
+      "date": 2019-02-21T23:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "Wir Lebensmittel",
+        "Edeka Fi1. 2129",
+        "Grauhorststr. 1",
+        "38440 Wolfsburg OT Hageberg",
+        "MILKANA KRAEUTER",
+        "MOEVENP. PUDDING",
+        "OETK.CREME FRAICHE",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 58,
+        "second": 57,
+      },
+      "timestamp": 2019-02-22T15:58:57.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-hornbach.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 67.95,
+      },
+      "date": 2019-01-18T23:00:00.000Z,
+      "header": Array [
+        "HORNBACH",
+        "Es gibt immer was za tun",
+        "HORNBACH Baumarkt AG",
+        "Filiale 583",
+        "Brandgehaege 7",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05308 9332-0",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 46,
+        "second": null,
+      },
+      "timestamp": 2019-01-19T16:46:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-media_markt.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 34.9,
+      },
+      "date": 2019-03-15T23:00:00.000Z,
+      "header": Array [
+        "MedlaMarkt",
+        "MEDIA MARKT WOLFSBURG",
+        "TV-HIFI ELEKTRO Gmbh",
+        "Wolfsburg-Brandgehaege 3",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05308-701",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 18,
+        "second": 38,
+      },
+      "timestamp": 2019-03-16T16:18:38.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-moemax.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.7,
+      },
+      "date": 2018-12-14T23:00:00.000Z,
+      "header": Array [
+        "Br andgehaege6",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": null,
+      "phone": "050/ 111 523 280",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 25,
+        "second": null,
+      },
+      "timestamp": 2018-12-15T13:25:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-nypd-pizza.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 17.2,
+      },
+      "date": 2018-12-17T23:00:00.000Z,
+      "header": Array [
+        "k *k",
+        "k k",
+        "d dem Balken 2 Www.nypa pizza.de",
+        "38448 Wolfsburg",
+      ],
+      "paymentMethod": "ONLINE",
+      "phone": "05361 275 12 50",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 34,
+        "second": null,
+      },
+      "timestamp": 2018-12-18T17:34:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 83.89,
+      },
+      "date": 2019-03-29T23:00:00.000Z,
+      "header": Array [
+        "real Wolfsburg",
+        "Brandgehaege 9",
+        "38444",
+        "Wolfsburs",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 10,
+        "second": 28,
+      },
+      "timestamp": 2019-03-30T18:10:28.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real-full.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 112.79,
+      },
+      "date": 2019-05-03T22:00:00.000Z,
+      "header": Array [
+        "real GmbH",
+        "38444 Wolfsburg",
+        "Brandgehaege 9",
+      ],
+      "paymentMethod": null,
+      "phone": "0 53 08 40 46 30",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 11,
+        "second": null,
+      },
+      "timestamp": 2019-05-04T18:11:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-smileys.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12.85,
+      },
+      "date": 2019-03-13T23:00:00.000Z,
+      "header": Array [
+        "Smiley's Pizza Profis, Inh.: M. Voigt",
+        "Kantallee 1a, 38440 Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05361 272 666",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 27,
+        "second": null,
+      },
+      "timestamp": 2019-03-14T17:27:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-smileys-paypal.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12.85,
+      },
+      "date": 2019-04-02T22:00:00.000Z,
+      "header": Array [
+        "il TImI",
+        "Smie",
+        "Smiley's Pizza Profis, Inh.: M. Voigt",
+        "Kantallee 1a, 38440 Wolfsburg",
+      ],
+      "paymentMethod": "PAYPAL",
+      "phone": "05361 272 666",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 19,
+        "second": null,
+      },
+      "timestamp": 2019-04-03T18:19:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-subway.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 12,
+      },
+      "date": 2018-10-19T22:00:00.000Z,
+      "header": Array [
+        "Subway Nr.35257-0",
+        "Porschestraße 21a",
+        "Wolfsburg, Niedersachsen, 38440",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "+49 536 1846394",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 14,
+        "second": 5,
+      },
+      "timestamp": 2018-10-20T16:14:05.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-vw-arena-weihnachtsessen.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 29.95,
+      },
+      "date": 2018-12-12T23:00:00.000Z,
+      "header": Array [
+        "Volkswagen AG",
+        "K-SF-G-5/7 Club 45",
+        "Berliner Ring 2",
+        "38436 Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05361-861516",
+      "place": null,
+      "time": Object {
+        "hour": 21,
+        "minute": 32,
+        "second": 11,
+      },
+      "timestamp": 2018-12-13T20:32:11.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;

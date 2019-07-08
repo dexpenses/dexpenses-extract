@@ -1,0 +1,31 @@
+Kundenbeleg **
+real Wolfsburg
+Brandgehaege 9
+38444
+Wolfsburs
+Datum:
+Uhrzeit:
+Beleg-Nr
+Trace-Nr
+30.03.2019
+19:10:28 Uhr
+4093
+053372
+Kartenzahlung
+EuroELV
+Online
+CDGM
+Kurz-BLZ
+Kto.
+Karte
+IBAN
+G-ID
+M-ID
+Terminal-ID
+DE44ZZZ00000050490
+6539478540931903301910
+65394785
+Betrag EUR
+83,89
+Transaktion erfolgreich
+

@@ -1,0 +1,37 @@
+Kundenbeleg
+Sausalitos Holding 6mbH
+Betrieb Wolfsburg
+Porschestr. 32
+38440 Wolfsburg
+30.08. 2018
+20: 28:35 Uhr
+2291
+009186
+Datum:
+Uhrzeit:
+Beleg Nr
+Trace Nr.
+Bezahlung
+Visa Credit
+Nr
+VU Nr
+Genehmigungs -Nr 748247
+Terminal-ID
+Pos Inf o
+148032014
+65268324
+00 053 00
+AS -Zeit 30.08. 20: 28 Uhr
+AS-Proc-Code = 00 053 00
+Capt. -Ref. 0368
+AID59 980102
+Betrag EUR
+23,00
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+Informationen zur
+Datenverarbeitung durch
+Ingenico Payment
+Services www 1ngenico
+/datenschutz
+

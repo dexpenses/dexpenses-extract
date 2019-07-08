@@ -1,0 +1,31 @@
+* Kundenbeleg*
+Landkreis Wolfenbuettel
+- Abt. Straßenverkehr
+Tel. 05331 / 84 562
+13.12.2018
+08:12:46 Uhr
+1635
+071127
+Datum:
+Uhrzeit:
+Beleg Nr
+Trace - Nr.
+Kartenzahlung
+girocard
+Nr
+VU-123456789017
+VU-Nr
+Terminal ID
+Pos In f o
+68087200
+00 055 00
+Weitere Daten 9001900002
+59310000000000E80001/000
+0000000/E800/A000000359/
+440302/
+Betrag EUR
+15 , 00
+Zahlung erfolgt*
+kxx
+Bitte Beleg aufbewahran
+

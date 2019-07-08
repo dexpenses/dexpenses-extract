@@ -1,0 +1,29 @@
+K-U-N -D -E -N - B -E-L-E-G
+ELBENWALD
+Braunschwei
+Schloss Arkaden
+www.elbenwald. de
+Terminal ID 54095889
+TA-Nr 089013 BNr 6585
+Kartenzahlung
+Visa Credit
+EUR 10,00
+PAN
+Karte 0
+EMV -AID A0000000031010
+VU-N
+AIDPara
+Genehmigungs Nr 923757
+Datum 20.12. 18 15: 57 Uhr
+EMV -Daten
+0080008000/F800/04100000
+142157850
+0100000002
+/1E0 300///198B 322B/40
+Zahlung erfolgt
+AS-P roc-Code = 00 055
+ออ
+Capt.-Ref.# 1134
+Alb 59: 113426
+BITTE BELEG AUFBEWAHREN
+

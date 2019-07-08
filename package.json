@@ -1,0 +1,51 @@
+{
+  "name": "@dexpenses/extract",
+  "scripts": {
+    "lint": "tslint --force --project tsconfig.json",
+    "lint:sonar": "npm run lint -- -t json -o .sonar/tslint-report.json",
+    "build": "rimraf lib/ && tsc --project tsconfig.build.json",
+    "test": "jest",
+    "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**"
+  },
+  "main": "lib/index.js",
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "@dexpenses/core": "^1.1.0",
+    "@google/maps": "^0.5.5",
+    "luxon": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/google__maps": "^0.5.5",
+    "@types/jest": "^24.0.15",
+    "@types/luxon": "^1.15.1",
+    "@types/node": "^12.0.12",
+    "chance": "^1.0.18",
+    "core-js": "^3.1.4",
+    "jest": "^24.8.0",
+    "jest-date-mock": "^1.0.7",
+    "rimraf": "^2.6.3",
+    "source-map-support": "^0.5.12",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "tslint-sonarts": "^1.9.0",
+    "typescript": "^3.5.2"
+  },
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Henrik Drefs",
+    "url": "https://github.com/dexmo007"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dexpenses/dexpenses-extract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dexpenses/dexpenses-extract/issues"
+  }
+}

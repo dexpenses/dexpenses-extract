@@ -1,0 +1,32 @@
+Kundenbeleq
+Sausalitos Holding GmbH
+Betrieb Wolfsburg
+Porschestr. 32
+38440 Wolfsburg
+Datum 28.08.17 20:33 Uhr
+Beleg Nr
+Trace -Nr
+4472
+006371
+Bezahlung
+Visa Credit
+148032014
+805293
+652б8325
+00 053 00
+AS -Zeit 28.08. 20: 33 Uhrr
+Genehmigungs - Nr
+Terminal-ID
+Pos - Info
+AS-Proc-Code = 00 053 00
+Capt. -Re0222
+AID59 253630
+Betrag EUR
+Trinkgeld EUR
+26,80
+2,00
+Gesamt eUR
+28,80
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+

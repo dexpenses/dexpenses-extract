@@ -1,0 +1,28 @@
+-K-U-N D E-N-B-E L E G
+Cl Cinema
+Lange Str. 60
+38100 Braunschweig
+Terminal-ID 69591393
+TA-Nr 018367BNr 7879
+Kartenzahlung
+Visg kontaktlõs
+Visa Credit
+EUR 14, 00
+PAN
+Karte θ
+MV AID A0000000031010
+VU-Nr
+Genehmigungs NT
+Datum 27.08.18 20:43 Uhr
+EMV Daten
+9000000000/0000/00000000
+00/FC5088800/FC508C8800
+/11175847A05/80
+142776717
+466356
+xxx Zahlung erfolgt
+AS-Proc-Code-00 075 Θ0
+Capt. Ref.-0242
+AID59 712712
+BITTE BELEG AUFBEWAHREN
+

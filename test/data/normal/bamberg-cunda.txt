@@ -1,0 +1,62 @@
+C&A D
+Bamberg
+Franz-Ludwig-Strasse 4
+664 A 4532514 1333 56
+D-STRI/CLO
+664 A 4532514 1333 90
+D-STRI/CLO
+A 6,00
+A 6,00
+EUR 12,00V
+Total
+12,00
+Girocard
+EUR
+KUNDENBELEG
+67057473
+31.01.2019
+13:54:53
+196
+80501
+Terminalnummer
+Datum
+Uhrzeit
+Beleg-Nr
+Transaktions-Nr
+Kartenzahlung
+girocard
+12.00 EUR
+Betrag
+Karte
+Kartenfolgenummer
+Vertragsnummer
+EMV-AID
+Genehmi gungs-Nr
+01
+2703000356
+A0000003591010028001
+985812
+EMV-DATA
+0000000000/E800/0400000000/F850ACF800/
+FC50ACA000/440302
+Zahlung erfolgt
+MwSt A 19,0% x
+10,08 EUR
+1,92
+Anzahl Artikel: 2
+Vielen Dank für Ihren Einkauf
+Umtausch nur gegen Vorlage des Bons
+in allen deutschen C&A Filialen
+Infos zur Ware der "Mayer Schuhh.
+GmbH" siehe Rückseite
+Newsletter abonnieren und
+10% Rabatt für deinen Einkauf im C&A
+Online-Shop sichern!
+Anmel dung unter
+www.c-a.com/newsletter
+USt-ID-Nr. DE121280555
+Kasse 1 Bon 00240 Bediener 430
+Filiale 98 Datum 31.01.19 13:56
+Sequenz Nr. 4731
+70000098012403101196
+

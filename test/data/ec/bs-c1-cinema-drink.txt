@@ -1,0 +1,36 @@
+** Kundenbeleg*
+C1 Cinema
+Lange Straße 60
+38100 Braunschweg
+06.05. 2019
+20:33:32 Uhr
+0504
+Datum:
+Uhrzeit:
+Beleg-Nr
+Trace-Nr
+001177
+Bezahlung
+Kontaktlos
+Visa Credit
+Nr
+142776717
+VU Nr.
+gs-064580
+Genehmigungs -Nr
+69583456
+00 075 00
+Terminal-ID
+Pos Info
+AS -Zeit 06.05. 20:33 Uhr
+EMV - Daten 0000000000////
+1///652 CE8A5/80
+AS-Proc - Code 00 075 00
+Capt.-Ref. 0023
+AID59#366780
+AS-RC 0G
+Betrag EUR
+5,00
+Genehmigung erteilt
+Bitte Beleg aufbewahren
+

@@ -1,0 +1,73 @@
+REWE
+x REWE *x**xx
+Schlossarkaden
+38100 Braunschweig
+UID Nr. DE812706034
+1,99 A
+0, 50 A
+2, 29 B
+0,65 B
+2,37 B
+ZAHNCREME ORIGIN
+Zahncreme - 25%
+FRISCHESCH. KRAE
+FRISCHE SAHNE
+SAHNEPUD. SCHOKO
+3 Stk x 0, 79
+MSC WILDLACHS
+SPAGHETTINI
+EBERB. RIESL ING
+KRAUTERLIMONADE
+PFAND
+PAPIERTASCHE
+5, 99 B
+1, 39 B
+6,49 A
+1,39 A
+0, 25 A X
+0, 20 A
+EUR 22,51
+SUMME
+Geg. VISA
+EUR 22,51
+xKundenbeleg
+Datum
+Uhrzeit:
+Beleg-Nr
+Trace-Nr
+08. 12. 2018
+15:59:22 Uhr
+2719
+030136
+Bezahlung
+Kontaktlos
+Visa Credit
+Nr
+VU-Nr
+Terminal-ID
+Pos-Info
+AS-Zeit 08. 12
+4556835354
+56003356
+00 073 00
+15:59 Uhr
+AS-Proc-Code 00 073 00
+Capt.-Ref. = 0000
+00 GENEHMIGT
+Betrag EUR
+22, 51
+Zahlung erfolgt
+teuer
+esantbetrag
+08. 12. 2018
+St
+Net
+Nr. :828
+Markt:0400 Kasse:6 Bed. :616161
+15:59
+Ihre REWE PAYBACK Vorteile heute
+Punktestand vor Einkauf: 1.948
+Punktestand entspr icht: 19, 48 EUR
+Sie erhalten 11 PAYBACK Punkte auf
+einen PAYBACK Umsatz von 26 ELR
+

@@ -1,0 +1,23 @@
+-K-U-N-D-E-N-B-E-L-E-G-
+Bek leidungshaeuser
+Vockeroth GmbH
+Lange Str.73
+34346 Hann Muenden
+T7019910
+Terminal-ID54002664
+TA-Nr 267730 BNr 5355
+Kartenzahlung
+girocard
+EUR 117,95
+Karte 0
+EMV-AID
+A0000003591010028001
+VU-Nr
+AIDPara
+5288400001
+0100000002
+Genehmigungs-Nr 140323
+Datum 13.04,19 14:03 Uhr
+Zahlung erfolgt
+BITTE BELEG AUFBEWAHREN
+

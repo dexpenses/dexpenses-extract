@@ -1,0 +1,32 @@
+Messebuchhandlung
+powered by Haufe
+Lieferdatum = Rechnungsdatum
+Preis:
+(EUR)
+Artikel:
+E-Preis
+Menge
+Hogwarts-Schulbücher: Quidditc
+12,99
+12,99
+,00
+MwSt: 7,00%
+0,85 €
+12,99
+12,14
+0,85
+Gesamt
+Betrag Netto:
+MwSt 7,00%
+Gerät: 61592289
+Bediener: Benutzer 6
+Beleg: 2891903231620590446
+23.03.2019/16:20:46
+Vielen Dank für Ihren Einkauf
+Haufe Discovery GmbH
+Ein Unterneh men der Haufe Gruppe
+Gerichtsweg 28 - D-04103 Leipzig
+Tel: +49 341 9954 250
+E-Mail: Ibm.support @haufe.com
+Ust-ID-Nr: DE 141498777
+

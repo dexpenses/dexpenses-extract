@@ -1,0 +1,32 @@
+*Kundenbeleg *
+Smileys Pizza Wolfsbur g
+Kantallee 1a
+38440 Wolfs burg
+05361 -272666
+14.03.2019
+18:53 57 Uhr
+0990
+022364
+Datum:
+Uhrzeit:
+Beleg -Nr.
+Trace Nr
+Kartenzahlung
+girocard
+Nr
+VU Nr. VU-123456789017
+Genehmigungs Nr. 185504
+68063115
+00 055 00
+AS -Zeit 14.03. 18:53 Uhr
+Terminal ID
+Pos In fo
+Weitere Daten 9002900002
+30300000000000E80001/000
+0000000/E800/A000000359/
+440302/
+Betrag EUR
+14,00
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+

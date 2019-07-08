@@ -1,0 +1,38 @@
+Kundenbeleg
+Bolero Braunschweig GmbH
+Lange Str. 60
+38100 Braunschweig
+0531- 6180168
+DE 210026390
+11.08.2018
+19 42:48 ühr
+1313
+Datum:
+Uhrzeit
+Beleg -Nr
+Trace Nr
+001587
+Bezahlung
+Visa Credit
+Nr
+VU-Nr
+200055526
+Genehmigungs -Nr. 735845
+Terminal ID
+Pos Info
+AS - Zeit 11.08. 19:42 Uhr
+65124 069
+00 055 00
+AS Proc - Code00 055 00
+Capt. -Ref0081
+AID59 424825
+Betrag EUR
+25,00
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+Informationen zur
+Datenverarbeitung durch
+Ingenico Payment
+Services www.ingenico.de
+/datenschutz
+

@@ -1,0 +1,33 @@
+* * Kundenbeleg *
+Sausalitos GmbH
+Betrieb Braunschweig
+Hagenmarkt 2
+38100 Braunschweig
+Tel 0531/ 123 30 87
+Datum:
+Uhrzeit
+Beleg - Nr
+Trace Nr
+17. 06. 2018
+01 20:48 Uhr
+3598
+045296
+Bezah Lung
+Visa Credit
+Nr
+VU Nr
+Genehmigungs Nr 794166
+Terminal ID
+Pos -Info
+AS-Zeit 17.06. 01:20 ühr
+148032006
+654 06396
+00 053 00
+AS Proc Code 00 053 00
+Capt. -Ref0884
+AID59: 920019
+Betrag EUR
+44 , 00
+Zahlung erfolgt
+Bitte Beleg aufbewahren
+

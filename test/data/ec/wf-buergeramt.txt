@@ -1,0 +1,27 @@
+** Kundenbeleg
+Stadt Wolfenbuettel
+Buergeramt
+Stadtmarkt 3-6
+38300 Wolfenbuettel
+13.12.2018
+Datum:
+Uhrzeit 07:45 08 Uhr
+Beleg Nr
+Trace-Nr
+2408
+029984
+Kartenzahlung
+girocard
+Nr.
+VU Nr.
+Terminal-ID
+Pos -In f o
+5654100002
+54292918
+00 053 00
+Betrag EUR
+37,50
+** Zahlung erfolgt **
+x*x
+Bitte Beleg aufbewahren
+

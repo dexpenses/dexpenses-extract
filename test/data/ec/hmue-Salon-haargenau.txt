@@ -1,0 +1,29 @@
+*Kundenbeleg **
+Salon haargenau
+Bahnhofstraße 1
+34346 Hann Münden
+Tel. 05541/6241
+Dankeschön!
+Datum 13. 04.19 13:03 Uhr
+Beleg-Nr
+Trace Nr
+0447
+001292
+Kartenzahlung
+girocard
+Nr.
+Nr. VU-123456789017
+Genehmigungs -Nr 130345
+Terminal-ID
+Pos In fo
+AS-Zeit 13.04. 13: 03 Uhr
+68235628
+00 053 00
+Weitere Daten 9002900002
+30300000000000E80001/000
+0000000/E800/A000000359/
+440302/
+Betrag EUR
+15,00
+Zahlung erfolat
+
