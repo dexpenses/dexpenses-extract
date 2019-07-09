@@ -4,6 +4,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "outDir": "lib",
+    "declaration": true,
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": false,
