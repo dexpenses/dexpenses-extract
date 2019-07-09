@@ -1,13 +1,35 @@
 {
   "name": "@dexpenses/extract",
+  "description": "Extract data from OCRed receipts",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Henrik Drefs",
+    "url": "https://github.com/dexmo007"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dexpenses/dexpenses-extract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dexpenses/dexpenses-extract/issues"
+  },
   "scripts": {
     "lint": "tslint --force --project tsconfig.json",
     "lint:sonar": "npm run lint -- -t json -o .sonar/tslint-report.json",
     "build": "rimraf lib/ && tsc --project tsconfig.build.json",
     "test": "jest",
-    "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**"
+    "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "engines": {
     "node": "10"
   },
@@ -34,18 +56,5 @@
     "tslint-microsoft-contrib": "^6.2.0",
     "tslint-sonarts": "^1.9.0",
     "typescript": "^3.5.2"
-  },
-  "private": false,
-  "license": "MIT",
-  "author": {
-    "name": "Henrik Drefs",
-    "url": "https://github.com/dexmo007"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dexpenses/dexpenses-extract.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dexpenses/dexpenses-extract/issues"
   }
 }
