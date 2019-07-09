@@ -1,15 +1,15 @@
+import { Receipt, UserData } from '@dexpenses/core';
+import cleanUp from './clean-up';
 import { AmountExtractor } from './extractor/amount';
 import { DateExtractor } from './extractor/date';
 import { HeaderExtractor } from './extractor/header';
 import { PaymentMethodExtractor } from './extractor/paymentMethod';
 import { PhoneNumberExtractor } from './extractor/phone';
-import DateTimePostProcessor from './postprocess/DateTimePostProcessor';
 import { TimeExtractor } from './extractor/time';
 import { PlaceExtractor } from './extractor/place';
+import DateTimePostProcessor from './postprocess/DateTimePostProcessor';
 import PlacePostProcessor from './postprocess/PlacePostProcessor';
-import cleanUp from './clean-up';
 import HeaderCleanUpPostProcessor from './postprocess/HeaderCleanUpPostProcessor';
-import { Receipt } from '@dexpenses/core';
 
 export type ReceiptResultState =
   | 'pending'
@@ -44,10 +44,6 @@ const postProcessors = [
 
 export function isReady({ header, date, amount }: Receipt): boolean {
   return !!header && header.length > 0 && !!date && !!amount;
-}
-
-interface UserData {
-  phoneNumber?: string;
 }
 
 export default async function(
