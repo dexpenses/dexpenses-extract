@@ -17,13 +17,13 @@
   },
   "scripts": {
     "lint": "tslint --force --project tsconfig.json",
-    "lint:sonar": "npm run lint -- -t json -o .sonar/tslint-report.json",
+    "lint:sonar": "yarn lint -- -t json -o .sonar/tslint-report.json",
     "build": "rimraf lib/ && tsc --project tsconfig.build.json",
     "test": "jest",
     "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run test && npm run lint",
-    "preversion": "npm run lint"
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -10,10 +10,10 @@ env:
     - TZ=UTC
     - TZ=CET
 install:
-  - npm install
+  - yarn install
 script:
-  - npm run test -- --silent
-  - npm run build
+  - yarn test
+  - yarn build
 jobs:
   include:
     - stage: sonar
@@ -26,6 +26,6 @@ jobs:
           token:
             secure: e/AZM448K6otV0awOy1QBNw+85nQK2n2lfxqvqiHUzwdn2vA7u6FgNQ/hEcxsJ5qhi7cJsCxDiiUbnxaK8U3go3fQ/2YLjSYLB+r3uD1q/fw2hMHImgGJwUdpZxk9KKJfHwDz8jLU19AV95WGcqZ6zUP8FWejBtEO4nOQ6M81y2UK3/sN/pcnzCT/7QGOk90zADkdaUHuZxz8o0HiyIhIgyno+0Vi7XawYvKQI7bNQgUOWp4ZcOAYG8hk2lLzZG1U2OQ0kK0WUj9HuDzdm8ox3FSQkgZeT/4ijKynYmTHuXeyG5yd4DL4vfC4aKqAb5iEThPXmcof602Qmjy4G2OhnSqsHiLeglDz6/3BDMvxcvfr7VvNHP+nH1L13C4IDl9DieEyxU8zMYDloc/ITwvZRZyvwpBr2VZQaD6eFpIEpfRKfrzdJTs88Ib5QFqtU3efdxcXUW4EW4yKslbPQ42JRqfv8Mcktdifnf59QXcOOYZ7icUOFstBhZLTaT3VAz1ZYg+W3w3gJmv5dZOefVkPuHw1/SUIOGGIdOzw4LMvRrXQ3xS47SEMoWgjwCbZA5sDJ1uLtnUK6I0ZnK2NRfZLFb9pH1QCe9enGSdKEwDWaD3G5v4hWjm4EfgvMg99xtcO9ArNXrmvxTVV1cPcu4IzdxmkJCbYVMQQVp9nX9UaU0=
       script:
-        - npm run test:coverage
-        - npm run lint:sonar
+        - yarn test:coverage
+        - yarn lint:sonar
         - sonar-scanner
