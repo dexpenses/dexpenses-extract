@@ -2,7 +2,6 @@ dist: trusty
 language: node_js
 node_js:
   - '10'
-  - '11'
 cache:
   npm: true
 env:
@@ -19,7 +18,7 @@ jobs:
     - stage: sonar
       env: TZ=UTC
       node_js:
-        - '11'
+        - '10'
       addons:
         sonarcloud:
           organization: dexpenses
