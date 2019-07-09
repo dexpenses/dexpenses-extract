@@ -6,3 +6,19 @@
 # Dexpenses Extract
 
 Extract data from OCRed receipts
+
+## Install
+
+`npm i @dexpenses/extract`
+
+or
+
+`yarn add @dexpenses/extract`
+
+## Polyfill
+
+Uses `Array.prototype.flatMap` which means a polyfill may be needed:
+
+`yarn add core-js`
+
+Then `import 'core-js/modules/es.array.flat-map';` at some point.
