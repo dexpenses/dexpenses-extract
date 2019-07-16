@@ -140,9 +140,9 @@
     minimist "^1.2.0"
 
 "@dexpenses/core@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@dexpenses/core/-/core-1.2.1.tgz#519527b4d0cc629399aec7504e473b5cf111cb75"
-  integrity sha512-SgzZiuyHS5cfAGrs+rI8INIKA3ypT3gzM5w4LkdfVgqD+HrQGDJOpQm0d+Qucn59lBXqXxSuFNr4lyl5k3NJnA==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@dexpenses/core/-/core-1.2.2.tgz#6f432404bb9a6d0775a7346e33453fa94dff6800"
+  integrity sha512-ImiJQa0HmWqCk9k3vKzTec8/J69NWhSvu41rtiuMQbyMjlXgXNE8+PcgQVm3YhojB3eAuY0C9N3ClJaTubOjAg==
 
 "@google/maps@^0.5.5":
   version "0.5.5"
