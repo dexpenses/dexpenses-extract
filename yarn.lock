@@ -139,10 +139,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dexpenses/core@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@dexpenses/core/-/core-1.2.1.tgz#519527b4d0cc629399aec7504e473b5cf111cb75"
-  integrity sha512-SgzZiuyHS5cfAGrs+rI8INIKA3ypT3gzM5w4LkdfVgqD+HrQGDJOpQm0d+Qucn59lBXqXxSuFNr4lyl5k3NJnA==
+"@dexpenses/core@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@dexpenses/core/-/core-1.2.2.tgz#6f432404bb9a6d0775a7346e33453fa94dff6800"
+  integrity sha512-ImiJQa0HmWqCk9k3vKzTec8/J69NWhSvu41rtiuMQbyMjlXgXNE8+PcgQVm3YhojB3eAuY0C9N3ClJaTubOjAg==
 
 "@google/maps@^0.5.5":
   version "0.5.5"
@@ -372,10 +372,10 @@
   resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-1.15.2.tgz#528f11f7d6dc08cec0445d4bea8065a5bb6989b2"
   integrity sha512-zHPoyVrLvNaiMRYdhmh88Rn489ZgAgbc6iLxR5Yi0VCNfeNYHcszbhJV2vDHLNrVGy35BPtWBRn4OP2F9BBvFw==
 
-"@types/node@^12.6.1":
-  version "12.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
-  integrity sha512-gojym4tX0FWeV2gsW4Xmzo5wxGjXGm550oVUII7f7G5o4BV6c7DBdiG1RRQd+y1bvqRyYtPfMK85UM95vsapqQ==
+"@types/node@^10.14.12":
+  version "10.14.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.12.tgz#0eec3155a46e6c4db1f27c3e588a205f767d622f"
+  integrity sha512-QcAKpaO6nhHLlxWBvpc4WeLrTvPqlHOvaj0s5GriKkA1zq+bsFBPpfYCvQhLqLgYlIko8A9YrPdaMHCo5mBcpg==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
