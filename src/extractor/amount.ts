@@ -92,14 +92,16 @@ export function getAmountValues(lines: string[]): number[] {
           illegalAmountSuffixPatterns
         )
     )
-    .map(([_, amount]) =>
-      parseFloat(
-        amount
-          .replace(/\s/g, '')
-          .replace(/S/g, '5')
-          .replace(',', '.')
-      )
-    );
+    .map(([_, amount]) => looselyParseFloat(amount));
+}
+
+function looselyParseFloat(s: string): number {
+  return parseFloat(
+    s
+      .replace(/\s/g, '')
+      .replace(/S/g, '5')
+      .replace(',', '.')
+  );
 }
 
 function equal(x: number, y: number) {
