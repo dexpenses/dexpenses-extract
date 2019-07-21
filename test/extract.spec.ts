@@ -22,37 +22,34 @@ const testSuites: Record<string, string[]> = {
   general: [],
 };
 
-const testRoot = __dirname;
-const dir = path.resolve(testRoot, 'data');
+const dir = path.resolve(__dirname, 'data');
 for (const entry of fs.readdirSync(dir)) {
-  const entry_path = path.resolve(dir, entry);
-  if (fs.statSync(entry_path).isDirectory()) {
-    testSuites[path.basename(entry_path)] = fs
-      .readdirSync(entry_path)
+  const entryPath = path.resolve(dir, entry);
+  if (fs.statSync(entryPath).isDirectory()) {
+    testSuites[path.basename(entryPath)] = fs
+      .readdirSync(entryPath)
       .filter((f) => f.endsWith('.txt'))
-      .map((f) => path.resolve(entry_path, f));
+      .map((f) => path.resolve(entryPath, f));
   } else if (entry.endsWith('.txt')) {
-    testSuites.general.push(entry_path);
+    testSuites.general.push(entryPath);
   }
 }
 
-// TODO use describe.each and it.each
-for (const [suite, files] of Object.entries(testSuites)) {
-  describe(`Extract receipt cloud function (offline) for "${suite}" receipts`, () => {
-    for (const textFile of files) {
-      if (!textFile.endsWith('.txt')) {
-        continue;
-      }
-      it(`should successfully extract info from '${path.basename(
-        textFile
-      )}'`, async () => {
-        const text = fs.readFileSync(textFile, 'utf8');
+describe.each(
+  Object.entries(testSuites).filter(([, files]) => files.length > 0)
+)(
+  'Extract receipt cloud function (offline) for "%s" receipts',
+  (suite, files) => {
+    it.each(files.map((file) => [path.basename(file), file]))(
+      "should successfully extract info from '%s'",
+      async (name, file) => {
+        const text = fs.readFileSync(file, 'utf8');
         const config = {
           gmaps: { key: '' },
         }; // we need no config in tests
         const result = await extractReceipt(config)(text, userData);
         expect({ result }).toMatchSnapshot();
-      });
-    }
-  });
-}
+      }
+    );
+  }
+);
