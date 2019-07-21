@@ -15,6 +15,8 @@ const prefixedRegex = new RegExp(
   'i'
 );
 
+const illegalPhoneNumberLinePrefixes = [/St\.?Nr\.?\s*$/i, /^UID\sNr\.?/i];
+
 @DependsOn(HeaderExtractor)
 export class PhoneNumberExtractor extends Extractor<string> {
   private readonly ownNumber?: RegExp;
@@ -26,11 +28,18 @@ export class PhoneNumberExtractor extends Extractor<string> {
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
+    return (
+      this.extractFromHeader(extracted) ||
+      this.extractFromWholeReceipt(lines, extracted)
+    );
+  }
+
+  private extractFromHeader(extracted: Receipt) {
     for (const [i, line] of extracted.header!.entries()) {
       const m = line.match(phoneRegex);
       if (m) {
         const prefix = line.substring(0, line.indexOf(m[0]));
-        if (prefix.match(/St\.?Nr\.?\s*$/i) || prefix.match(/^UID\sNr\.?/i)) {
+        if (this.isIllegalPhoneNumberLine(prefix)) {
           continue;
         }
         const extractedNumber = m[1].trim().replace(/o/gi, '0');
@@ -42,6 +51,10 @@ export class PhoneNumberExtractor extends Extractor<string> {
         return extractedNumber;
       }
     }
+    return null;
+  }
+
+  private extractFromWholeReceipt(lines: string[], extracted: Receipt) {
     for (const [i, line] of lines.entries()) {
       const m = line.match(prefixedRegex);
       if (m) {
@@ -60,5 +73,9 @@ export class PhoneNumberExtractor extends Extractor<string> {
     return (
       this.ownNumber && phoneNumberPatternEquals(this.ownNumber, phoneNumber)
     );
+  }
+
+  private isIllegalPhoneNumberLine(prefix: string) {
+    return illegalPhoneNumberLinePrefixes.some((r) => prefix.match(r));
   }
 }
