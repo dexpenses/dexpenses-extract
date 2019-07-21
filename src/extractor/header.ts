@@ -1,7 +1,9 @@
 import { Extractor } from './extractor';
 import { Receipt } from '@dexpenses/core';
 
-const irrelevantLines = [
+type IrrelevancePattern = RegExp | { pattern: RegExp; minLineIndex: number };
+
+const irrelevantLines: IrrelevancePattern[] = [
   /^Datum:?/i,
   /^Uhrzeit:?/i,
   /^Beleg\s?(\-?\s?Nr\.?|nummer)/i,
@@ -9,7 +11,7 @@ const irrelevantLines = [
   /K\s?\-?\s?U\s?\-?\s?N\s?\-?\s?D\s?\-?\s?E\s?\-?\s?N\s?\-?\s?B\s?\-?\s?E\s?\-?\s?L\s?\-?\s?E\s?\-?\s?[gqa]/i,
   /h(ae|ä)ndlerbeleg/i,
   /zwischensumme/i,
-  /^Fax[.:]?\s/i, // TODO: just not is the first line, it could be the name of the store
+  { pattern: /^Fax[.:]?\s/i, minLineIndex: 1 },
   /^Term(inal)?[\-\s]?ID/i,
   /^TA\-?Nr/i,
   /^\(?\s?[O0]rtstarif\s?\)?$/i,
@@ -43,13 +45,17 @@ export class HeaderExtractor extends Extractor<string[]> {
 
   public extract(text: string, lines: string[], extracted: Receipt) {
     const headerLines: string[] = [];
-    let i = this._firstHeaderLine(lines);
-    if (i === -1) {
+    const firstHeaderLine = this._firstHeaderLine(lines);
+    if (firstHeaderLine === -1) {
       return [];
     }
-    for (i; i < this.options.maxHeaderLines && i < lines.length; i++) {
+    for (
+      let i = firstHeaderLine;
+      i < this.options.maxHeaderLines && i < lines.length;
+      i++
+    ) {
       const line = lines[i];
-      if (HeaderExtractor.isIrrelevantLine(line)) {
+      if (HeaderExtractor.isIrrelevantLine(line, i - firstHeaderLine)) {
         continue;
       }
       if (!line.trim() || this._isHeaderDelimiter(line)) {
@@ -69,8 +75,16 @@ export class HeaderExtractor extends Extractor<string[]> {
     });
   }
 
-  static isIrrelevantLine(line: string): boolean {
-    return line.length <= 1 || irrelevantLines.some((r) => !!line.match(r));
+  static isIrrelevantLine(line: string, index: number): boolean {
+    return (
+      line.length <= 1 ||
+      irrelevantLines.some((r) => {
+        if (r instanceof RegExp) {
+          return line.match(r);
+        }
+        return index >= r.minLineIndex && line.match(r.pattern);
+      })
+    );
   }
 
   /**
@@ -101,7 +115,7 @@ export class HeaderExtractor extends Extractor<string[]> {
     for (let i = 0; i < lines.length; i += 1) {
       const line = lines[i].trim();
       if (
-        !HeaderExtractor.isIrrelevantLine(line) &&
+        !HeaderExtractor.isIrrelevantLine(line, i) &&
         !this._isHeaderDelimiter(line)
       ) {
         return i;

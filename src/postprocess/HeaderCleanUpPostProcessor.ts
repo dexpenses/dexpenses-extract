@@ -19,7 +19,7 @@ export default class HeaderCleanUpPostProcessor extends PostProcessor {
     since header lines could have changed (been cleaned) by other extractors
      */
     extracted.header = extracted.header.filter(
-      (line) => !HeaderExtractor.isIrrelevantLine(line)
+      (line, index) => !HeaderExtractor.isIrrelevantLine(line, index)
     );
   }
 }
