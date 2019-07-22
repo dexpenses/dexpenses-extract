@@ -17,6 +17,7 @@ const paymentMethodIdentifiers = {
     /zahlart[:\s]\s*EC/i,
     /Euro\s?ELV/i,
     /EC Kartenzahlung/i,
+    /(^|\s)EC[\-\s]Card(\s|$)/i,
     /gegeben EC/i,
     /EC[\s\-]Karte/i,
     /gegeben kreditsch\./i,
