@@ -26,7 +26,10 @@ export interface ReceiptResult {
   error?: any;
 }
 
-export const extractorPipelineFactory = (userData: UserData, config: any) => [
+export const extractorPipelineFactory = (
+  userData: UserData,
+  config: Config
+) => [
   new HeaderExtractor(),
   new PhoneNumberExtractor(userData.phoneNumber),
   new DateExtractor(),
@@ -46,11 +49,15 @@ export function isReady({ header, date, amount }: Receipt): boolean {
   return !!header && header.length > 0 && !!date && !!amount;
 }
 
-export default async function(
-  text: string,
-  userData: UserData,
-  config: any
-): Promise<ReceiptResult> {
+interface Config {
+  gmaps: {
+    key: string;
+  };
+}
+
+export default (config: Config) => (userData: UserData) => async (
+  text: string
+) => {
   if (!text) {
     return {
       state: 'no-text',
@@ -87,4 +94,4 @@ export default async function(
     state: isReady(extracted) ? 'ready' : 'partial',
     data: extracted,
   };
-}
+};
