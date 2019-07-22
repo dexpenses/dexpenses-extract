@@ -3,23 +3,23 @@ export class Optional<T> {
     return new Optional();
   }
 
-  constructor(private value?: T) {}
+  constructor(private value?: T | null) {}
 
   then<U>(mapper: (value: T) => U): U | null {
-    if (!this.value) {
+    if (!this.isPresent()) {
       return null;
     }
-    return mapper(this.value);
+    return mapper(this.value!);
   }
 
   asIs(): T | null {
-    if (!this.value) {
+    if (!this.isPresent()) {
       return null;
     }
-    return this.value;
+    return this.value!;
   }
 
   isPresent(): boolean {
-    return !!this.value;
+    return this.value !== undefined && this.value !== null;
   }
 }
