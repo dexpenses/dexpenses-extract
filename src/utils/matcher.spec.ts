@@ -4,7 +4,7 @@ import {
   buildMatcherDef,
   createMatcher,
 } from './matcher';
-import { matchers } from '../date';
+import { matchers } from '../extractor/date';
 
 const matcherChars = getTokenChars(matchers);
 

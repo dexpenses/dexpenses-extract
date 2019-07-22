@@ -2,7 +2,7 @@ import { DependsOn } from '../DependsOn';
 import { Extractor } from './extractor';
 import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
-import { statically, createMatcher, Matcher } from './util/matcher';
+import { statically, createMatcher, Matcher } from '../utils/matcher';
 
 const matchers = {
   HH: /((?:[01][0-9]|2[0-4]))/,

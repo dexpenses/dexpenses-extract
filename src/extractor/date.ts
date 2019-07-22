@@ -9,7 +9,7 @@ import {
   Matcher,
   RegExpMatcher,
   statically,
-} from './util/matcher';
+} from '../utils/matcher';
 
 export const matchers: Record<string, RegExpMatcher> = {
   d: /([1-9]|[12]\d|3[01])/,

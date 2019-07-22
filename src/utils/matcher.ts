@@ -1,4 +1,4 @@
-import { Optional } from '../../Optional';
+import { Optional } from './Optional';
 
 export type RegExpMatcher = RegExp & { static?: boolean };
 
