@@ -3,7 +3,7 @@ import { Extractor } from './extractor/extractor';
 type Class = new (...args: any[]) => {};
 
 export function DependsOn(...value: Class[]) {
-  return function MyClassDecorator(target: any): any {
+  return (target: any) => {
     if (value.indexOf(target) !== -1) {
       throw new Error(`${target.name} cannot depend on itself`);
     }
