@@ -49,7 +49,7 @@ export function isReady({ header, date, amount }: Receipt): boolean {
   return !!header && header.length > 0 && !!date && !!amount;
 }
 
-interface Config {
+export interface Config {
   gmaps: {
     key: string;
   };
