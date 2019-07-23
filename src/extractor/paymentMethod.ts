@@ -15,7 +15,7 @@ const paymentMethodIdentifiers = {
   [PaymentMethod.DEBIT]: [
     /(^|\s)[g9]irocar\s?(c|c?d)(\s|$)/i,
     /zahlart[:\s]\s*EC/i,
-    /Euro\s?ELV/i,
+    /Euro\s?[EB]LV/i,
     /EC Kartenzahlung/i,
     /(^|\s)EC[\-\s]Card(\s|$)/i,
     /gegeben EC/i,
