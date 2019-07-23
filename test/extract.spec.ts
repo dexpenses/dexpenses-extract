@@ -47,7 +47,7 @@ describe.each(
         const config = {
           gmaps: { key: '' },
         }; // we need no config in tests
-        const result = await extractReceipt(config)(text, userData);
+        const result = await extractReceipt(config)(userData)(text);
         expect({ result }).toMatchSnapshot();
       }
     );

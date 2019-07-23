@@ -39,13 +39,13 @@ export const extractorPipelineFactory = (
   new PlaceExtractor(config.gmaps.key),
 ];
 
-const postProcessors = [
+export const postProcessors = [
   new HeaderCleanUpPostProcessor(),
   new DateTimePostProcessor(),
   new PlacePostProcessor(),
 ];
 
-export function isReady({ header, date, amount }: Receipt): boolean {
+export function isReceiptReady({ header, date, amount }: Receipt): boolean {
   return !!header && header.length > 0 && !!date && !!amount;
 }
 
@@ -91,7 +91,7 @@ export default (config: Config) => (userData: UserData) => async (
     postProcessor.touch(extracted);
   }
   return {
-    state: isReady(extracted) ? 'ready' : 'partial',
+    state: isReceiptReady(extracted) ? 'ready' : 'partial',
     data: extracted,
   };
 };
