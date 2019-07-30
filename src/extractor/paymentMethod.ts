@@ -24,6 +24,7 @@ const paymentMethodIdentifiers = {
     /Lastschrift/i,
     /(^|\s)EC(\s|$)/i,
     /(^|\s)SEPA(\s|$)/i,
+    /(^|\s)EC-Cash(\s|$)/i,
   ],
   [PaymentMethod.CREDIT]: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte(\s|$)/i],
   [PaymentMethod.CASH]: [
