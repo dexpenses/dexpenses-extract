@@ -70,9 +70,12 @@ export class AmountExtractor extends Extractor<Amount> {
  */
 const amountValuePattern = /(?:^|\s|\*)-?((?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s]|$)/gim;
 
+const illegalPreviousLinePatterns = [/MwSt$/i];
+
 const illegalAmountPrefixPatterns = [
   /AS-Zeit:?\s?$/i,
   /dieser punktestand entspricht:?\s?$/i,
+  /MwSt:?\s?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
@@ -80,9 +83,19 @@ const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
 // TODO: we could include date filter (i.e. not take dd.MM from the matched date as amount value)
 export function getAmountValues(lines: string[]): number[] {
   return lines
-    .flatMap((line) => getAllMatches(amountValuePattern, line))
+    .flatMap((line, lineIndex) =>
+      getAllMatches(amountValuePattern, line).map((match) => ({
+        match,
+        lineIndex,
+      }))
+    )
     .filter(
-      (match) =>
+      ({ match, lineIndex }) =>
+        (lineIndex === 0 ||
+          !anyRegexMatches(
+            lines[lineIndex - 1],
+            illegalPreviousLinePatterns
+          )) &&
         !anyRegexMatches(
           match.input.slice(0, match.index),
           illegalAmountPrefixPatterns
@@ -92,7 +105,7 @@ export function getAmountValues(lines: string[]): number[] {
           illegalAmountSuffixPatterns
         )
     )
-    .map(([_, amount]) => looselyParseFloat(amount));
+    .map(({ match: [_, amount] }) => looselyParseFloat(amount));
 }
 
 function looselyParseFloat(s: string): number {
