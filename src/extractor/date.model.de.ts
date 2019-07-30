@@ -9,4 +9,5 @@ export default [
   'ddMMyyyy',
   'd.MM.yyyy',
   'd.MM.yy',
+  'yyyy-MM-dd',
 ];
