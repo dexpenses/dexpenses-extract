@@ -2792,6 +2792,38 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-hornbach-2.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 21.23,
+      },
+      "date": 2019-06-03T22:00:00.000Z,
+      "header": Array [
+        "HORNBACH",
+        "Es gibt immer was za tun.",
+        "HORNBACH Baumarkt AG",
+        "Filiale 583",
+        "Brandgehaege 7",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05308 9332-0",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 15,
+        "second": null,
+      },
+      "timestamp": 2019-06-04T16:15:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-media_markt.txt' 1`] = `
 Object {
   "result": Object {
