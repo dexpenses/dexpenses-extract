@@ -2913,6 +2913,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-media_markt-bar.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 0.58,
+      },
+      "date": 2019-06-05T22:00:00.000Z,
+      "header": Array [
+        "MediaMarkt",
+        "MEDIA MARKT WOLFSBURG",
+        "TV-HIFI-ELEKTRO Gmbh",
+        "Wolfsburg-Brandgehaege 3",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05308-7010",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 32,
+        "second": null,
+      },
+      "timestamp": 2019-06-06T15:32:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-moemax.txt' 1`] = `
 Object {
   "result": Object {

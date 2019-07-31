@@ -5,9 +5,9 @@ import { Receipt, Time } from '@dexpenses/core';
 import { statically, createMatcher, Matcher } from '../utils/matcher';
 
 const matchers = {
-  HH: /((?:[01][0-9]|2[0-4]))/,
-  mm: /([0-5][0-9])/,
-  ss: /([0-5][0-9])/,
+  HH: /((?:[01i][0-9i]|2[0-4i]))/i,
+  mm: /([0-5i][0-9i])/,
+  ss: /([0-5i][0-9i])/,
   ':': statically(/\s?:\s?/),
   // '^': /(?:^|\s)/,
 };
@@ -27,7 +27,18 @@ export class TimeExtractor extends Extractor<Time> {
       const [fullTime, hour, minute, second] = res.regexMatch;
       cleanHeaders(extracted, new RegExp(`${fullTime} Uhr`));
       cleanHeaders(extracted, fullTime);
-      return Time.fromStrings(hour, minute, second);
+      return Time.fromStrings(
+        replaceLooseMatches(hour)!,
+        replaceLooseMatches(minute)!,
+        replaceLooseMatches(second)
+      );
     });
   }
+}
+
+function replaceLooseMatches(input?: string): string | undefined {
+  if (!input) {
+    return;
+  }
+  return input.replace(/i/gi, '1');
 }
