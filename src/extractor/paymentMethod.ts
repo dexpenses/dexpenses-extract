@@ -31,7 +31,10 @@ const paymentMethodIdentifiers = {
     /(^|\s)bar(geld|zahlung)?(\s|$)/i,
     /(^|\s)Gegeben(\s|$)/,
   ],
-  [PaymentMethod.DKV_CARD]: [/DK[VI] Selection Card/i, /(^|\s)DKV(\s|$)/i],
+  [PaymentMethod.DKV_CARD]: [
+    /DK[VIU](\s|-)Se\s?lection Card/i,
+    /(^|\s)DKV(\s|$)/i,
+  ],
   [PaymentMethod.PAYPAL]: [/(^|\s)PayPal(\s|$)/i],
   [PaymentMethod.ONLINE]: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(\s|$)/i],
 };
