@@ -4,9 +4,9 @@ Lieferzeit
 lieferando. de
 08.05. 19 14:10
 Henr ik Drefs
-Solinger Ring 2
+Straße 2
 38440 Wolfsburg
-+491639066144
++491234567890
 Bestellt über:
 Bestellt am:
 Name:
@@ -43,4 +43,3 @@ Bereits bezahlt: 15. 50 EUR
 Anlieferung:
 08.05. 19 15:11
 Hotline 0306098A508
-

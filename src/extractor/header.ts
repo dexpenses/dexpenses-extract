@@ -19,6 +19,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /^Vielen Dank/i,
   /^[a-z][^a-z\d]$/i, // indicate wrongly detected text
   /^\d{1,4}$/,
+  /Lieferzeit/,
 ];
 
 const irrelevantPatterns = [

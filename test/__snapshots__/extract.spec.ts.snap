@@ -2854,6 +2854,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-lieferando-quan-bao_thao.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 15.5,
+      },
+      "date": 2019-05-07T22:00:00.000Z,
+      "header": Array [
+        "lieferando",
+        "sofort",
+        "lieferando. de",
+      ],
+      "paymentMethod": "ONLINE",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 10,
+        "second": null,
+      },
+      "timestamp": 2019-05-08T12:10:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-media_markt.txt' 1`] = `
 Object {
   "result": Object {
