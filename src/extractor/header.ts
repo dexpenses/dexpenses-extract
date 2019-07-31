@@ -11,7 +11,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /K\s?\-?\s?U\s?\-?\s?N\s?\-?\s?D\s?\-?\s?E\s?\-?\s?N\s?\-?\s?B\s?\-?\s?E\s?\-?\s?L\s?\-?\s?E\s?\-?\s?[gqa]/i,
   /h(ae|ä)ndlerbeleg/i,
   /zwischensumme/i,
-  { pattern: /^Fax[.:]?\s/i, minLineIndex: 1 },
+  { pattern: /^Fax[.:]?(\s|$)/i, minLineIndex: 1 },
   /^Term(inal)?[\-\s]?ID/i,
   /^TA\-?Nr/i,
   /^\(?\s?[O0]rtstarif\s?\)?$/i,
