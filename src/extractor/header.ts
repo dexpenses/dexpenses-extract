@@ -26,6 +26,7 @@ const irrelevantPatterns = [
   /Bedient von: [a-z]+/i,
   /www\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+/i,
   /Vielen Dank/i,
+  /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
 ];
 
 const fixes = [
