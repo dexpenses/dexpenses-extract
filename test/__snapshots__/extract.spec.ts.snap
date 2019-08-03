@@ -1454,6 +1454,34 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-aldi-kastanienallee-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 13.14,
+      },
+      "date": 2019-06-13T22:00:00.000Z,
+      "header": Array [
+        "A L D I",
+        "Braunschweig Kastanienallee",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 59,
+        "second": null,
+      },
+      "timestamp": 2019-06-14T17:59:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-burger-king-berliner-platz.txt' 1`] = `
 Object {
   "result": Object {
