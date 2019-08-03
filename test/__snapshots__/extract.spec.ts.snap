@@ -2523,6 +2523,38 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-edeka-neuer-weg-2-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 5.76,
+      },
+      "date": 2019-06-19T22:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "Lebensmittel.",
+        "Wir",
+        "EDEKA Klaus Michallik",
+        "Neuer Weg 28 a",
+        "38302 Wolfenbuttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331-935301",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 19,
+        "second": null,
+      },
+      "timestamp": 2019-06-20T08:19:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-edeka-neuer-weg-3-cash.txt' 1`] = `
 Object {
   "result": Object {
