@@ -63,7 +63,7 @@ export interface MatchResult {
 export class Matcher {
   constructor(
     private tokenMatchers: Record<string, RegExpMatcher>,
-    private matchers: MatcherDef[]
+    public readonly matchers: MatcherDef[]
   ) {}
 
   exec(s: string): Optional<MatchResult> {

@@ -4,7 +4,7 @@ import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
 import { statically, createMatcher, Matcher } from '../utils/matcher';
 
-const matchers = {
+export const matchers = {
   HH: /((?:[01i][0-9i]|2[0-4i]))/i,
   mm: /([0-5i][0-9i])/,
   ss: /([0-5i][0-9i])/,
@@ -12,7 +12,7 @@ const matchers = {
   // '^': /(?:^|\s)/,
 };
 
-const formats = ['HH:mm:ss', '^HH mm:ss', 'HH:mm'];
+export const formats = ['HH:mm:ss', '^HH mm:ss', 'HH:mm'];
 
 @DependsOn(HeaderExtractor)
 export class TimeExtractor extends Extractor<Time> {

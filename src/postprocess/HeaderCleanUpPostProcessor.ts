@@ -1,12 +1,38 @@
 import { Receipt } from '@dexpenses/core';
 import PostProcessor from './PostProcessor';
-import { HeaderExtractor } from '../extractor/header';
+import { HeaderExtractor, cleanHeaders } from '../extractor/header';
+import { Matcher, createMatcher } from '../utils/matcher';
+import { matchers as dateMatchers } from '../extractor/date';
+import {
+  matchers as timeMatchers,
+  formats as timeFormats,
+} from '../extractor/time';
+import dateModel from '../extractor/date.model.de';
 
 export default class HeaderCleanUpPostProcessor extends PostProcessor {
+  private dateMatcher: Matcher;
+  private timeMatcher: Matcher;
+
+  constructor() {
+    super();
+    this.dateMatcher = createMatcher(dateMatchers, dateModel);
+    this.timeMatcher = createMatcher(timeMatchers, timeFormats);
+  }
+
   public touch(extracted: Receipt) {
     if (!extracted.header) {
       return;
     }
+    /*
+     * Clean date and time pattern from the header and slice after a match in row 2 and onwards
+     */
+    this.dateMatcher.matchers.forEach((def) =>
+      cleanHeaders(extracted, def.regex, (index) => index > 1)
+    );
+    this.timeMatcher.matchers.forEach((def) =>
+      cleanHeaders(extracted, def.regex, (index) => index > 1)
+    );
+
     const i = extracted.header.findIndex(containsMostlyNumbers);
     if (i !== -1) {
       extracted.header.splice(i);
