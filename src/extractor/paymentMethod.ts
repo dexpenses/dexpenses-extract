@@ -1,18 +1,9 @@
 import { Extractor } from './extractor';
-import { Receipt } from '@dexpenses/core';
+import { Receipt, PaymentMethod } from '@dexpenses/core';
 import { anyLineMatches } from './util';
 
-export enum PaymentMethod {
-  DEBIT = 'DEBIT',
-  CREDIT = 'CREDIT',
-  CASH = 'CASH',
-  DKV_CARD = 'DKV_CARD',
-  PAYPAL = 'PAYPAL',
-  ONLINE = 'ONLINE',
-}
-
-const paymentMethodIdentifiers = {
-  [PaymentMethod.DEBIT]: [
+const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
+  DEBIT: [
     /(^|\s)[g9]irocar\s?(c|c?d)(\s|$)/i,
     /zahlart[:\s]\s*EC/i,
     /Euro\s?[EB]LV/i,
@@ -26,20 +17,14 @@ const paymentMethodIdentifiers = {
     /(^|\s)SEPA(\s|$)/i,
     /(^|\s)EC-Cash(\s|$)/i,
   ],
-  [PaymentMethod.CREDIT]: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte(\s|$)/i],
-  [PaymentMethod.CASH]: [
-    /(^|\s)bar(geld|zahlung)?(\s|$)/i,
-    /(^|\s)Gegeben(\s|$)/,
-  ],
-  [PaymentMethod.DKV_CARD]: [
-    /DK[VIU](\s|-)Se\s?lection Card/i,
-    /(^|\s)DKV(\s|$)/i,
-  ],
-  [PaymentMethod.PAYPAL]: [/(^|\s)PayPal(\s|$)/i],
-  [PaymentMethod.ONLINE]: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(\s|$)/i],
+  CREDIT: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte(\s|$)/i],
+  CASH: [/(^|\s)bar(geld|zahlung)?(\s|$)/i, /(^|\s)Gegeben(\s|$)/],
+  DKV_CARD: [/DK[VIU](\s|-)Se\s?lection Card/i, /(^|\s)DKV(\s|$)/i],
+  PAYPAL: [/(^|\s)PayPal(\s|$)/i],
+  ONLINE: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(\s|$)/i],
 };
 
-export class PaymentMethodExtractor extends Extractor<string> {
+export class PaymentMethodExtractor extends Extractor<PaymentMethod> {
   constructor() {
     super('paymentMethod');
   }
@@ -48,7 +33,7 @@ export class PaymentMethodExtractor extends Extractor<string> {
     text: string,
     lines: string[],
     extracted: Receipt
-  ): string | null {
+  ): PaymentMethod | null {
     for (const [method, identifiers] of Object.entries(
       paymentMethodIdentifiers
     )) {
@@ -56,7 +41,7 @@ export class PaymentMethodExtractor extends Extractor<string> {
         if (
           anyLineMatches(lines, (line) => line.match(identifier)).isPresent()
         ) {
-          return method;
+          return method as PaymentMethod;
         }
       }
     }
