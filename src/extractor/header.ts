@@ -97,7 +97,7 @@ export class HeaderExtractor extends Extractor<string[]> {
    * @example '*xxx Header*xx*' -> 'Header'
    */
   static trim(line: string): string {
-    return line.replace(/^[\s*x]*[\s*]/i, '').replace(/[\s*][\s*x]*$/i, '');
+    return line.replace(/^[\s*xж]*[\s*ж]/i, '').replace(/[\s*ж][\s*жx]*$/i, '');
   }
 
   private _isHeaderDelimiter(line: string): boolean {
