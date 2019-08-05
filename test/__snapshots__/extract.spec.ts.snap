@@ -1810,6 +1810,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-mcdonalds-hamburger-str-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 28.96,
+      },
+      "date": 2019-06-09T22:00:00.000Z,
+      "header": Array [
+        "Rieke Braunschweig GmbH",
+        "Hamburger Strasse 262",
+        "38114 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531 / 330314",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 36,
+        "second": 18,
+      },
+      "timestamp": 2019-06-10T18:36:18.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-oil_and_vinegar.txt' 1`] = `
 Object {
   "result": Object {

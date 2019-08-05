@@ -29,6 +29,7 @@ const irrelevantPatterns = [
   /Vielen Dank/i,
   /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
   /K[SA]\.\s?\d+/i,
+  /ID \d+/i,
 ];
 
 const fixes = [
