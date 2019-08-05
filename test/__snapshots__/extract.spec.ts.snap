@@ -2251,6 +2251,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eltmann-cafe-sauer-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 35.15,
+      },
+      "date": 2019-07-22T22:00:00.000Z,
+      "header": Array [
+        "BACKERE CONDITOREI - CAFE",
+        "Sauer",
+        "SCHOTTENSTRASSE 1",
+        "97483 ELTMANN",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "09522/303",
+      "place": null,
+      "time": Object {
+        "hour": 11,
+        "minute": 30,
+        "second": 5,
+      },
+      "timestamp": 2019-07-23T09:30:05.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-penny-lehmweg-cash.txt' 1`] = `
 Object {
   "result": Object {
