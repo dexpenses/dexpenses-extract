@@ -74,7 +74,7 @@ const illegalPreviousLinePatterns = [/MwSt$/i];
 
 const illegalAmountPrefixPatterns = [
   /AS-Zeit:?\s?$/i,
-  /dieser punktestand entspricht:?\s?$/i,
+  /punktestand entspricht:?\s?$/i,
   /MwSt:?\s?$/i,
 ];
 
