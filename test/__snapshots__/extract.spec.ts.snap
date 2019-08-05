@@ -3359,6 +3359,38 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-edeka-berliner-ring-bad-quality-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 6.69,
+      },
+      "date": 2019-06-21T22:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "Lebensmittel.",
+        "Wir",
+        "EDEKA FIl. 2088 WOB",
+        "Berliner Ring 12-14",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05361-12621",
+      "place": null,
+      "time": Object {
+        "hour": 21,
+        "minute": 57,
+        "second": 4,
+      },
+      "timestamp": 2019-06-22T19:57:04.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-hornbach.txt' 1`] = `
 Object {
   "result": Object {
