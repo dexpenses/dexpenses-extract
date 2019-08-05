@@ -5,6 +5,7 @@ export default [
   'dd-MM-yyyy',
   'd-M-yyyy',
   'dd/MM/yyyy',
+  'M/dd/yyyy',
   'ddMM-yyyy',
   'ddMMyyyy',
   'd.MM.yyyy',

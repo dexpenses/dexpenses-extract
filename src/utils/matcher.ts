@@ -1,9 +1,20 @@
 import { Optional } from './Optional';
 
-export type RegExpMatcher = RegExp & { static?: boolean };
+export type RegExpMatcher = RegExp & {
+  static?: boolean;
+  sanityCheck?: (match: string) => boolean;
+};
 
 export function statically(regex: RegExpMatcher): RegExpMatcher {
   regex.static = true;
+  return regex;
+}
+
+export function withSanityCheck(
+  regex: RegExpMatcher,
+  check: (match: string) => boolean
+): RegExpMatcher {
+  regex.sanityCheck = check;
   return regex;
 }
 
@@ -66,10 +77,25 @@ export class Matcher {
     public readonly matchers: MatcherDef[]
   ) {}
 
+  private passesAllSanityChecks(
+    def: MatcherDef,
+    match: RegExpMatchArray
+  ): boolean {
+    for (const [i, matcher] of def.tokens
+      .map((token) => this.tokenMatchers[token])
+      .filter((m) => m && !m.static)
+      .entries()) {
+      if (matcher.sanityCheck && !matcher.sanityCheck(match[i + 1])) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   exec(s: string): Optional<MatchResult> {
     for (const def of this.matchers) {
       const m = s.match(def.regex);
-      if (m) {
+      if (m && this.passesAllSanityChecks(def, m)) {
         return new Optional({
           def,
           regexMatch: m,

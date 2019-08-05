@@ -3,16 +3,19 @@ import { Extractor } from './extractor';
 import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
 import { statically, createMatcher, Matcher } from '../utils/matcher';
+import { DateTime } from 'luxon';
 
 export const matchers = {
+  h: /((?:[1i][0-2i]|[1-9]))/i,
   HH: /((?:[01i][0-9i]|2[0-4i]))/i,
   mm: /([0-5i][0-9i])/,
   ss: /([0-5i][0-9i])/,
   ':': statically(/\s?[:;]\s?/),
+  a: /([AP]M)/i,
   // '^': /(?:^|\s)/,
 };
 
-export const formats = ['HH:mm:ss', '^HH mm:ss', 'HH:mm'];
+export const formats = ['h:mm:ss a', 'HH:mm:ss', '^HH mm:ss', 'HH:mm'];
 
 @DependsOn(HeaderExtractor)
 export class TimeExtractor extends Extractor<Time> {
@@ -24,21 +27,26 @@ export class TimeExtractor extends Extractor<Time> {
 
   public extract(text: string, lines: string[], extracted: Receipt) {
     return this.matcher.exec(text).then((res) => {
-      const [fullTime, hour, minute, second] = res.regexMatch;
+      const [fullTime, , , second] = res.regexMatch;
+      const pt = DateTime.fromFormat(
+        res.polishedMatch().replace(/i/g, '1'),
+        res.def.format,
+        {
+          zone: 'Europe/Berlin',
+        }
+      );
+      if (!pt.isValid) {
+        throw new Error(
+          'Time parsing failed! Regexes should only match valid times! Maybe polishing loose matches is incomplete'
+        );
+      }
       cleanHeaders(extracted, new RegExp(`${fullTime} Uhr`));
       cleanHeaders(extracted, fullTime);
-      return Time.fromStrings(
-        replaceLooseMatches(hour)!,
-        replaceLooseMatches(minute)!,
-        replaceLooseMatches(second)
-      );
+      return {
+        hour: pt.hour,
+        minute: pt.minute,
+        second: second ? pt.second : null,
+      };
     });
   }
-}
-
-function replaceLooseMatches(input?: string): string | undefined {
-  if (!input) {
-    return;
-  }
-  return input.replace(/i/gi, '1');
 }
