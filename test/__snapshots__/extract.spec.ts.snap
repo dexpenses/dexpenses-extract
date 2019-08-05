@@ -1423,6 +1423,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-welcome-kongress-hotel-plueckers.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 107.44,
+      },
+      "date": 2019-07-25T22:00:00.000Z,
+      "header": Array [
+        "Welcome",
+        "Kong ress Hotel",
+        "Mußstraße 7",
+        "D-96047 Bambern",
+      ],
+      "paymentMethod": null,
+      "phone": "+49 951 7000-0",
+      "place": null,
+      "time": Object {
+        "hour": 21,
+        "minute": 34,
+        "second": 52,
+      },
+      "timestamp": 2019-07-26T19:34:52.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-wollstudio.txt' 1`] = `
 Object {
   "result": Object {
