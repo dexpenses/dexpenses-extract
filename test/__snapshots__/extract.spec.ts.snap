@@ -1510,6 +1510,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-zeis-restaurant-2.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 57.8,
+      },
+      "date": 2019-07-20T22:00:00.000Z,
+      "header": Array [
+        "Zeis o",
+        "Cafó",
+        "Hager u. Etterer GbR",
+        "Cafe Restaurant Zeis",
+        "Obstmarkt 3 - 96047 Bamberg",
+      ],
+      "paymentMethod": null,
+      "phone": "0951 2082466",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 56,
+        "second": null,
+      },
+      "timestamp": 2019-07-21T16:56:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bielefeld-rancho-steakhouse.txt' 1`] = `
 Object {
   "result": Object {
