@@ -808,6 +808,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'bs-star-neustadtring-30-dkv_card.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 62.67,
+      },
+      "date": 2019-06-16T22:00:00.000Z,
+      "header": Array [
+        "Star Tankstelle",
+        "Frieder Ehrt",
+        "Neustadtring 30",
+        "38114 Braunschweig",
+      ],
+      "paymentMethod": "DKV_CARD",
+      "phone": "0531/53081",
+      "place": null,
+      "time": Object {
+        "hour": 23,
+        "minute": 14,
+        "second": 22,
+      },
+      "timestamp": 2019-06-17T21:14:22.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'esso-rueden.txt' 1`] = `
 Object {
   "result": Object {
@@ -1033,7 +1063,6 @@ Object {
         "Sedat Kurtulus",
         "Breslauer Str. 45",
         "38440 Wolfsburg",
-        "Tankstellen-Nr. 141170",
       ],
       "paymentMethod": "DKV_CARD",
       "phone": "05361 39000",

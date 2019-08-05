@@ -21,6 +21,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /^\d{1,4}$/,
   /Lieferzeit/,
   /(^|\s)karten\s?beleg(\s|$)/i,
+  /Tankstellen-?Nr\.?:?/i,
 ];
 
 const irrelevantPatterns = [
