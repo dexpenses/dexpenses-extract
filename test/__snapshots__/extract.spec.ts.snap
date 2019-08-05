@@ -690,6 +690,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-puma-outlet-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 80,
+      },
+      "date": 2019-07-17T22:00:00.000Z,
+      "header": Array [
+        "Puma Outlet",
+        "Am der Vorburg 1",
+        "38440 Holfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 8,
+        "second": null,
+      },
+      "timestamp": 2019-07-18T15:08:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-sausalitos-2017.txt' 1`] = `
 Object {
   "result": Object {
