@@ -779,6 +779,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-smileys-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.4,
+      },
+      "date": 2019-08-02T22:00:00.000Z,
+      "header": Array [
+        "Smileys Pizza Wolfsburg",
+        "Kantallee la",
+        "38440 Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05361-272666",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 30,
+        "second": 57,
+      },
+      "timestamp": 2019-08-03T18:30:57.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'esso-rueden.txt' 1`] = `
 Object {
   "result": Object {
