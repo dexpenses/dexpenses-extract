@@ -70,7 +70,7 @@ export class AmountExtractor extends Extractor<Amount> {
  */
 const amountValuePattern = /(?:^|\s|\*)-?((?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s€]|$)/gim;
 
-const illegalPreviousLinePatterns = [/MwSt$/i];
+const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i];
 
 const illegalAmountPrefixPatterns = [
   /AS-Zeit:?\s?$/i,
