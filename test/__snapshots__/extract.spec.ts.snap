@@ -3288,6 +3288,38 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-altes-brauhaus-zu-fallersleben-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.8,
+      },
+      "date": 2019-07-09T22:00:00.000Z,
+      "header": Array [
+        "Altes Brauhaus zu",
+        "Fallersleben",
+        "Altes Brauhaus zu Fallersleben",
+        "Inh. H. Gehrmann",
+        "Am Alten Brauhaus",
+        "38442 Wolfsburg - Fallersleben",
+      ],
+      "paymentMethod": null,
+      "phone": "05362 / 3140",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 22,
+        "second": null,
+      },
+      "timestamp": 2019-07-10T17:22:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-burger-me-online.txt' 1`] = `
 Object {
   "result": Object {
