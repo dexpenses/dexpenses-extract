@@ -628,6 +628,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-altes-brauhaus-zu-fallersleben-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 21,
+      },
+      "date": 2019-07-09T22:00:00.000Z,
+      "header": Array [
+        "Altes Brauhaus",
+        "zu Fallersleben",
+        "Am alten Brauhaus 9",
+        "38442 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05362-3140",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 21,
+        "second": null,
+      },
+      "timestamp": 2019-07-10T17:21:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-burger-king.txt' 1`] = `
 Object {
   "result": Object {
