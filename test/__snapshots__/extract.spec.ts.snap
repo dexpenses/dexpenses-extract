@@ -748,6 +748,34 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-eat-with-heart-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 23,
+      },
+      "date": 2019-06-21T22:00:00.000Z,
+      "header": Array [
+        "Eat",
+        "Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 21,
+        "minute": 33,
+        "second": null,
+      },
+      "timestamp": 2019-06-22T19:33:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-puma-outlet-debit.txt' 1`] = `
 Object {
   "result": Object {
