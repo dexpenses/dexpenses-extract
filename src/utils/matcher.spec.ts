@@ -3,6 +3,7 @@ import {
   getTokenChars,
   buildMatcherDef,
   createMatcher,
+  withSanityCheck,
 } from './matcher';
 import { matchers } from '../extractor/date';
 
@@ -98,5 +99,36 @@ describe('Date extractor polisher', () => {
     const match = matcher.exec('01.04, 2019');
     expect(match.isPresent()).toBeTruthy();
     expect(match.asIs()!.polishedMatch()).toBe('01.04.2019');
+  });
+});
+
+describe('Matcher with sanity checks', () => {
+  const sanityCheck = jest.fn().mockReturnValue(true);
+  const matcher = createMatcher(
+    {
+      a: withSanityCheck(/(\d)/, sanityCheck),
+      b: /([a-z])/i,
+    },
+    ['abab', 'b b b b']
+  );
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should match after sanity checks', () => {
+    const res = matcher.exec('0001a2b000');
+    expect(res.isPresent()).toBe(true);
+    expect(res.asIs()!.regexMatch[0]).toBe('1a2b');
+    expect(sanityCheck).toHaveBeenCalledTimes(2);
+    expect(sanityCheck).toHaveBeenCalledWith('1');
+    expect(sanityCheck).toHaveBeenCalledWith('2');
+  });
+
+  it("should don't run the sanity check if token doesn't match", () => {
+    const res = matcher.exec('000a b c d00');
+    expect(res.isPresent()).toBe(true);
+    expect(res.asIs()!.regexMatch[0]).toBe('a b c d');
+    expect(sanityCheck).not.toHaveBeenCalled();
   });
 });
