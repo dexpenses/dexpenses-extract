@@ -351,9 +351,9 @@
     "@babel/types" "^7.3.0"
 
 "@types/google__maps@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@types/google__maps/-/google__maps-0.5.6.tgz#c81f6429ae5e9ee7d97fa9cf4a45726b30ad1847"
-  integrity sha512-dk3Ci51uJG5EbhpamQWlHCX+EGKgoPQ0y+ikqpPmwj5oOTMoH0/O+jpdVoxC0HR302Zp7ZGm3nDGd8qeRZAcTg==
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@types/google__maps/-/google__maps-0.5.8.tgz#1f88dbf5ee28a5491ebe4de229c7da0e2ac76c32"
+  integrity sha512-yrNHBIrvqNF7Ec8/nqaABUnyl90I0VkcR/EtWhz9h5dTWB+idrtiTSzsk4j0JwxBHwwmb0RVJYgx90jJcuk3IA==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
