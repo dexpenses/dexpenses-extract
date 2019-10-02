@@ -11,19 +11,11 @@ import DateTimePostProcessor from './postprocess/DateTimePostProcessor';
 import PlacePostProcessor from './postprocess/PlacePostProcessor';
 import HeaderCleanUpPostProcessor from './postprocess/HeaderCleanUpPostProcessor';
 
-export type ReceiptResultState =
-  | 'pending'
-  | 'no-text'
-  | 'bad-image'
-  | 'error'
-  | 'unreadable'
-  | 'partial'
-  | 'ready';
+export type ReceiptResultState = 'no-text' | 'unreadable' | 'partial' | 'ready';
 
-export interface ReceiptResult {
+export interface ExtractedReceipt {
   state: ReceiptResultState;
   data?: Receipt;
-  error?: any;
 }
 
 export const extractorPipelineFactory = (
@@ -55,9 +47,11 @@ export interface Config {
   };
 }
 
-export default (config: Config) => (userData: UserData) => async (
-  text: string
-) => {
+const runPipeline: (
+  config: Config
+) => (userData: UserData) => (text: string) => Promise<ExtractedReceipt> = (
+  config: Config
+) => (userData: UserData) => async (text: string) => {
   if (!text) {
     return {
       state: 'no-text',
@@ -95,3 +89,4 @@ export default (config: Config) => (userData: UserData) => async (
     data: extracted,
   };
 };
+export default runPipeline;
