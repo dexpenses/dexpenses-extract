@@ -21,9 +21,10 @@
     "build": "rimraf lib/ && tsc --project tsconfig.build.json",
     "test": "jest",
     "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**",
-    "prepare": "yarn build",
+    "prepare": "npm run snyk-protect && yarn build",
     "prepublishOnly": "yarn test && yarn lint",
-    "preversion": "yarn lint"
+    "preversion": "yarn lint",
+    "snyk-protect": "snyk protect"
   },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -36,7 +37,8 @@
   "dependencies": {
     "@dexpenses/core": "^1.2.2",
     "@google/maps": "^1.0.1",
-    "luxon": "^1.16.1"
+    "luxon": "^1.16.1",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "@types/google__maps": "^0.5.6",
@@ -56,5 +58,6 @@
     "tslint-microsoft-contrib": "^6.2.0",
     "tslint-sonarts": "^1.9.0",
     "typescript": "^3.5.3"
-  }
+  },
+  "snyk": true
 }
