@@ -1,7 +1,7 @@
 {
   "name": "@dexpenses/extract",
   "description": "Extract data from OCRed receipts",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": false,
   "license": "MIT",
   "author": {
