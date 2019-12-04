@@ -145,11 +145,11 @@
   integrity sha512-mbyYCUq8CFIdg44mSUjYVfz0q9u1/5mz9F6p28zPCsJoGzeheOtiJHitxlCF9ga7J4FoazQacfTGd3AtnH/iTA==
 
 "@google/maps@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@google/maps/-/maps-1.0.1.tgz#e0f4b32119500ff3b92c47028623208f3b3d5d43"
-  integrity sha512-TURNZX9L7pQoluhhovt9Dvrw1MISJl2eCidknEeybG8T8e8UH9NNH7SYoxLkdU4l/1sqyUd9m8uwKGe7llWWPQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@google/maps/-/maps-1.0.2.tgz#5100e29f3ef7f0384a9210c486dde8c6c8b4c8ea"
+  integrity sha512-iTsvIIgVjIicC+UdLCJOMSBnOmLnmgnOXrjTBUUQr/ffBMfH9GdnlrA9R+vH/kZSFEp9AZUDw0vJ5ES6avfTPQ==
   dependencies:
-    https-proxy-agent "^2.2.1"
+    https-proxy-agent "^3.0.0"
     uuid ">=2.2.1"
 
 "@jest/console@^24.7.1":
@@ -2053,14 +2053,6 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-https-proxy-agent@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.2.tgz#271ea8e90f836ac9f119daccd39c19ff7dfb0793"
-  integrity sha512-c8Ndjc9Bkpfx/vCJueCPy0jlP4ccCCSNDp8xwCZzPjKJUm+B+u9WX2x98Qx4n1PiMNTWo3D7KK5ifNV/yJyRzg==
-  dependencies:
-    agent-base "^4.3.0"
-    debug "^3.1.0"
-
 https-proxy-agent@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-3.0.1.tgz#b8c286433e87602311b01c8ea34413d856a4af81"
@@ -3103,9 +3095,9 @@ lru-cache@^5.1.1:
     yallist "^3.0.2"
 
 luxon@^1.16.1:
-  version "1.19.3"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.19.3.tgz#86c04a1395529b4386ae235a8fe16d0a82a0695b"
-  integrity sha512-YwTDjGRQC0QC9Iya2g2eKZfgEFqRId4ZoLHORQcfTMB/5xrTx427V7ZPjQJ1vzvhA2vJfG2bh1Kv8V8IFMWCUA==
+  version "1.21.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.21.3.tgz#f1d5c2a7e855d039836cf4954f883ecac8fc4727"
+  integrity sha512-lLRwNcNnkZLuv13A1FUuZRZmTWF7ro2ricYvb0L9cvBYHPvZhQdKwrYnZzi103D2XKmlVmxWpdn2wfIiOt2YEw==
 
 macos-release@^2.2.0:
   version "2.3.0"
