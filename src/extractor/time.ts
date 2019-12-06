@@ -15,7 +15,7 @@ export const matchers = {
   // '^': /(?:^|\s)/,
 };
 
-export const formats = ['h:mm:ss a', 'HH:mm:ss', '^HH mm:ss', 'HH:mm'];
+export const formats = ['h:mm:ss a', 'HH:mm:ss', '^HH mm:ss', 'HH:mm', 'h:mm'];
 
 @DependsOn(HeaderExtractor)
 export class TimeExtractor extends Extractor<Time> {
