@@ -2811,6 +2811,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-toom-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.69,
+      },
+      "date": 2019-07-29T22:00:00.000Z,
+      "header": Array [
+        "toom",
+        "Respekt, wer's selber macht.",
+        "toom Baumarkt GmbH",
+        "Winkeler Strasse 3",
+        "38518 Gifhorn",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 36,
+        "second": null,
+      },
+      "timestamp": 2019-07-30T10:36:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-goertz.txt' 1`] = `
 Object {
   "result": Object {
