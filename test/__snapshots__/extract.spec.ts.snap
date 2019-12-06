@@ -2807,6 +2807,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-e-center-raiffeisenstr-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 14.64,
+      },
+      "date": 2019-08-30T22:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "center",
+        "E-Center Wede",
+        "Raiffeisenstr. 2",
+        "38518 Gifhorn",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05371/97710",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 16,
+        "second": 20,
+      },
+      "timestamp": 2019-08-31T16:16:20.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-edeka-weyhausen-2-debit.txt' 1`] = `
 Object {
   "result": Object {
