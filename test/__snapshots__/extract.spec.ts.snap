@@ -2451,6 +2451,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'coe-ernstings-family-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 29.98,
+      },
+      "date": 2019-09-10T22:00:00.000Z,
+      "header": Array [
+        "Ernsting's family",
+        "Von fröhlichen Familien empfohlen.",
+        "Ernsting's family GmbH & Co. KG",
+        "Hugo-Ernsting-Platz 1",
+        "48653 Coesfeld",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 11,
+        "minute": 50,
+        "second": 30,
+      },
+      "timestamp": 2019-09-11T09:50:30.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'dbahn-bistro.txt' 1`] = `
 Object {
   "result": Object {

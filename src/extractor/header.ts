@@ -22,6 +22,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /Lieferzeit/,
   /(^|\s)karten\s?beleg(\s|$)/i,
   /Tankstellen-?Nr\.?:?/i,
+  /^Ust-?ID\.?/i,
 ];
 
 const irrelevantPatterns = [
@@ -31,6 +32,7 @@ const irrelevantPatterns = [
   /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
   /K[SA]\.\s?\d+/i,
   /ID \d+/i,
+  /^:\s*/,
 ];
 
 const fixes = [
