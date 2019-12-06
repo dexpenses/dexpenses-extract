@@ -2658,6 +2658,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-dm-steinweg-2-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 20.45,
+      },
+      "date": 2019-08-04T22:00:00.000Z,
+      "header": Array [
+        "dm",
+        "dm-drogerie markt",
+        "Steinweg 44",
+        "38518 Gifhorn",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05371/588655",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2019-08-05T13:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-edeka-weyhausen-2-debit.txt' 1`] = `
 Object {
   "result": Object {
