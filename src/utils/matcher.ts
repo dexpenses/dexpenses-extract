@@ -54,7 +54,7 @@ export function buildMatcherDef(
           matchers[token] ? matchers[token].source : escape(token)
         )
         .join(''),
-      'm'
+      'mi'
     ),
   };
 }

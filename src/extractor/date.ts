@@ -21,6 +21,7 @@ export const matchers: Record<string, RegExpMatcher> = {
   dd: /(0[1-9]|[12]\d|3[01])/,
   M: /([1-9]|1[0-2])/,
   MM: /(0[1-9]|1[0-2])/,
+  MMM: /(jan|feb|märz|apr|mai|jun|jul|aug|sep|okt|nov|dez)/i,
   yyyy: withSanityCheck(
     /((?:19|2\d)\d{2})/,
     (m) => parseInt(m, 10) <= currentYear()
@@ -46,6 +47,7 @@ export class DateExtractor extends Extractor<Date> {
   constructor() {
     super('date');
     this.matcher = createMatcher(matchers, model);
+    //console.log(this.matcher);
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
