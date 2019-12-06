@@ -78,6 +78,7 @@ const illegalAmountPrefixPatterns = [
   /AS-Zeit:?\s?$/i,
   /punktestand entspricht:?\s?$/i,
   /MwSt:?\s?$/i,
+  /Originalpreis\s?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
