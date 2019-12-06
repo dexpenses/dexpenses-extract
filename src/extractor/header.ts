@@ -3,6 +3,10 @@ import { Receipt } from '@dexpenses/core';
 
 type IrrelevancePattern = RegExp | { pattern: RegExp; minLineIndex: number };
 
+function optionalBetween(word: string): RegExp {
+  return new RegExp(word.split('').join('\\s?-?'), 'i');
+}
+
 const irrelevantLines: IrrelevancePattern[] = [
   /^Datum:?/i,
   /^[UJ]hrzeit:?/i,
@@ -23,6 +27,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /(^|\s)karten\s?beleg(\s|$)/i,
   /Tankstellen-?Nr\.?:?/i,
   /^Ust-?ID\.?/i,
+  optionalBetween('QUITTUNG'),
 ];
 
 const irrelevantPatterns = [
