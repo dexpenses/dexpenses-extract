@@ -2,8 +2,14 @@ import { DependsOn } from '../DependsOn';
 import { Extractor } from './extractor';
 import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
-import { statically, createMatcher, Matcher } from '../utils/matcher';
+import {
+  statically,
+  createMatcher,
+  Matcher,
+  MatcherDef,
+} from '../utils/matcher';
 import { DateTime } from 'luxon';
+import { anyMatches } from './util';
 
 export const matchers = {
   h: /((?:[1i][0-2i]|[1-9]))/i,
@@ -25,6 +31,22 @@ export const formats = [
   '§HH mm ss',
 ];
 
+const illegalPrefixPatterns = [/\s\d?\d:\d\d\s?-\s?$/];
+
+const illegalSuffixPatterns = [/^\s?-\s?\d?\d:\d\d\s/];
+
+const hasNoIllegalPrefix = (text: string) => (
+  m: RegExpMatchArray,
+  def: MatcherDef
+) => {
+  const prefix = text.slice(0, m.index);
+  const suffix = text.slice(m.index! + m[0].length);
+  return (
+    !anyMatches(prefix, illegalPrefixPatterns).isPresent() &&
+    !anyMatches(suffix, illegalSuffixPatterns).isPresent()
+  );
+};
+
 @DependsOn(HeaderExtractor)
 export class TimeExtractor extends Extractor<Time> {
   private readonly matcher: Matcher;
@@ -34,7 +56,7 @@ export class TimeExtractor extends Extractor<Time> {
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
-    return this.matcher.exec(text).then((res) => {
+    return this.matcher.exec(text, hasNoIllegalPrefix(text)).then((res) => {
       const [fullTime, , , second] = res.regexMatch;
       const pt = DateTime.fromFormat(
         res.polishedMatch().replace(/i/g, '1'),

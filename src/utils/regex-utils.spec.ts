@@ -14,8 +14,14 @@ describe('regex-utils/regexTrim', () => {
 
 describe('regex-utils/getAllMatches', () => {
   it('should return all matches', () => {
+    // with global flag
     expect(getAllMatches(/[a-z]/g, 'a2bc4.-d').map(([m]) => m)).toEqual(
       Array.from('abcd')
+    );
+
+    // without the global flag
+    expect(getAllMatches(/[a-z]/, 'a2bc4.-d').map(([m]) => m)).toEqual(
+      Array.from('a')
     );
   });
 

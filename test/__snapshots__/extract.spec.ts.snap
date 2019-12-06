@@ -2722,6 +2722,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-netto-celler-str-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 14.91,
+      },
+      "date": 2019-07-28T22:00:00.000Z,
+      "header": Array [
+        "Netto",
+        "Marken-DiscC unt",
+        "38518 Gifhorn, Celler Str 106 a",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2019-07-29T10:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-penny-lehmweg-cash.txt' 1`] = `
 Object {
   "result": Object {

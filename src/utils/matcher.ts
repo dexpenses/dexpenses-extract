@@ -1,4 +1,5 @@
 import { Optional } from './Optional';
+import { getAllMatches } from './regex-utils';
 
 export type RegExpMatcher = RegExp & {
   static?: boolean;
@@ -54,12 +55,12 @@ export function buildMatcherDef(
           matchers[token] ? matchers[token].source : escape(token)
         )
         .join(''),
-      'mi'
+      'mig'
     ),
   };
 }
 
-interface MatcherDef {
+export interface MatcherDef {
   format: string;
   regex: RegExp;
   tokens: string[];
@@ -92,29 +93,37 @@ export class Matcher {
     return true;
   }
 
-  exec(s: string): Optional<MatchResult> {
+  exec(
+    s: string,
+    additionalCondition?: (m: RegExpMatchArray, def: MatcherDef) => boolean
+  ): Optional<MatchResult> {
     for (const def of this.matchers) {
-      const m = s.match(def.regex);
-      if (m && this.passesAllSanityChecks(def, m)) {
-        return new Optional({
-          def,
-          regexMatch: m,
-          polishedMatch: () => {
-            let matchIndex = 0;
-            return def.tokens
-              .map((token) => {
-                if (
-                  this.tokenMatchers[token] &&
-                  !this.tokenMatchers[token].static
-                ) {
-                  matchIndex += 1;
-                  return m[matchIndex];
-                }
-                return token;
-              })
-              .join('');
-          },
-        });
+      for (const m of getAllMatches(def.regex, s)) {
+        if (
+          m &&
+          this.passesAllSanityChecks(def, m) &&
+          (!additionalCondition || additionalCondition(m, def))
+        ) {
+          return new Optional({
+            def,
+            regexMatch: m,
+            polishedMatch: () => {
+              let matchIndex = 0;
+              return def.tokens
+                .map((token) => {
+                  if (
+                    this.tokenMatchers[token] &&
+                    !this.tokenMatchers[token].static
+                  ) {
+                    matchIndex += 1;
+                    return m[matchIndex];
+                  }
+                  return token;
+                })
+                .join('');
+            },
+          });
+        }
       }
     }
     return Optional.none();
