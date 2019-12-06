@@ -436,6 +436,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hh-burger-king-mundsburger-damm-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.98,
+      },
+      "date": 2019-08-02T22:00:00.000Z,
+      "header": Array [
+        "Burger King",
+        "Deutschland GmbH",
+        "Mundsburger Damm 67",
+        "22087 Hamburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 16,
+        "second": 43,
+      },
+      "timestamp": 2019-08-03T15:16:43.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'hmue-Salon-haargenau.txt' 1`] = `
 Object {
   "result": Object {
