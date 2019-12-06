@@ -4043,6 +4043,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-rewe-braunschweiger-str-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.08,
+      },
+      "date": 2019-09-05T22:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Braunschweiger Str. 204",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05361/888203",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 14,
+        "second": 7,
+      },
+      "timestamp": 2019-09-06T15:14:07.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-rewe-laagbergstr-credit.txt' 1`] = `
 Object {
   "result": Object {
