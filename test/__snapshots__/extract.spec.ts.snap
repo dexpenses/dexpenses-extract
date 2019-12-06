@@ -2633,6 +2633,38 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-edeka-weyhausen-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 26.98,
+      },
+      "date": 2019-09-06T22:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "Lebensmittel.",
+        "Wir",
+        "EDEKA Martin Eisbrenner",
+        "Wolfsburger Str. 13",
+        "38554 Weyhausen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05362-71001",
+      "place": null,
+      "time": Object {
+        "hour": 9,
+        "minute": 34,
+        "second": 58,
+      },
+      "timestamp": 2019-09-07T07:34:58.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'gf-penny-lehmweg-cash.txt' 1`] = `
 Object {
   "result": Object {
