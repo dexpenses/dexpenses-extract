@@ -13,4 +13,5 @@ export default [
   'd.MM.yy',
   'yyyy-MM-dd',
   'ddMMM yy',
+  'dd/MM/yy',
 ];

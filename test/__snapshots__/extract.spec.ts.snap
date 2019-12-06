@@ -2033,6 +2033,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-decathlon-2-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 39.98,
+      },
+      "date": 2019-07-14T22:00:00.000Z,
+      "header": Array [
+        "DECATHLON",
+        "Sportspezialvertriebs GmbH",
+        "Sack 4",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531 261 597 10",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 19,
+        "second": null,
+      },
+      "timestamp": 2019-07-15T12:19:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-edeka-kastanienallee.txt' 1`] = `
 Object {
   "result": Object {
