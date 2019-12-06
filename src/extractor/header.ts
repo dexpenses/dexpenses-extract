@@ -35,6 +35,7 @@ const irrelevantPatterns = [
   /Bedient von: [a-z]+/i,
   /www\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+/i,
   /Vielen Dank/i,
+  /Bis bald!?/i,
   /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
   /K[SA]\.\s?\d+/i,
   /ID \d+/i,
