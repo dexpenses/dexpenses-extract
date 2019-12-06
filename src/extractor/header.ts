@@ -28,6 +28,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /Tankstellen-?Nr\.?:?/i,
   /^Ust-?ID\.?/i,
   optionalBetween('QUITTUNG'),
+  { pattern: /^\d*\s?total\s?\d*$/i, minLineIndex: 1 },
 ];
 
 const irrelevantPatterns = [

@@ -22,9 +22,11 @@ export class AmountExtractor extends Extractor<Amount> {
     const amount = anyMatches(text, [
       /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
       /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
-      /^geg(?:\.|eben)(?:\sVISA)?$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
+      // /^geg(?:\.|eben)(?:\sVISA)?$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
+      /^geg(?:\.|eben)\sVISA$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
       /^(\d+,\d\d)$\n^Total in EUR$/im,
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
+      /total:?(?:$\n)?^(\d+,\d\d)$/im,
     ]).then(
       (m) =>
         ({
@@ -124,7 +126,7 @@ function equal(x: number, y: number) {
 export function findAmountFromCashPaymentValues(values: number[]) {
   for (let i = values.length - 3; i >= 0; i -= 1) {
     const [amount, given, back] = values.slice(i, i + 3);
-    if (equal(amount + back, given)) {
+    if (equal(amount + (back < 0 ? -back : back), given)) {
       return amount;
     }
   }

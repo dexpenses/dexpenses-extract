@@ -3020,6 +3020,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'messe-manga-mafia-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 25,
+      },
+      "date": 2019-09-06T22:00:00.000Z,
+      "header": Array [
+        "MM",
+        "Manga-Mafia.de",
+        "Dein Anime und Manga Online-Shop",
+        "1 Herr der Ringe Ring Der E 25,00",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 48,
+        "second": 39,
+      },
+      "timestamp": 2019-09-07T13:48:39.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-apotheke.txt' 1`] = `
 Object {
   "result": Object {
@@ -3342,8 +3372,12 @@ Object {
       "paymentMethod": "CASH",
       "phone": "05331 - 71845",
       "place": null,
-      "time": null,
-      "timestamp": 2017-09-22T22:00:00.000Z,
+      "time": Object {
+        "hour": 12,
+        "minute": 22,
+        "second": 59,
+      },
+      "timestamp": 2017-09-23T10:22:59.000Z,
     },
     "state": "ready",
   },
