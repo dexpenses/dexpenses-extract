@@ -2330,6 +2330,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-edeka-kastanienallee-small-amount-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 2.94,
+      },
+      "date": 2019-08-18T22:00:00.000Z,
+      "header": Array [
+        "E Görge",
+        "EDEKA Die Frischemärkte",
+        "EDEKA Görge Discount GmbH",
+        "Kastanienallee 18/19",
+        "38102 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531-798075",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 44,
+        "second": 55,
+      },
+      "timestamp": 2019-08-19T13:44:55.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-elbenwald.txt' 1`] = `
 Object {
   "result": Object {
