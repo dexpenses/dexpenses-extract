@@ -42,6 +42,10 @@ const irrelevantPatterns = [
   /^:\s*/,
 ];
 
+const irrelevantMultiLinePatterns = [
+  /wir danken\sf(ü|ue?)r ihren einkauf[!.]?/gim,
+];
+
 const fixes = [
   {
     pattern: /(^|\s)6mbH(\s|$)/i,
@@ -82,7 +86,15 @@ export class HeaderExtractor extends Extractor<string[]> {
     for (const irrelevantPattern of irrelevantPatterns) {
       cleanHeaders(wrapper, irrelevantPattern);
     }
-    return wrapper.header.map((line) => {
+    let headerText = wrapper.header.join('\n');
+    for (const irrelevantMultiLinePattern of irrelevantMultiLinePatterns) {
+      headerText = headerText.replace(irrelevantMultiLinePattern, '');
+    }
+    const header = headerText
+      .split('\n')
+      .map((l) => l.trim())
+      .filter((l) => l);
+    return header.map((line) => {
       for (const fix of fixes) {
         line = line.replace(fix.pattern, fix.replaceWith);
       }
