@@ -377,6 +377,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-t-h-kleen-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 29.95,
+      },
+      "date": 2019-07-03T22:00:00.000Z,
+      "header": Array [
+        "T.H. KLEEN FIL. 944",
+        "WILLY-BRAND -PLATZ 1",
+        "38102 BRAUNSCHWEIG",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0531/70189980",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 37,
+        "second": null,
+      },
+      "timestamp": 2019-07-04T11:37:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'dresden-figaro-salon.txt' 1`] = `
 Object {
   "result": Object {
