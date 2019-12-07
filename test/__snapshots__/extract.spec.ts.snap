@@ -2625,6 +2625,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-real-hamburger-str-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 43.32,
+      },
+      "date": 2019-07-11T22:00:00.000Z,
+      "header": Array [
+        "real GMBH",
+        "real",
+        "38114 Braunschweig",
+        "Hamburger Straße 250",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05 31/ 2377 50",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 14,
+        "second": 2,
+      },
+      "timestamp": 2019-07-12T18:14:02.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-real-otto-guericke.txt' 1`] = `
 Object {
   "result": Object {
