@@ -75,7 +75,7 @@ const amountValuePattern = /(?:^|\s|\*)-?((?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[
 const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i];
 
 const illegalAmountPrefixPatterns = [
-  /AS-Zeit:?\s?$/i,
+  /AS(-|\s)Zeit:?\s?$/i,
   /punktestand entspricht:?\s?$/i,
   /MwSt:?\s?$/i,
   /Originalpreis\s?$/i,
