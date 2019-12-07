@@ -2361,6 +2361,34 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-jack-jones-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 30,
+      },
+      "date": 2019-07-14T22:00:00.000Z,
+      "header": Array [
+        "JACK&JONES",
+        "VERO MODA",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0531-1208938",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 49,
+        "second": null,
+      },
+      "timestamp": 2019-07-15T11:49:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-jack-jones-debit.txt' 1`] = `
 Object {
   "result": Object {
