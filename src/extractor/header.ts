@@ -29,6 +29,7 @@ const irrelevantLines: IrrelevancePattern[] = [
   /^Ust-?ID\.?/i,
   optionalBetween('QUITTUNG'),
   { pattern: /^\d*\s?total\s?\d*$/i, minLineIndex: 1 },
+  /^Rechnung$/i,
 ];
 
 const irrelevantPatterns = [
