@@ -2062,6 +2062,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-c-und-a-muenzstr-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 4.8,
+      },
+      "date": 2019-07-07T22:00:00.000Z,
+      "header": Array [
+        "C&A D",
+        "Braunschweig",
+        "Münzstrasse 7",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 12,
+        "second": 6,
+      },
+      "timestamp": 2019-07-08T14:12:06.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-decathlon-2-debit.txt' 1`] = `
 Object {
   "result": Object {
