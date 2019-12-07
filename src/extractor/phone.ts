@@ -8,7 +8,7 @@ import {
   phoneNumberPatternEquals,
 } from './phone-utils';
 
-const phoneRegex = /(?:^|[.,:\s])(\(?(?=\+49|\(?0)((\([\d \-\–\+\/]+\)|[\d \-\–\+\/])+){6,}\)?([ \-–\/]?)([\doO]+))/;
+const phoneRegex = /(?:^|[.,:\s])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?([ \-–\/]?)([\doOg]+))/;
 const prefixRegex = /(?:Tel(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?:?/i;
 const prefixedRegex = new RegExp(
   `${prefixRegex.source}${phoneRegex.source}`,
@@ -42,7 +42,10 @@ export class PhoneNumberExtractor extends Extractor<string> {
         if (this.isIllegalPhoneNumberLine(prefix)) {
           continue;
         }
-        const extractedNumber = m[1].trim().replace(/o/gi, '0');
+        const extractedNumber = m[1]
+          .trim()
+          .replace(/o/gi, '0')
+          .replace(/g/g, '9');
         if (this.isOwnNumber(extractedNumber)) {
           continue;
         }
