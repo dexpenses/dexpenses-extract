@@ -41,6 +41,8 @@ const irrelevantPatterns = [
   /K[SA]\.\s?\d+/i,
   /ID \d+/i,
   /^:\s*/,
+  /Bed\.?Nr\.?:?\s?\d+/i,
+  /Kasse\s?\d+/i,
 ];
 
 const irrelevantMultiLinePatterns = [
@@ -137,7 +139,8 @@ export class HeaderExtractor extends Extractor<string[]> {
       !!line.match(/^\s*St\.?Nr\.?/i) ||
       !!line.match(/[oö]ffnungszeit(en)?/i) ||
       !!line.match(/(^|\s)Kartenzahlung($|\s)/i) ||
-      !!line.match(/(^|\s)Bezahlung($|\s)/i)
+      !!line.match(/(^|\s)Bezahlung($|\s)/i) ||
+      !!line.match(/^€/i)
     );
   }
 
