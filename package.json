@@ -21,7 +21,7 @@
     "build": "rimraf lib/ && tsc --project tsconfig.build.json",
     "test": "jest",
     "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**",
-    "prepare": "npm run snyk-protect && yarn build",
+    "prepare": "yarn snyk-protect && yarn build",
     "prepublishOnly": "yarn test && yarn lint",
     "preversion": "yarn lint",
     "snyk-protect": "snyk protect"
