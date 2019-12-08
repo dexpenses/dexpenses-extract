@@ -43,6 +43,7 @@ const irrelevantPatterns = [
   /^:\s*/,
   /Bed\.?Nr\.?:?\s?\d+/i,
   /Kasse\s?\d+/i,
+  /BNr\.?\s?\d+/i,
 ];
 
 const irrelevantMultiLinePatterns = [
