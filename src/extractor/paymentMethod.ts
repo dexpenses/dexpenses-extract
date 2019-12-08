@@ -6,7 +6,7 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
   DEBIT: [
     /(^|\s)[g9]irocar\s?(c|c?d)(\s|$|MAESTRVPAY)/i,
     /zahlart[:\s]\s*EC/i,
-    /Euro\s?[EB]LV/i,
+    /Eur[og]\s?[EB]LV/i,
     /EC Kartenzahlung/i,
     /(^|\s)EC[\-\s]Card(\s|$)/i,
     /gegeben EC/i,
