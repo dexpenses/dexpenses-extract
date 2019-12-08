@@ -2979,6 +2979,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-rewe-schlossarkaden-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 61.98,
+      },
+      "date": 2019-08-05T22:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "REWE k",
+        "Schlossarkaden",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 13,
+        "second": 9,
+      },
+      "timestamp": 2019-08-06T16:13:09.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-rossmann-berliner-platz-cash.txt' 1`] = `
 Object {
   "result": Object {
