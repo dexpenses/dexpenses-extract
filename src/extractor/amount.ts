@@ -26,11 +26,12 @@ export class AmountExtractor extends Extractor<Amount> {
       /^geg(?:\.|eben)\sVISA$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
       /^(\d+,\d\d)$\n^Total in EUR$/im,
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
-      /total:?(?:$\n)?^(\d+,\d\d)$/im,
+      // /total:?(?:$\n)?^(\d+,\d\d)$/im,
+      /^total:?(?:$\n)?^(\d+,\s?\d\d)(?:\s?(?:€|EUR))?$/im,
     ]).then(
       (m) =>
         ({
-          value: parseFloat(m[1].replace(',', '.')),
+          value: parseFloat(m[1].replace(/\s/g, '').replace(',', '.')),
           currency: 'EUR',
         } as Amount)
     );

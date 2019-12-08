@@ -34,7 +34,7 @@ const irrelevantLines: IrrelevancePattern[] = [
 
 const irrelevantPatterns = [
   /Bedient von: [a-z]+/i,
-  /www?\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+/i,
+  /www?\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+(\/[a-z\-_\d%]+)*\/?/i,
   /Vielen Dank/i,
   /Bis bald!?/i,
   /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
