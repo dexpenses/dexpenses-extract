@@ -20,7 +20,11 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
     /MAESTR CCard/i,
   ],
   CREDIT: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte(\s|$)/i],
-  CASH: [/(^|\s)bar(geld|zahlung)?(\s|$)/i, /(^|\s)Gegeben(\s|$)/],
+  CASH: [
+    /(^|\s)bar(geld|zahlung)?(\s|$)/i,
+    /(^|\s)Gegeben(\s|$)/,
+    /(^|\s)wechselgeld(\s|$)/i,
+  ],
   DKV_CARD: [/DK[VIU](\s|-)Se\s?lection Card/i, /(^|\s)DKV(\s|$)/i],
   PAYPAL: [/(^|\s)PayPal(\s|$)/i],
   ONLINE: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(\s|$)/i],
