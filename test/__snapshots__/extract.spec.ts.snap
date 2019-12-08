@@ -2627,6 +2627,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-peek-cloppenburg-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 24.99,
+      },
+      "date": 2019-08-14T22:00:00.000Z,
+      "header": Array [
+        "Peek&Cloppenburg",
+        "Schuhstraße 13 - .14",
+        "D-38100 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49(0)531/2415-0",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 39,
+        "second": 1,
+      },
+      "timestamp": 2019-08-15T15:39:01.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-penny.txt' 1`] = `
 Object {
   "result": Object {

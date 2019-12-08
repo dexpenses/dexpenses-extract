@@ -37,10 +37,12 @@ export class AmountExtractor extends Extractor<Amount> {
     if (amount) {
       return amount;
     }
+    const amountValues = getAmountValues(lines);
+    if (amountValues.length === 0) {
+      return null;
+    }
     if (extracted.paymentMethod === 'CASH') {
-      const amountValue = findAmountFromCashPaymentValues(
-        getAmountValues(lines)
-      );
+      const amountValue = findAmountFromCashPaymentValues(amountValues);
       if (amountValue) {
         return {
           value: amountValue,
@@ -48,18 +50,30 @@ export class AmountExtractor extends Extractor<Amount> {
         };
       }
     }
-    const maxAmount = getAmountValues(lines).reduce(
-      (max: number | null, cur) => {
-        return !max || cur > max ? cur : max;
-      },
-      null
-    );
+    if (amountValues.some((v) => v < 0)) {
+      const [mostFrequent, mostFrequent2] = Object.entries(
+        amountValues.reduce((acc, cur) => {
+          acc[cur] = (acc[cur] || 0) + 1;
+          return acc;
+        }, {} as Record<number, number>)
+      ).sort(([, f1], [, f2]) => f2 - f1);
+      if (!mostFrequent2 || mostFrequent[1] !== mostFrequent2[1]) {
+        return {
+          value: Number(mostFrequent[0]),
+          currency: 'EUR',
+        };
+      }
+    }
+    const maxAmount = amountValues.reduce((max: number | null, cur) => {
+      return !max || cur > max ? cur : max;
+    }, null);
     if (maxAmount) {
       return {
         value: maxAmount,
         currency: 'EUR',
       };
     }
+
     return null;
   }
 }
@@ -70,7 +84,7 @@ export class AmountExtractor extends Extractor<Amount> {
  with no leading zero where S also matches as 5
  3. line end, space or dash
  */
-const amountValuePattern = /(?:^|\s|\*)-?((?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s€]|$)/gim;
+const amountValuePattern = /(?:^|\s|\*)(-?(?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s€]|$)/gim;
 
 const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i];
 
