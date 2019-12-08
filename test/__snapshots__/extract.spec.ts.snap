@@ -145,6 +145,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-decathlon-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.99,
+      },
+      "date": 2019-08-05T22:00:00.000Z,
+      "header": Array [
+        "Decathlon",
+        "Sack 5-11",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 33,
+        "second": null,
+      },
+      "timestamp": 2019-08-06T13:33:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-elbenwald.txt' 1`] = `
 Object {
   "result": Object {
