@@ -4443,6 +4443,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-rewe-rodeland-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 6.52,
+      },
+      "date": 2019-08-25T22:00:00.000Z,
+      "header": Array [
+        "REWE",
+        "Am Rodeland",
+        "38302 Wolfenbuttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331/907026",
+      "place": null,
+      "time": Object {
+        "hour": 9,
+        "minute": 46,
+        "second": null,
+      },
+      "timestamp": 2019-08-26T07:46:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-wurst-basar.txt' 1`] = `
 Object {
   "result": Object {
