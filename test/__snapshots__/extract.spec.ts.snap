@@ -1302,6 +1302,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'wob-tabak-und-presse-heinenkamp-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 13.9,
+      },
+      "date": 2019-08-30T22:00:00.000Z,
+      "header": Array [
+        "Tabak und P resse",
+        "H. Vespermann",
+        "Brandgehaege 9",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05308/694671",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 58,
+        "second": null,
+      },
+      "timestamp": 2019-08-31T16:58:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'bs-star-neustadtring-30-dkv_card.txt' 1`] = `
 Object {
   "result": Object {
