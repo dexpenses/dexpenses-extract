@@ -140,7 +140,8 @@ export class HeaderExtractor extends Extractor<string[]> {
       !!line.match(/[oö]ffnungszeit(en)?/i) ||
       !!line.match(/(^|\s)Kartenzahlung($|\s)/i) ||
       !!line.match(/(^|\s)Bezahlung($|\s)/i) ||
-      !!line.match(/^€/i)
+      !!line.match(/^€/i) ||
+      !!line.match(/^\d+\sCashier$/i)
     );
   }
 
