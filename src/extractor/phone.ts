@@ -9,7 +9,7 @@ import {
 } from './phone-utils';
 
 const phoneRegex = /(?:^|[.,:\s])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?([ \-–\/]?)([\doOg]+))/;
-const prefixRegex = /(?:Tel(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?:?/i;
+const prefixRegex = /(?:Tel(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?\s?:?/i;
 const prefixedRegex = new RegExp(
   `${prefixRegex.source}${phoneRegex.source}`,
   'i'

@@ -4060,6 +4060,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-edeka-daube-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 99.87,
+      },
+      "date": 2019-07-31T22:00:00.000Z,
+      "header": Array [
+        "EDEKA",
+        "Lebensmittel.",
+        "Wir",
+        "Daube",
+        "Wiershäuser Weg 2, 34346 Hann.Münden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541-6990",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 25,
+        "second": null,
+      },
+      "timestamp": 2019-08-01T15:25:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'kassel-ikea-full.txt' 1`] = `
 Object {
   "result": Object {

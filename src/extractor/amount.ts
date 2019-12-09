@@ -42,7 +42,7 @@ export class AmountExtractor extends Extractor<Amount> {
       /^(\d+,\d\d)$\n^Total in EUR$/im,
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
       // /total:?(?:$\n)?^(\d+,\d\d)$/im,
-      /^total:?(?:$\n)?^(\d+,\s?\d\d)(?:\s?(?:€|EUR))?$/im,
+      /^total:?(?:$\n)?^(?:€\s?)?(\d+[,\.]\s?\d\d)(?:\s?(?:€|EUR))?$/im,
     ]).then((m) => looselyParseFloat(m[1]));
     if (amount != null) {
       return amount;
