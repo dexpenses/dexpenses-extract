@@ -126,7 +126,10 @@ export class HeaderExtractor extends Extractor<string[]> {
    * @example '*xxx Header*xx*' -> 'Header'
    */
   static trim(line: string): string {
-    return line.replace(/^[\s*xж]*[\s*ж]/i, '').replace(/[\s*ж][\s*жx]*$/i, '');
+    return line
+      .trim()
+      .replace(/^[\s*xжN]*[\s*ж]/i, '')
+      .replace(/[\s*ж][\s*жxN]*$/i, '');
   }
 
   private _isHeaderDelimiter(line: string): boolean {
@@ -148,7 +151,7 @@ export class HeaderExtractor extends Extractor<string[]> {
 
   private _firstHeaderLine(lines: string[]): number {
     for (let i = 0; i < lines.length; i += 1) {
-      const line = lines[i].trim();
+      const line = HeaderExtractor.trim(lines[i]);
       if (
         !HeaderExtractor.isIrrelevantLine(line, i) &&
         !this._isHeaderDelimiter(line)
