@@ -3998,6 +3998,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-goertz-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 16.95,
+      },
+      "date": 2019-08-02T22:00:00.000Z,
+      "header": Array [
+        "GORTZ",
+        "Gortz Retail GmbH (Filiale 109)",
+        "Große Packhofstrasse 36",
+        "30159 Hannover",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49511) 8970360",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 14,
+        "second": 0,
+      },
+      "timestamp": 2019-08-03T11:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-marche.txt' 1`] = `
 Object {
   "result": Object {
