@@ -19,6 +19,21 @@ export class AmountExtractor extends Extractor<Amount> {
     lines: string[],
     extracted: Receipt
   ): Amount | null {
+    const result = this._extract(text, lines, extracted);
+    if (result == null) {
+      return result;
+    }
+    return {
+      value: result,
+      currency: 'EUR',
+    };
+  }
+
+  private _extract(
+    text: string,
+    lines: string[],
+    extracted: Receipt
+  ): number | null {
     const amount = anyMatches(text, [
       /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
       /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
@@ -28,14 +43,8 @@ export class AmountExtractor extends Extractor<Amount> {
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
       // /total:?(?:$\n)?^(\d+,\d\d)$/im,
       /^total:?(?:$\n)?^(\d+,\s?\d\d)(?:\s?(?:€|EUR))?$/im,
-    ]).then(
-      (m) =>
-        ({
-          value: parseFloat(m[1].replace(/\s/g, '').replace(',', '.')),
-          currency: 'EUR',
-        } as Amount)
-    );
-    if (amount) {
+    ]).then((m) => looselyParseFloat(m[1]));
+    if (amount != null) {
       return amount;
     }
     const amountValues = getAmountValues(lines);
@@ -44,11 +53,8 @@ export class AmountExtractor extends Extractor<Amount> {
     }
     if (extracted.paymentMethod === 'CASH') {
       const amountValue = findAmountFromCashPaymentValues(amountValues);
-      if (amountValue) {
-        return {
-          value: amountValue,
-          currency: 'EUR',
-        };
+      if (amountValue != null) {
+        return amountValue;
       }
     }
     if (amountValues.some((v) => v < 0)) {
@@ -59,20 +65,14 @@ export class AmountExtractor extends Extractor<Amount> {
         }, {} as Record<number, number>)
       ).sort(([, f1], [, f2]) => f2 - f1);
       if (!mostFrequent2 || mostFrequent[1] !== mostFrequent2[1]) {
-        return {
-          value: Number(mostFrequent[0]),
-          currency: 'EUR',
-        };
+        return Number(mostFrequent[0]);
       }
     }
     const maxAmount = amountValues.reduce((max: number | null, cur) => {
       return !max || cur > max ? cur : max;
     }, null);
-    if (maxAmount) {
-      return {
-        value: maxAmount,
-        currency: 'EUR',
-      };
+    if (maxAmount != null) {
+      return maxAmount;
     }
 
     return null;
@@ -94,6 +94,7 @@ const illegalAmountPrefixPatterns = [
   /punktestand entspricht:?\s?$/i,
   /MwSt:?\s?$/i,
   /Originalpreis\s?$/i,
+  /PFAND\s?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
