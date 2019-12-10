@@ -4146,6 +4146,33 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hog-tierpark-sababurg-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 10.7,
+      },
+      "date": 2019-08-11T22:00:00.000Z,
+      "header": Array [
+        "Tierpark Sababurg",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 26,
+        "second": null,
+      },
+      "timestamp": 2019-08-12T11:26:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hog-tierpark-sababurg-long-cash.txt' 1`] = `
 Object {
   "result": Object {
