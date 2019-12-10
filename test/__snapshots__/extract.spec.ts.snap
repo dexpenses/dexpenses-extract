@@ -1513,6 +1513,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'hmue-aral-hedemuendener-str-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 75.41,
+      },
+      "date": 2019-07-31T22:00:00.000Z,
+      "header": Array [
+        "Aral - CENTER",
+        "Christian Ebbecke",
+        "HEDEMUNDENER STR.10",
+        "34346 HANN.-MUNDEN",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541/1859",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 31,
+        "second": 58,
+      },
+      "timestamp": 2019-08-01T15:31:58.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "gas_station" receipts should successfully extract info from 'wob-bft.txt' 1`] = `
 Object {
   "result": Object {
