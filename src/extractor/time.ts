@@ -2,25 +2,10 @@ import { DependsOn } from '../DependsOn';
 import { Extractor } from './extractor';
 import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
-import {
-  statically,
-  createMatcher,
-  Matcher,
-  MatcherDef,
-} from '../utils/matcher';
+import { createMatcher, Matcher, MatcherDef } from '../utils/matcher';
 import { DateTime } from 'luxon';
 import { anyMatches } from './util';
-
-export const matchers = {
-  h: /((?:[1i][0-2i]|[1-9]))/i,
-  HH: /((?:[01i][0-9i]|2[0-4i]))/i,
-  mm: /([0-5i][0-9i])/,
-  ss: /([0-5i][0-9i])/,
-  ':': statically(/\s?[:;]\s?/),
-  a: /([AP]M)/i,
-  // '^': /(?:^|\s)/,
-  '§': statically(/(?:^|\s)/),
-};
+import matchers from './date-time-matchers';
 
 export const formats = [
   'h:mm:ss a',
@@ -29,6 +14,7 @@ export const formats = [
   'HH:mm',
   'h:mm',
   '§HH mm ss',
+  'dd.MM.yy HH mm',
 ];
 
 const illegalPrefixPatterns = [/\s\d?\d:\d\d\s?-\s?$/];

@@ -5,7 +5,7 @@ import {
   createMatcher,
   withSanityCheck,
 } from './matcher';
-import { matchers } from '../extractor/date';
+import matchers from '../extractor/date-time-matchers';
 
 const matcherChars = getTokenChars(matchers);
 
@@ -56,9 +56,7 @@ describe('The date extractor regex builder', () => {
     expect(
       buildMatcherDef(matchers, matcherChars, 'dd.MM.yyyy').regex.source
     ).toBe(
-      `${matchers.dd.source}${matchers['.'].source}${matchers.MM.source}${
-        matchers['.'].source
-      }${matchers.yyyy.source}`
+      `${matchers.dd.source}${matchers['.'].source}${matchers.MM.source}${matchers['.'].source}${matchers.yyyy.source}`
     );
   });
 
@@ -66,9 +64,7 @@ describe('The date extractor regex builder', () => {
     expect(
       buildMatcherDef(matchers, matcherChars, 'dd.MM.yy').regex.source
     ).toBe(
-      `${matchers.dd.source}${matchers['.'].source}${matchers.MM.source}${
-        matchers['.'].source
-      }${matchers.yy.source}`
+      `${matchers.dd.source}${matchers['.'].source}${matchers.MM.source}${matchers['.'].source}${matchers.yy.source}`
     );
   });
 
@@ -76,9 +72,7 @@ describe('The date extractor regex builder', () => {
     expect(
       buildMatcherDef(matchers, matcherChars, 'dd-MM-yyyy').regex.source
     ).toBe(
-      `${matchers.dd.source}${matchers['-'].source}${matchers.MM.source}${
-        matchers['-'].source
-      }${matchers.yyyy.source}`
+      `${matchers.dd.source}${matchers['-'].source}${matchers.MM.source}${matchers['-'].source}${matchers.yyyy.source}`
     );
   });
 
@@ -86,9 +80,7 @@ describe('The date extractor regex builder', () => {
     expect(
       buildMatcherDef(matchers, matcherChars, 'd-M-yyyy').regex.source
     ).toBe(
-      `${matchers.d.source}${matchers['-'].source}${matchers.M.source}${
-        matchers['-'].source
-      }${matchers.yyyy.source}`
+      `${matchers.d.source}${matchers['-'].source}${matchers.M.source}${matchers['-'].source}${matchers.yyyy.source}`
     );
   });
 });

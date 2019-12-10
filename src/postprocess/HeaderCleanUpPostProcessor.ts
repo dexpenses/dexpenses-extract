@@ -2,11 +2,8 @@ import { Receipt } from '@dexpenses/core';
 import PostProcessor from './PostProcessor';
 import { HeaderExtractor, cleanHeaders } from '../extractor/header';
 import { Matcher, createMatcher } from '../utils/matcher';
-import { matchers as dateMatchers } from '../extractor/date';
-import {
-  matchers as timeMatchers,
-  formats as timeFormats,
-} from '../extractor/time';
+import matchers from '../extractor/date-time-matchers';
+import { formats as timeFormats } from '../extractor/time';
 import dateModel from '../extractor/date.model.de';
 
 export default class HeaderCleanUpPostProcessor extends PostProcessor {
@@ -15,8 +12,8 @@ export default class HeaderCleanUpPostProcessor extends PostProcessor {
 
   constructor() {
     super();
-    this.dateMatcher = createMatcher(dateMatchers, dateModel);
-    this.timeMatcher = createMatcher(timeMatchers, timeFormats);
+    this.dateMatcher = createMatcher(matchers, dateModel);
+    this.timeMatcher = createMatcher(matchers, timeFormats);
   }
 
   public touch(extracted: Receipt) {
