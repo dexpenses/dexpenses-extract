@@ -44,6 +44,9 @@ const irrelevantPatterns = [
   /Bed\.?Nr\.?:?\s?\d+/i,
   /Kasse\s?\d+/i,
   /BNr\.?\s?\d+/i,
+  /wir haben f(ü|ue?)r sie ge(ö|oe?)ffnet[:!\.]?/i,
+  /t(ä|ae?)glich ab \d+( uhr)?/i,
+  /rgnr\.?:?\s?\w+/i,
 ];
 
 const irrelevantMultiLinePatterns = [
