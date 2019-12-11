@@ -4,8 +4,8 @@ import { DependsOn } from '../DependsOn';
 import { Extractor } from './extractor';
 import { cleanHeaders, HeaderExtractor } from './header';
 import { Receipt } from '@dexpenses/core';
-import { createMatcher, Matcher } from '../utils/matcher';
 import matchers from './date-time-matchers';
+import Matcher from '../utils/matcher';
 
 @DependsOn(HeaderExtractor)
 export class DateExtractor extends Extractor<Date> {
@@ -13,19 +13,24 @@ export class DateExtractor extends Extractor<Date> {
 
   constructor() {
     super('date');
-    this.matcher = createMatcher(matchers, model);
+    this.matcher = new Matcher(matchers, model);
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
-    return this.matcher.exec(text).then((res) => {
-      const fullDate = res.polishedMatch();
+    const matches = this.matcher.match(text);
+    if (!matches) {
+      return null;
+    }
+    for (const match of matches) {
+      const fullDate = match.result;
 
       cleanHeaders(extracted, fullDate);
-      return DateTime.fromFormat(fullDate, res.def.format, {
+      return DateTime.fromFormat(fullDate, match.format, {
         zone: 'Europe/Berlin',
       })
         .set({ hour: 0, minute: 0, second: 0 })
         .toJSDate();
-    });
+    }
+    return null;
   }
 }

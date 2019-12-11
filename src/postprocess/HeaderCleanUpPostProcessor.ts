@@ -1,10 +1,10 @@
 import { Receipt } from '@dexpenses/core';
 import PostProcessor from './PostProcessor';
 import { HeaderExtractor, cleanHeaders } from '../extractor/header';
-import { Matcher, createMatcher } from '../utils/matcher';
 import matchers from '../extractor/date-time-matchers';
 import { formats as timeFormats } from '../extractor/time';
 import dateModel from '../extractor/date.model.de';
+import Matcher from '../utils/matcher';
 
 export default class HeaderCleanUpPostProcessor extends PostProcessor {
   private dateMatcher: Matcher;
@@ -12,8 +12,8 @@ export default class HeaderCleanUpPostProcessor extends PostProcessor {
 
   constructor() {
     super();
-    this.dateMatcher = createMatcher(matchers, dateModel);
-    this.timeMatcher = createMatcher(matchers, timeFormats);
+    this.dateMatcher = new Matcher(matchers, dateModel);
+    this.timeMatcher = new Matcher(matchers, timeFormats);
   }
 
   public touch(extracted: Receipt) {
@@ -23,12 +23,17 @@ export default class HeaderCleanUpPostProcessor extends PostProcessor {
     /*
      * Clean date and time pattern from the header and slice after a match in row 2 and onwards
      */
-    this.dateMatcher.matchers.forEach((def) =>
+    this.dateMatcher.formats.forEach((def) =>
       cleanHeaders(extracted, def.regex, (index) => index > 1)
     );
-    this.timeMatcher.matchers.forEach((def) =>
-      cleanHeaders(extracted, def.regex, (index) => index > 1)
-    );
+    this.timeMatcher.formats.forEach((def) => {
+      cleanHeaders(
+        extracted,
+        new RegExp(def.regex.source + /\s?Uhr/.source, def.regex.flags),
+        (index) => index > 1
+      );
+      cleanHeaders(extracted, def.regex, (index) => index > 1);
+    });
 
     const i = extracted.header.findIndex(containsMostlyNumbers);
     if (i !== -1) {

@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bamberg-restaurant-aposto-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 34,
+      },
+      "date": 2019-07-29T22:00:00.000Z,
+      "header": Array [
+        "Aposto Bamberg GmbH",
+        "Geyersworthstr. 5a",
+        "D 96047 Bamberg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0951-91700481",
+      "place": null,
+      "time": Object {
+        "hour": 21,
+        "minute": 18,
+        "second": 40,
+      },
+      "timestamp": 2019-07-30T19:18:40.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bamberg-spaghetteria.txt' 1`] = `
 Object {
   "result": Object {
@@ -485,9 +514,9 @@ Object {
       "time": Object {
         "hour": 13,
         "minute": 37,
-        "second": null,
+        "second": 47,
       },
-      "timestamp": 2019-07-04T11:37:00.000Z,
+      "timestamp": 2019-07-04T11:37:47.000Z,
     },
     "state": "ready",
   },
@@ -916,9 +945,9 @@ Object {
       "time": Object {
         "hour": 7,
         "minute": 45,
-        "second": null,
+        "second": 8,
       },
-      "timestamp": 2018-12-13T06:45:00.000Z,
+      "timestamp": 2018-12-13T06:45:08.000Z,
     },
     "state": "ready",
   },
@@ -1264,9 +1293,9 @@ Object {
       "time": Object {
         "hour": 18,
         "minute": 53,
-        "second": null,
+        "second": 57,
       },
-      "timestamp": 2019-03-14T17:53:00.000Z,
+      "timestamp": 2019-03-14T17:53:57.000Z,
     },
     "state": "ready",
   },
@@ -1934,10 +1963,10 @@ Object {
       "place": null,
       "time": Object {
         "hour": 11,
-        "minute": 8,
+        "minute": 7,
         "second": null,
       },
-      "timestamp": 2019-02-08T10:08:00.000Z,
+      "timestamp": 2019-02-08T10:07:00.000Z,
     },
     "state": "ready",
   },
@@ -2085,7 +2114,7 @@ Object {
       "time": Object {
         "hour": 12,
         "minute": 11,
-        "second": 0,
+        "second": null,
       },
       "timestamp": 2019-07-31T10:11:00.000Z,
     },
