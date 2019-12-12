@@ -1,6 +1,5 @@
-Kundenbeleg
+Kundenbeleg * *
 C1 Cinema
-* *
 Lange Straße 60
 38100 Braunschweig
 Datum:

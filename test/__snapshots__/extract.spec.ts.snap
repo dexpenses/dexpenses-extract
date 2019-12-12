@@ -145,6 +145,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-c1-cinema-alternative-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 4.4,
+      },
+      "date": 2019-05-12T22:00:00.000Z,
+      "header": Array [
+        "C1 Cinema",
+        "Lange Straße 60",
+        "38100 Braunschweig",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 30,
+        "second": 49,
+      },
+      "timestamp": 2019-05-13T18:30:49.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bs-c1-cinema-drink.txt' 1`] = `
 Object {
   "result": Object {

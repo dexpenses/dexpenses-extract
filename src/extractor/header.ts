@@ -79,6 +79,7 @@ export class HeaderExtractor extends Extractor<string[]> {
   public extract(text: string, lines: string[], extracted: Receipt) {
     const headerLines: string[] = [];
     const firstHeaderLine = this._firstHeaderLine(lines);
+
     if (firstHeaderLine === -1) {
       return [];
     }
@@ -91,7 +92,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       if (HeaderExtractor.isIrrelevantLine(line, i - firstHeaderLine)) {
         continue;
       }
-      if (!line.trim() || this._isHeaderDelimiter(line)) {
+      if (!line.trim() || this._isHeaderDelimiter(line, i - firstHeaderLine)) {
         break;
       }
       headerLines.push(HeaderExtractor.trim(line));
@@ -142,7 +143,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       .replace(/[\s*ж][\s*жxN]*$/i, '');
   }
 
-  private _isHeaderDelimiter(line: string): boolean {
+  private _isHeaderDelimiter(line: string, i?: number): boolean {
     return (
       !line.match(/[\d\w]/) ||
       !!line.match(/^\s*Artikelname\s*$/i) ||
