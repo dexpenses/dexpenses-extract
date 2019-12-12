@@ -1559,9 +1559,9 @@ Object {
       "time": Object {
         "hour": 23,
         "minute": 14,
-        "second": 22,
+        "second": null,
       },
-      "timestamp": 2019-06-17T21:14:22.000Z,
+      "timestamp": 2019-06-17T21:14:00.000Z,
     },
     "state": "ready",
   },
@@ -3884,6 +3884,34 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-22T17:18:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eck-unknown-restaurant.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 5.8,
+      },
+      "date": 2019-08-16T22:00:00.000Z,
+      "header": Array [
+        "-Heisse Getränke--",
+        "KWKAO mit SAHNE",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 31,
+        "second": null,
+      },
+      "timestamp": 2019-08-17T13:31:00.000Z,
     },
     "state": "ready",
   },

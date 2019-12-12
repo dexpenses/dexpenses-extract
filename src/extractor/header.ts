@@ -30,6 +30,9 @@ const irrelevantLines: IrrelevancePattern[] = [
   optionalBetween('QUITTUNG'),
   { pattern: /^\d*\s?total\s?\d*$/i, minLineIndex: 1 },
   /^Rechnung$/i,
+  /^Kellner:?\s?\d+$/i,
+  /^Tisch:?\s?\d+\s?[a-z]?$/i,
+  /^Arbeitszettel$/i,
 ];
 
 const irrelevantPatterns = [
@@ -48,6 +51,9 @@ const irrelevantPatterns = [
   /t(ä|ae?)glich ab \d+( uhr)?/i,
   /rgnr\.?:?\s?\w+/i,
   /Zahlungsart/i,
+  /Kellner:?\s?\d+/i,
+  /Tisch:?\s?\d+/i,
+  /Arbeitszettel/i,
 ];
 
 const irrelevantMultiLinePatterns = [

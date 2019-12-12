@@ -7,7 +7,7 @@ export default interface Token {
 
 export const whitespaceToken = (token: string) =>
   ({
-    regex: /\s+/,
+    regex: / +/,
     token,
     getMatch: () => token,
     check: () => true,
