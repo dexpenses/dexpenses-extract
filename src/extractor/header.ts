@@ -47,6 +47,7 @@ const irrelevantPatterns = [
   /wir haben f(ü|ue?)r sie ge(ö|oe?)ffnet[:!\.]?/i,
   /t(ä|ae?)glich ab \d+( uhr)?/i,
   /rgnr\.?:?\s?\w+/i,
+  /Zahlungsart/i,
 ];
 
 const irrelevantMultiLinePatterns = [
