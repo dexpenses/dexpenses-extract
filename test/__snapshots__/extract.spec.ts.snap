@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bamberg-licht-und-design-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 38.9,
+      },
+      "date": 2019-07-28T22:00:00.000Z,
+      "header": Array [
+        "Licht & Design",
+        "Am Kranen 6",
+        "96047 Bamberg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0951/22148",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 33,
+        "second": null,
+      },
+      "timestamp": 2019-07-29T11:33:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'bamberg-restaurant-aposto-debit.txt' 1`] = `
 Object {
   "result": Object {
