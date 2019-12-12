@@ -4788,6 +4788,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-vockeroth-bad-print-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 49.98,
+      },
+      "date": 2018-05-17T22:00:00.000Z,
+      "header": Array [
+        "OCKEROTH",
+        "Bekleidungshäuser",
+        "K. Vockeroth GmbH",
+        "Lange Str. 73",
+        "34346 Hann. Münden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541 7019910",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 12,
+        "second": null,
+      },
+      "timestamp": 2018-05-18T08:12:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hog-tierpark-sababurg-cash.txt' 1`] = `
 Object {
   "result": Object {

@@ -15,7 +15,7 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
     /Lastschrift/i,
     /(^|\s)EC(\s|$)/i,
     /(^|\s)SEPA(-ELV)?(\s|$)/i,
-    /(^|\s)EC-Cash(\s|$)/i,
+    /(^|\s)EC-Cash([ :,.;]|$)/i,
     /(^|\s)DEBIT(\s|$)/i,
     /MAESTR CCard/i,
   ],
