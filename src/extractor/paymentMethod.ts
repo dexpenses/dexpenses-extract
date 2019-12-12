@@ -23,7 +23,7 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
   CASH: [
     /(^|\s)bar(geld|zahlung)?(\s|$)/i,
     /(^|\s)Gegeben(\s|$)/,
-    /(^|\s)wechselgeld(\s|$)/i,
+    /(^|\s)(wechsel|r(ü|ue?)ck)geld(\s|$)/i,
     /(^|\s)CASH(\s|$)/i,
   ],
   DKV_CARD: [/DK[VIU](\s|-)Se\s?lection Card/i, /(^|\s)DKV(\s|$)/i],
