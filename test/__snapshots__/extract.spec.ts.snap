@@ -2056,6 +2056,34 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-restaurant-tivoli.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 27.5,
+      },
+      "date": 2019-07-28T22:00:00.000Z,
+      "header": Array [
+        "Ristorante Tivoli",
+        "Kleberstraße 14 96047 Bamberg",
+      ],
+      "paymentMethod": null,
+      "phone": "0951 23 4 63",
+      "place": null,
+      "time": Object {
+        "hour": 19,
+        "minute": 59,
+        "second": null,
+      },
+      "timestamp": 2019-07-29T17:59:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-rewe.txt' 1`] = `
 Object {
   "result": Object {
