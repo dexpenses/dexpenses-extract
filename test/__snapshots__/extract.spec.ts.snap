@@ -582,6 +582,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'goe-autohaus-suedhannover-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 744.18,
+      },
+      "date": 2019-08-04T22:00:00.000Z,
+      "header": Array [
+        "Volkswagen Euro Cash",
+        "Autohaus",
+        "Suedhannover GmbH",
+        "37081 Goettingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 40,
+        "second": null,
+      },
+      "timestamp": 2019-08-05T14:40:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'goe-cinemaxx.txt' 1`] = `
 Object {
   "result": Object {
