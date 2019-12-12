@@ -3916,6 +3916,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eck-la-taverna.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 27.6,
+      },
+      "date": 2019-08-16T22:00:00.000Z,
+      "header": Array [
+        "laverna",
+        "Ristorante -Pizzeria catering-Service",
+        "Kieler Straße 79",
+        "24340 Eckernförde",
+      ],
+      "paymentMethod": null,
+      "phone": "04351 2107",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 59,
+        "second": null,
+      },
+      "timestamp": 2019-08-17T12:59:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eck-liesegang-cash.txt' 1`] = `
 Object {
   "result": Object {
