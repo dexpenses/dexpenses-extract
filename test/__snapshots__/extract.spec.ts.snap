@@ -1918,6 +1918,31 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-licht-und-design.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 38.9,
+      },
+      "date": 2019-07-28T22:00:00.000Z,
+      "header": Array [
+        "LICHT DESIGN GBR",
+        "AM KRANEN 6",
+        "96047 BAMBERG",
+      ],
+      "paymentMethod": null,
+      "phone": "0951 22148",
+      "place": null,
+      "time": null,
+      "timestamp": 2019-07-28T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-mayerische.txt' 1`] = `
 Object {
   "result": Object {
