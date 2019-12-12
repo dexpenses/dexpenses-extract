@@ -34,7 +34,7 @@ export class AmountExtractor extends Extractor<Amount> {
     lines: string[],
     extracted: Receipt
   ): number | null {
-    const amount = anyMatches(text, [
+    let amount = anyMatches(text, [
       /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
       /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
       // /^geg(?:\.|eben)(?:\sVISA)?$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
@@ -56,6 +56,12 @@ export class AmountExtractor extends Extractor<Amount> {
       if (amountValue != null) {
         return amountValue;
       }
+    }
+    amount = anyMatches(text, [
+      /(?:gesa[mn]t)?summe(?: EUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
+    ]).then((m) => looselyParseFloat(m[1]));
+    if (amount != null) {
+      return amount;
     }
     if (amountValues.some((v) => v < 0)) {
       const [mostFrequent, mostFrequent2] = Object.entries(
