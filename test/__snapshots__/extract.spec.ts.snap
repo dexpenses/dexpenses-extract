@@ -3916,6 +3916,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eck-liesegang-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 5.35,
+      },
+      "date": 2019-08-21T22:00:00.000Z,
+      "header": Array [
+        "LIESEGANG",
+        "BUCHHANDLUNG SCHREIBWAREN- TICKETKONTOR",
+        "Liesegang GmbH",
+        "Kieler Str. 19, 24340 Eckernforde",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "(0 4351) 61 91",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 11,
+        "second": null,
+      },
+      "timestamp": 2019-08-22T16:11:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'eck-pizzeria-strandgut-cash.txt' 1`] = `
 Object {
   "result": Object {

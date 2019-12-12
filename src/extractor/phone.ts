@@ -8,7 +8,7 @@ import {
   phoneNumberPatternEquals,
 } from './phone-utils';
 
-const phoneRegex = /(?:^|[.,:\s])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?([ \-–\/]?)([\doOg]+))/;
+const phoneRegex = /(?:^|[.,:\s])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?(?:([ \-–\/]?)([\doOg]+))+)/;
 const prefixRegex = /(?:[Tl]el(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?\s?:?/i;
 const prefixedRegex = new RegExp(
   `${prefixRegex.source}${phoneRegex.source}`,
