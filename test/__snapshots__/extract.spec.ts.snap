@@ -5736,6 +5736,39 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-daenisches-bettenlager-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 5.99,
+      },
+      "date": 2019-08-22T22:00:00.000Z,
+      "header": Array [
+        "DANTSCHES(",
+        "BETTENLAGER",
+        "Qualitat sehr preiswert",
+        "Dänisches BETTENLAGER",
+        "GmbH & Co KG",
+        "Brandgehäge 5",
+        "38444 Wolfsburg",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05308 93030",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 23,
+        "second": 27,
+      },
+      "timestamp": 2019-08-23T14:23:27.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-e-center-raiffeisenstr-debit.txt' 1`] = `
 Object {
   "result": Object {
