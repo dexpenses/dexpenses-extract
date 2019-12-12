@@ -6254,6 +6254,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 55.03,
+      },
+      "date": 2019-08-23T22:00:00.000Z,
+      "header": Array [
+        "real",
+        "real GmbH",
+        "38444 Wolfsburg",
+        "Brandgehaege 9",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "0 53 08/40 46 30",
+      "place": null,
+      "time": Object {
+        "hour": 20,
+        "minute": 23,
+        "second": 51,
+      },
+      "timestamp": 2019-08-24T18:23:51.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real-full.txt' 1`] = `
 Object {
   "result": Object {
