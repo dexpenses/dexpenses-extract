@@ -582,6 +582,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'eck-reiterhof-seeberg-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 670,
+      },
+      "date": 2019-08-16T22:00:00.000Z,
+      "header": Array [
+        "Pension & Reiterhof",
+        "Seeberg - Inh. Nis Juhl",
+        "Seeberg 1.",
+        "24369 Langholz",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "04352-9569052",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 7,
+        "second": null,
+      },
+      "timestamp": 2019-08-17T16:07:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "ec" receipts should successfully extract info from 'goe-autohaus-suedhannover-debit.txt' 1`] = `
 Object {
   "result": Object {
