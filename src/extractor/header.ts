@@ -54,6 +54,8 @@ const irrelevantPatterns = [
   /Kellner:?\s?\d+/i,
   /Tisch:?\s?\d+/i,
   /Arbeitszettel/i,
+  /(sagt )?danke f(ü|ue?)r Ihren Einkauf/i,
+  /(und )?auf Wiedersehen/i,
 ];
 
 const irrelevantMultiLinePatterns = [

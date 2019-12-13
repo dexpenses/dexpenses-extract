@@ -4665,6 +4665,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-deichmann-otto-brenner-str-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 19.9,
+      },
+      "date": 2019-08-12T22:00:00.000Z,
+      "header": Array [
+        "DEICHMANN",
+        "Deichmann SE",
+        "Otto-Brenner-Str. 1",
+        "37079 Göttingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 39,
+        "second": 40,
+      },
+      "timestamp": 2019-08-13T08:39:40.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-goertz.txt' 1`] = `
 Object {
   "result": Object {
