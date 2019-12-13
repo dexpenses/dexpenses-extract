@@ -57,6 +57,17 @@ export class AmountExtractor extends Extractor<Amount> {
         return amountValue;
       }
     }
+    if (
+      extracted.paymentMethod !== 'ONLINE' &&
+      extracted.paymentMethod !== 'PAYPAL'
+    ) {
+      amount = anyMatches(text, [
+        /zu zahlen:?\s?(?:EUR\s)?(\d+[,.]\d\d)(?: |$)?/im,
+      ]).then((m) => looselyParseFloat(m[1]));
+      if (amount != null) {
+        return amount;
+      }
+    }
     amount = anyMatches(text, [
       /(?:gesa[mn]t)?summe(?: EUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
     ]).then((m) => looselyParseFloat(m[1]));
@@ -93,7 +104,7 @@ export class AmountExtractor extends Extractor<Amount> {
  */
 const amountValuePattern = /(?:^|\s|\*)(-?(?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s€]|$)/gim;
 
-const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i];
+const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i, /Nachlass:?\s?$/i];
 
 const illegalAmountPrefixPatterns = [
   /AS(-|\s)Zeit:?\s?$/i,
@@ -101,6 +112,7 @@ const illegalAmountPrefixPatterns = [
   /MwSt:?\s?$/i,
   /Originalpreis\s?$/i,
   /PFAND\s?$/i,
+  /Nachlass:?\s?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];

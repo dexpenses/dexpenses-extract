@@ -28,7 +28,7 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
   ],
   DKV_CARD: [/DK[VIU](\s|-)Se\s?lection Card/i, /(^|\s)DKV(\s|$)/i],
   PAYPAL: [/(^|\s)PayPal(\s|$)/i],
-  ONLINE: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(\s|$)/i],
+  ONLINE: [/(^|\s)Onlinezahlung(\s|$)/i, /(^|\s)Online(?! ?SHOPPEN)(\s|$)/i],
 };
 
 export class PaymentMethodExtractor extends Extractor<PaymentMethod> {
