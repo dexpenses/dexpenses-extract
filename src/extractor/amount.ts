@@ -117,7 +117,6 @@ const illegalAmountPrefixPatterns = [
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
 
-// TODO: we could include date filter (i.e. not take dd.MM from the matched date as amount value)
 export function getAmountValues(lines: string[]): number[] {
   return lines
     .flatMap((line, lineIndex) =>
