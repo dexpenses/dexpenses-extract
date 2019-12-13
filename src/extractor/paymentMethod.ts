@@ -19,7 +19,7 @@ const paymentMethodIdentifiers: Record<PaymentMethod, RegExp[]> = {
     /(^|\s)DEBIT(\s|$)/i,
     /MAESTR CCard/i,
   ],
-  CREDIT: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte(\s|$)/i],
+  CREDIT: [/(^|\s)visa(\s|$)/i, /(^|\s)kreditkarte([:\s]|$)/i],
   CASH: [
     /(^|\s)bar(geld|zahlung)?(\s|$)/i,
     /(^|\s)Gegeben(\s|$)/,

@@ -5055,6 +5055,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hm-s-oliver-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 35.99,
+      },
+      "date": 2018-06-22T22:00:00.000Z,
+      "header": Array [
+        "s.01iver Store",
+        "Pferdemarkt 1",
+        "31785 Hameln",
+      ],
+      "paymentMethod": "CREDIT",
+      "phone": "05151/4079102",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 10,
+        "second": null,
+      },
+      "timestamp": 2018-06-23T11:10:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-edeka-daube-debit.txt' 1`] = `
 Object {
   "result": Object {
