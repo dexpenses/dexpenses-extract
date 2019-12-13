@@ -48,6 +48,9 @@ export class AmountExtractor extends Extractor<Amount> {
       return amount;
     }
     const amountValues = getAmountValues(lines);
+    if (text.includes('Harry Potter - Up To No Good')) {
+      console.log(amountValues);
+    }
     if (amountValues.length === 0) {
       return null;
     }
@@ -110,7 +113,7 @@ const illegalAmountPrefixPatterns = [
   /AS(-|\s)Zeit:?\s?$/i,
   /punktestand entspricht:?\s?$/i,
   /MwSt:?\s?$/i,
-  /Originalpreis\s?$/i,
+  /(Original|Einzel)preis:?\s?$/i,
   /PFAND\s?$/i,
   /Nachlass:?\s?$/i,
 ];
