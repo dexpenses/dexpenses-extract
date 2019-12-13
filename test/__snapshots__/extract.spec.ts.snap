@@ -5115,6 +5115,31 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-stoff-und-stoeffchen-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 9.45,
+      },
+      "date": 2019-08-04T22:00:00.000Z,
+      "header": Array [
+        "Stoff und Stoffchen GmbH",
+        "Burgstr. 33",
+        "34346 Hann. Münden",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05541/73550",
+      "place": null,
+      "time": null,
+      "timestamp": 2019-08-04T22:00:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-vockeroth-bad-print-debit.txt' 1`] = `
 Object {
   "result": Object {

@@ -67,6 +67,10 @@ const fixes = [
     pattern: /(^|\s)6mbH(\s|$)/i,
     replaceWith: '$1GmbH$2',
   },
+  {
+    pattern: /(^|\s)GabH(\s|$)/i,
+    replaceWith: '$1GmbH$2',
+  },
 ];
 
 type HeaderDelimiter =
