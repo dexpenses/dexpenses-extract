@@ -6558,6 +6558,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 39.95,
+      },
+      "date": 2018-12-14T23:00:00.000Z,
+      "header": Array [
+        "real",
+        "real GmbH",
+        "38444 Wolfsburg",
+        "Brandgehaege 9",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0 53 0840 46 30",
+      "place": null,
+      "time": Object {
+        "hour": 18,
+        "minute": 42,
+        "second": null,
+      },
+      "timestamp": 2018-12-15T17:42:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wob-real-full.txt' 1`] = `
 Object {
   "result": Object {
