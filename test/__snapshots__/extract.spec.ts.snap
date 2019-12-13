@@ -4664,6 +4664,31 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-karstadt-groner-str.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 36.45,
+      },
+      "date": null,
+      "header": Array [
+        "KARSTADT",
+        "Karstadt Warenhaus GmbH",
+        "Groner Strade 43-47",
+        "37073 Gottingen",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": null,
+    },
+    "state": "partial",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-karstadt-umtausch.txt' 1`] = `
 Object {
   "result": Object {
