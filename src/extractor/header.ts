@@ -20,16 +20,13 @@ const irrelevantLines: IrrelevancePattern[] = [
   /^TA\-?Nr/i,
   /^\(?\s?[O0]rtstarif\s?\)?$/i,
   /^UID$/i,
-  /^Vielen Dank/i,
   /^[a-z][^a-z\d]$/i, // indicate wrongly detected text
   /^\d{1,4}$/,
   /Lieferzeit/,
   /(^|\s)karten\s?beleg(\s|$)/i,
   /Tankstellen-?Nr\.?:?/i,
-  /^Ust-?ID\.?/i,
   optionalBetween('QUITTUNG'),
   { pattern: /^\d*\s?total\s?\d*$/i, minLineIndex: 1 },
-  /^Rechnung$/i,
   /^Kellner:?\s?\d+$/i,
   /^Tisch:?\s?\d+\s?[a-z]?$/i,
   /^Arbeitszettel$/i,
@@ -38,10 +35,11 @@ const irrelevantLines: IrrelevancePattern[] = [
 const irrelevantPatterns = [
   /Bedient von: [a-z]+/i,
   /www?\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+(\/[a-z\-_\d%]+)*\/?/i,
-  /Vielen Dank/i,
+  /Vielen Dank\s?(,[a-z\s&äüö]+[\?!.])?/gim,
   /Bis bald!?/i,
   /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
   /K[SA]\.\s?\d+/i,
+  /Term(inal)?[\-\s]?ID( ?\d+)/i,
   /ID \d+/i,
   /^:\s*/,
   /Bed\.?Nr\.?:?\s?\d+/i,
@@ -56,19 +54,21 @@ const irrelevantPatterns = [
   /Arbeitszettel/i,
   /(sagt )?danke f(ü|ue?)r Ihren Einkauf/i,
   /(und )?auf Wiedersehen/i,
-];
-
-const irrelevantMultiLinePatterns = [
+  /Bon[\- ]?ID:?\s?(\d+)?/im,
   /wir danken\sf(ü|ue?)r ihren einkauf[!.]?/gim,
+  /[HW](ä|ae?)hrung:? ?(EURO?)?/gim,
+  /(^| )Rechnung( |$)/gim,
+  /Bedienung:? ?/,
+  /USt[ \-]?(ID)?(Nr)?\.?:? ?(DE ?)?\d+/i,
 ];
 
 const fixes = [
   {
-    pattern: /(^|\s)6mbH(\s|$)/i,
+    pattern: /(^|\s)6mbH(\s|$)/gi,
     replaceWith: '$1GmbH$2',
   },
   {
-    pattern: /(^|\s)GabH(\s|$)/i,
+    pattern: /(^|\s)GabH(\s|$)/gi,
     replaceWith: '$1GmbH$2',
   },
 ];
@@ -94,7 +94,7 @@ const headerDelimiters: HeaderDelimiter[] = [
   /(^|\s)Bezahlung($|\s)/i,
   /^€/i,
   /^\d+\sCashier$/i,
-  { pattern: /Quittung/i, minLine: 5 },
+  { pattern: /(Quittung|Rechnung)/i, minLine: 5 },
 ];
 
 export class HeaderExtractor extends Extractor<string[]> {
@@ -107,7 +107,17 @@ export class HeaderExtractor extends Extractor<string[]> {
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
+    for (const irrelevantPattern of irrelevantPatterns) {
+      text = text.replace(irrelevantPattern, '');
+    }
+    lines = text
+      .split('\n')
+      .map((s) => s.trim())
+      .filter((s) => !!s);
+    text = lines.join('\n');
+
     const headerLines: string[] = [];
+
     const firstHeaderLine = this._firstHeaderLine(lines);
 
     if (firstHeaderLine === -1) {
@@ -128,18 +138,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       headerLines.push(HeaderExtractor.trim(line));
     }
     const wrapper = { header: [...new Set(headerLines)] };
-    for (const irrelevantPattern of irrelevantPatterns) {
-      cleanHeaders(wrapper, irrelevantPattern);
-    }
-    let headerText = wrapper.header.join('\n');
-    for (const irrelevantMultiLinePattern of irrelevantMultiLinePatterns) {
-      headerText = headerText.replace(irrelevantMultiLinePattern, '');
-    }
-    const header = headerText
-      .split('\n')
-      .map((l) => l.trim())
-      .filter((l) => l);
-    return header.map((line) => {
+    return wrapper.header.map((line) => {
       for (const fix of fixes) {
         line = line.replace(fix.pattern, fix.replaceWith);
       }

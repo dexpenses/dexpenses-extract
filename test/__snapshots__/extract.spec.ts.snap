@@ -1116,11 +1116,7 @@ Object {
       },
       "date": 2018-05-22T22:00:00.000Z,
       "header": Array [
-        "K t",
-        "sich entschieden haben",
-        "gesund & lecker zu essen",
-        "Wir freuen uns auf Ihren",
-        "nächsten Besuch!",
+        "Subway",
       ],
       "paymentMethod": "DEBIT",
       "phone": null,
@@ -4805,6 +4801,36 @@ Object {
         "second": null,
       },
       "timestamp": 2019-01-07T11:43:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-obi-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 57.37,
+      },
+      "date": 2018-05-25T22:00:00.000Z,
+      "header": Array [
+        "OBI Heimwerkermarkt Gmb & Co.",
+        "Sudniedersachsen KG; _Filiale Güttingen",
+        "Am Kauf Park 2",
+        "37079 Gottingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0551-99916-0",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 25,
+        "second": 48,
+      },
+      "timestamp": 2018-05-26T12:25:48.000Z,
     },
     "state": "ready",
   },
