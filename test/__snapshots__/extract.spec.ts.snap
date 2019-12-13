@@ -5398,6 +5398,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'unknown-tode.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 44.85,
+      },
+      "date": 2018-06-14T22:00:00.000Z,
+      "header": Array [
+        "TODE",
+        "PORZELLAN-HAUSHALT",
+        "GESCHENKE",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 27,
+        "second": null,
+      },
+      "timestamp": 2018-06-15T15:27:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-apotheke.txt' 1`] = `
 Object {
   "result": Object {
