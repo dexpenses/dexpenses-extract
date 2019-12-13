@@ -4811,6 +4811,34 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-rossmann-kaufpark-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 7.92,
+      },
+      "date": 2019-08-12T22:00:00.000Z,
+      "header": Array [
+        "ROSSMANN",
+        "Mein Drogeriemarkt",
+      ],
+      "paymentMethod": "CASH",
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 6,
+        "second": null,
+      },
+      "timestamp": 2019-08-13T10:06:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-thalia-kaufpark-debit.txt' 1`] = `
 Object {
   "result": Object {
