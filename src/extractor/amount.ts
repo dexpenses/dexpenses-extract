@@ -7,6 +7,7 @@ import {
   anyMatches as anyRegexMatches,
 } from '../utils/regex-utils';
 import { anyMatches } from './util';
+import { desc } from '../utils/array';
 
 @DependsOn(PaymentMethodExtractor)
 export class AmountExtractor extends Extractor<Amount> {
@@ -48,12 +49,6 @@ export class AmountExtractor extends Extractor<Amount> {
       return amount;
     }
     const amountValues = getAmountValues(lines);
-    if (text.includes('Harry Potter - Up To No Good')) {
-      console.log(amountValues);
-    }
-    if (amountValues.length === 0) {
-      return null;
-    }
     if (extracted.paymentMethod === 'CASH') {
       const amountValue = findAmountFromCashPaymentValues(amountValues);
       if (amountValue != null) {
@@ -116,6 +111,7 @@ const illegalAmountPrefixPatterns = [
   /(Original|Einzel)preis:?\s?$/i,
   /PFAND\s?$/i,
   /Nachlass:?\s?$/i,
+  /Netto:? ?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
@@ -161,11 +157,16 @@ function equal(x: number, y: number) {
 }
 
 export function findAmountFromCashPaymentValues(values: number[]) {
+  const possibleAmounts: number[] = [];
   for (let i = values.length - 3; i >= 0; i -= 1) {
     const [amount, given, back] = values.slice(i, i + 3);
     if (equal(amount + (back < 0 ? -back : back), given)) {
-      return amount;
+      possibleAmounts.push(amount);
     }
   }
-  return null;
+  if (possibleAmounts.length === 0) {
+    return null;
+  }
+  possibleAmounts.sort(desc());
+  return possibleAmounts[0];
 }
