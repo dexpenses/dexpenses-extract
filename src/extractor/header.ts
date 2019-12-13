@@ -69,6 +69,30 @@ const fixes = [
   },
 ];
 
+type HeaderDelimiter =
+  | RegExp
+  | {
+      pattern: RegExp;
+      negative?: boolean;
+      minLine?: number;
+    };
+
+const headerDelimiters: HeaderDelimiter[] = [
+  { pattern: /[\d\w]/, negative: true },
+  /^\s*Artikelname\s*$/i,
+  /^\s*Preis:?\s*$/i,
+  /^UID\sNr/i,
+  /^\s*EUR\s*$/i,
+  /^\s*\d+[,.]\d\d\s*$/i,
+  /^\s*St\.?Nr\.?/i,
+  /[oö]ffnungszeit(en)?/i,
+  /(^|\s)Kartenzahlu[np]g($|\s)/i,
+  /(^|\s)Bezahlung($|\s)/i,
+  /^€/i,
+  /^\d+\sCashier$/i,
+  { pattern: /Quittung/i, minLine: 5 },
+];
+
 export class HeaderExtractor extends Extractor<string[]> {
   constructor(
     protected options = {
@@ -146,20 +170,23 @@ export class HeaderExtractor extends Extractor<string[]> {
   }
 
   private _isHeaderDelimiter(line: string, i?: number): boolean {
-    return (
-      !line.match(/[\d\w]/) ||
-      !!line.match(/^\s*Artikelname\s*$/i) ||
-      !!line.match(/^\s*Preis:?\s*$/i) ||
-      !!line.match(/^UID\sNr/i) ||
-      !!line.match(/^\s*EUR\s*$/i) ||
-      !!line.match(/^\s*\d+[,.]\d\d\s*$/i) ||
-      !!line.match(/^\s*St\.?Nr\.?/i) ||
-      !!line.match(/[oö]ffnungszeit(en)?/i) ||
-      !!line.match(/(^|\s)Kartenzahlu[np]g($|\s)/i) ||
-      !!line.match(/(^|\s)Bezahlung($|\s)/i) ||
-      !!line.match(/^€/i) ||
-      !!line.match(/^\d+\sCashier$/i)
-    );
+    for (const delimiter of headerDelimiters) {
+      if (delimiter instanceof RegExp) {
+        if (line.match(delimiter)) {
+          return true;
+        }
+      } else {
+        if (
+          (delimiter.negative
+            ? !line.match(delimiter.pattern)
+            : !!line.match(delimiter.pattern)) &&
+          (!delimiter.minLine || !i || i >= delimiter.minLine)
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   private _firstHeaderLine(lines: string[]): number {

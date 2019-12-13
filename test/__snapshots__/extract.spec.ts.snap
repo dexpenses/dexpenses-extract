@@ -4811,6 +4811,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-thalia-kaufpark-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 18,
+      },
+      "date": 2019-08-12T22:00:00.000Z,
+      "header": Array [
+        "Thalia",
+        "Thalia Bücher",
+        "Kauf Park",
+        "Am Kauf Park 2",
+        "37079 Göttingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49 551 50969246",
+      "place": null,
+      "time": Object {
+        "hour": 10,
+        "minute": 1,
+        "second": 15,
+      },
+      "timestamp": 2019-08-13T08:01:15.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'ha-vielhabers-brot-cafe-debit.txt' 1`] = `
 Object {
   "result": Object {
