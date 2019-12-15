@@ -1,106 +1,18 @@
 import { Extractor } from './extractor';
 import { Receipt } from '@dexpenses/core';
+import model from './header.model.de';
 
-type IrrelevancePattern = RegExp | { pattern: RegExp; minLineIndex: number };
+const irrelevantPatterns = model.irrelevantPatterns;
 
-function optionalBetween(word: string): RegExp {
-  return new RegExp(word.split('').join('\\s?-?'), 'i');
-}
+const fixes = model.fixes;
 
-const irrelevantLines: IrrelevancePattern[] = [
-  /^Datum:?/i,
-  /^[UJ]hrzeit:?/i,
-  /^Beleg\s?(\-?\s?Nr\.?|nummer)/i,
-  /^Trace(\s*\-?\s*Nr\.?|nummer)/i,
-  /B\s?\-?\s?E\s?\-?\s?L\s?\-?\s?E\s?\-?\s?[gqa]/i,
-  /h(ae|ä)ndlerbeleg/i,
-  /zwischensumme/i,
-  { pattern: /^Fax[.:]?(\s|$)/i, minLineIndex: 1 },
-  /^Term(inal)?[\-\s]?ID/i,
-  /^TA\-?Nr/i,
-  /^\(?\s?[O0]rtstarif\s?\)?$/i,
-  /^UID$/i,
-  /^[a-z][^a-z\d]$/i, // indicate wrongly detected text
-  /^\d{1,4}$/,
-  /Lieferzeit/,
-  /(^|\s)karten\s?beleg(\s|$)/i,
-  /Tankstellen-?Nr\.?:?/i,
-  optionalBetween('QUITTUNG'),
-  { pattern: /^\d*\s?total\s?\d*$/i, minLineIndex: 1 },
-  /^Kellner:?\s?\d+$/i,
-  /^Tisch:?\s?\d+\s?[a-z]?$/i,
-  /^Arbeitszettel$/i,
-];
-
-const irrelevantPatterns = [
-  /Bedient von: [a-z]+/i,
-  /www?\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+(\/[a-z\-_\d%]+)*\/?/i,
-  /Vielen Dank\s?(,[a-z\s&äüö]+[\?!.])?/gim,
-  /Bis bald!?/i,
-  /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,
-  /K[SA]\.\s?\d+/i,
-  /Term(inal)?[\-\s]?ID( ?\d+)/i,
-  /ID \d+/i,
-  /^:\s*/,
-  /Bed\.?Nr\.?:?\s?\d+/i,
-  /Kasse\s?\d+/i,
-  /BNr\.?\s?\d+/i,
-  /wir haben f(ü|ue?)r sie ge(ö|oe?)ffnet[:!\.]?/i,
-  /t(ä|ae?)glich ab \d+( uhr)?/i,
-  /rgnr\.?:?\s?\w+/i,
-  /Zahlungsart/i,
-  /Kellner:?\s?\d+/i,
-  /Tisch:?\s?\d+/i,
-  /Arbeitszettel/i,
-  /(sagt )?danke f(ü|ue?)r Ihren Einkauf/i,
-  /(und )?auf Wiedersehen/i,
-  /Bon[\- ]?ID:?\s?(\d+)?/im,
-  /wir danken\sf(ü|ue?)r ihren einkauf[!.]?/gim,
-  /[HW](ä|ae?)hrung:? ?(EURO?)?/gim,
-  /(^| )Rechnung( |$)/gim,
-  /Bedienung:? ?/,
-  /USt[ \-]?(ID)?(Nr)?\.?:? ?(DE ?)?\d+/i,
-];
-
-const fixes = [
-  {
-    pattern: /(^|\s)6mbH(\s|$)/gi,
-    replaceWith: '$1GmbH$2',
-  },
-  {
-    pattern: /(^|\s)GabH(\s|$)/gi,
-    replaceWith: '$1GmbH$2',
-  },
-];
-
-type HeaderDelimiter =
-  | RegExp
-  | {
-      pattern: RegExp;
-      negative?: boolean;
-      minLine?: number;
-    };
-
-const headerDelimiters: HeaderDelimiter[] = [
-  { pattern: /[\d\w]/, negative: true },
-  /^\s*Artikelname\s*$/i,
-  /^\s*Preis:?\s*$/i,
-  /^UID\sNr/i,
-  /^\s*EUR\s*$/i,
-  /^\s*\d+[,.]\d\d\s*$/i,
-  /^\s*St\.?Nr\.?/i,
-  /[oö]ffnungszeit(en)?/i,
-  /(^|\s)Kartenzahlu[np]g($|\s)/i,
-  /(^|\s)Bezahlung($|\s)/i,
-  /^€/i,
-  /^\d+\sCashier$/i,
-  { pattern: /(Quittung|Rechnung)/i, minLine: 5 },
-];
+const headerDelimiters = model.headerDelimiters;
 
 export class HeaderExtractor extends Extractor<string[]> {
   constructor(
     protected options = {
-      maxHeaderLines: 8,
+      maxHeaderLines: model.maxHeaderLines,
+      minLineLength: model.minLineLength,
     }
   ) {
     super('header');
@@ -113,7 +25,7 @@ export class HeaderExtractor extends Extractor<string[]> {
     lines = text
       .split('\n')
       .map((s) => s.trim())
-      .filter((s) => !!s);
+      .filter((s) => !!s && s.length >= this.options.minLineLength);
     text = lines.join('\n');
 
     const headerLines: string[] = [];
@@ -129,33 +41,29 @@ export class HeaderExtractor extends Extractor<string[]> {
       i++
     ) {
       const line = lines[i];
-      if (HeaderExtractor.isIrrelevantLine(line, i - firstHeaderLine)) {
-        continue;
-      }
       if (!line.trim() || this._isHeaderDelimiter(line, i - firstHeaderLine)) {
         break;
       }
       headerLines.push(HeaderExtractor.trim(line));
     }
     const wrapper = { header: [...new Set(headerLines)] };
-    return wrapper.header.map((line) => {
-      for (const fix of fixes) {
-        line = line.replace(fix.pattern, fix.replaceWith);
-      }
-      return line;
-    });
+    let ht = wrapper.header.join('\n');
+    for (const irrelevantPattern of irrelevantPatterns) {
+      ht = ht.replace(irrelevantPattern, '');
+    }
+    wrapper.header = [...new Set(ht.split('\n'))];
+    return wrapper.header
+      .filter((s) => s.length >= this.options.minLineLength)
+      .map((line) => {
+        for (const fix of fixes) {
+          line = line.replace(fix.pattern, fix.replaceWith);
+        }
+        return line;
+      });
   }
 
   static isIrrelevantLine(line: string, index: number): boolean {
-    return (
-      line.length <= 1 ||
-      irrelevantLines.some((r) => {
-        if (r instanceof RegExp) {
-          return line.match(r);
-        }
-        return index >= r.minLineIndex && line.match(r.pattern);
-      })
-    );
+    return line.length < model.minLineLength;
   }
 
   /**
@@ -166,10 +74,11 @@ export class HeaderExtractor extends Extractor<string[]> {
    * @example '*xxx Header*xx*' -> 'Header'
    */
   static trim(line: string): string {
-    return line
-      .trim()
-      .replace(/^[\s*xжN]*[\s*ж]/i, '')
-      .replace(/[\s*ж][\s*жxN]*$/i, '');
+    let trimmed = line.trim();
+    for (const trimmer of model.trimPatterns) {
+      trimmed = trimmed.replace(trimmer, '');
+    }
+    return trimmed.trim();
   }
 
   private _isHeaderDelimiter(line: string, i?: number): boolean {
@@ -196,7 +105,8 @@ export class HeaderExtractor extends Extractor<string[]> {
     for (let i = 0; i < lines.length; i += 1) {
       const line = HeaderExtractor.trim(lines[i]);
       if (
-        !HeaderExtractor.isIrrelevantLine(line, i) &&
+        line &&
+        line.length >= this.options.minLineLength &&
         !this._isHeaderDelimiter(line)
       ) {
         return i;
@@ -259,9 +169,5 @@ function _sanitize(line: string, value?: string | RegExp): string {
   if (sanitizedLine === line) {
     return line;
   }
-  return sanitizedLine
-    .trim()
-    .replace(/^[,.\/]/, '')
-    .replace(/[,.\/]$/, '')
-    .trim();
+  return HeaderExtractor.trim(sanitizedLine);
 }
