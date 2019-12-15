@@ -45,11 +45,8 @@ export default class Pipeline {
     const extracted: Receipt = {};
     const data = { text, extracted, lines: text.split('\n') };
     for (const stage of this.pipeline) {
-      // TODO: concurrency
       if (Array.isArray(stage)) {
-        for (const subStage of stage) {
-          await subStage.process(data);
-        }
+        await Promise.all(stage.map((s) => s.process(data)));
       } else {
         await stage.process(data);
       }
