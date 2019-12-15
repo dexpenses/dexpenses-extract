@@ -1,61 +1,42 @@
 import { Extractor } from './extractor';
 import { Receipt } from '@dexpenses/core';
 import model from './header.model.de';
-
-const irrelevantPatterns = model.irrelevantPatterns;
-
-const fixes = model.fixes;
-
-const headerDelimiters = model.headerDelimiters;
+import HeaderExtractorOptions from './header.model';
 
 export class HeaderExtractor extends Extractor<string[]> {
-  constructor(
-    protected options = {
-      maxHeaderLines: model.maxHeaderLines,
-      minLineLength: model.minLineLength,
-    }
-  ) {
+  constructor(protected options: HeaderExtractorOptions = model) {
     super('header');
   }
 
-  public extract(text: string, lines: string[], extracted: Receipt) {
-    for (const irrelevantPattern of irrelevantPatterns) {
+  public extract(fullText: string, fullLines: string[], extracted: Receipt) {
+    let text = fullText;
+    for (const irrelevantPattern of this.options.irrelevantPatterns) {
       text = text.replace(irrelevantPattern, '');
     }
-    lines = text
+    let lines = text
       .split('\n')
       .map((s) => s.trim())
       .filter((s) => !!s && s.length >= this.options.minLineLength);
-    text = lines.join('\n');
+    lines = this._skipToFirstHeaderLine(lines);
 
-    const headerLines: string[] = [];
-
-    const firstHeaderLine = this._firstHeaderLine(lines);
-
-    if (firstHeaderLine === -1) {
-      return [];
-    }
-    for (
-      let i = firstHeaderLine;
-      i < this.options.maxHeaderLines && i < lines.length;
-      i++
-    ) {
+    let headerLines: string[] = [];
+    for (let i = 0; i < this.options.maxHeaderLines && i < lines.length; i++) {
       const line = lines[i];
-      if (!line.trim() || this._isHeaderDelimiter(line, i - firstHeaderLine)) {
+      if (!line.trim() || this._isHeaderDelimiter(line, i)) {
         break;
       }
       headerLines.push(this.trim(line));
     }
-    const wrapper = { header: [...new Set(headerLines)] };
-    let ht = wrapper.header.join('\n');
-    for (const irrelevantPattern of irrelevantPatterns) {
-      ht = ht.replace(irrelevantPattern, '');
+    headerLines = [...new Set(headerLines)];
+    let headerText = headerLines.join('\n');
+    for (const irrelevantPattern of this.options.irrelevantPatterns) {
+      headerText = headerText.replace(irrelevantPattern, '');
     }
-    wrapper.header = [...new Set(ht.split('\n'))];
-    return wrapper.header
-      .filter((s) => s.length >= this.options.minLineLength)
+    headerLines = [...new Set(headerText.split('\n'))];
+    return headerLines
+      .filter((s, i) => !this.isIrrelevantLine(s, i))
       .map((line) => {
-        for (const fix of fixes) {
+        for (const fix of this.options.fixes) {
           line = line.replace(fix.pattern, fix.replaceWith);
         }
         return line;
@@ -66,39 +47,23 @@ export class HeaderExtractor extends Extractor<string[]> {
     return line.length < model.minLineLength;
   }
 
-  /**
-   * Trims the header line from *, x and spaces
-   *
-   * @param line the line to trim
-   * @example '**** Header****' -> 'Header'
-   * @example '*xxx Header*xx*' -> 'Header'
-   */
   public trim(line: string): string {
     let trimmed = line.trim();
-    for (const trimmer of model.trimPatterns) {
-      trimmed = trimmed.replace(trimmer, '');
-    }
-    return trimmed.trim();
-  }
-  static trim(line: string): string {
-    let trimmed = line.trim();
-    for (const trimmer of model.trimPatterns) {
+    for (const trimmer of this.options.trimPatterns) {
       trimmed = trimmed.replace(trimmer, '');
     }
     return trimmed.trim();
   }
 
   private _isHeaderDelimiter(line: string, i?: number): boolean {
-    for (const delimiter of headerDelimiters) {
+    for (const delimiter of this.options.headerDelimiters) {
       if (delimiter instanceof RegExp) {
         if (line.match(delimiter)) {
           return true;
         }
       } else {
         if (
-          (delimiter.negative
-            ? !line.match(delimiter.pattern)
-            : !!line.match(delimiter.pattern)) &&
+          !!line.match(delimiter.pattern) === !delimiter.negative &&
           (!delimiter.minLine || !i || i >= delimiter.minLine)
         ) {
           return true;
@@ -108,7 +73,7 @@ export class HeaderExtractor extends Extractor<string[]> {
     return false;
   }
 
-  private _firstHeaderLine(lines: string[]): number {
+  private _skipToFirstHeaderLine(lines: string[]): string[] {
     for (let i = 0; i < lines.length; i += 1) {
       const line = this.trim(lines[i]);
       if (
@@ -116,10 +81,10 @@ export class HeaderExtractor extends Extractor<string[]> {
         line.length >= this.options.minLineLength &&
         !this._isHeaderDelimiter(line)
       ) {
-        return i;
+        return lines.slice(i);
       }
     }
-    return -1;
+    return [];
   }
 
   private _cleanHeaders(
@@ -183,6 +148,6 @@ export class HeaderExtractor extends Extractor<string[]> {
     if (sanitizedLine === line) {
       return line;
     }
-    return HeaderExtractor.trim(sanitizedLine);
+    return this.trim(sanitizedLine);
   }
 }
