@@ -14,6 +14,8 @@ describe('ContainsMostNumbers', () => {
 
 describe('HeaderCleanUpPostProcessor', () => {
   it('should not fail if header is absent', () => {
-    new HeaderCleanUpPostProcessor([new HeaderExtractor()]).touch({});
+    const headerCleanUpPostProcessor = new HeaderCleanUpPostProcessor();
+    (headerCleanUpPostProcessor as any).headerExtractor = new HeaderExtractor();
+    headerCleanUpPostProcessor.touch({});
   });
 });
