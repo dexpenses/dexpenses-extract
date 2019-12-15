@@ -13,25 +13,6 @@ export const whitespaceToken = (token: string) =>
     check: () => true,
   } as Token);
 
-export function regexToken(
-  token: string,
-  regex: RegExp,
-  returnTokenOnMatch: boolean | string = false,
-  check?: (m: string) => boolean
-): Token {
-  return {
-    regex,
-    token,
-    getMatch:
-      returnTokenOnMatch === true
-        ? () => token
-        : returnTokenOnMatch
-        ? () => returnTokenOnMatch
-        : (m) => m,
-    check: check ? check : () => true,
-  };
-}
-
 export function matcherToken(
   token: string,
   regex: RegExp,

@@ -1,6 +1,7 @@
+import { containsCaptureGroup } from '../regex-utils';
+
 export type RegExpMatcher = RegExp & {
   static?: string | boolean;
-  sanityCheck?: (match: string) => boolean;
 };
 
 export function statically(
@@ -11,35 +12,41 @@ export function statically(
   return regex;
 }
 
-export function withSanityCheck(
-  regex: RegExpMatcher,
-  check: (match: string) => boolean
-): RegExpMatcher {
-  regex.sanityCheck = check;
-  return regex;
+export interface MatcherDef {
+  pattern: RegExp;
+  static?: boolean | string;
+  replacements?: Array<[string, any]>;
+  check?: (match: string) => boolean;
 }
 
-export function withReplacements(
-  regex: RegExpMatcher,
-  ...replacements: Array<[string, any]>
-) {
-  return {
-    pattern: regex,
-    static: regex.static,
-    check: regex.sanityCheck,
-    replacements,
-  };
-}
+export type MatchersDef = Record<string, RegExpMatcher | MatcherDef>;
+export type Matchers = Record<string, MatcherDef>;
 
-type MatcherDef =
-  | RegExpMatcher
-  | {
-      pattern: RegExp;
-      static?: boolean | string;
-      replacements?: Array<[string, any]>;
-      check(match: string): boolean;
+export function parseMatcher(
+  matcherDef: RegExpMatcher | MatcherDef
+): MatcherDef {
+  if (matcherDef instanceof RegExp) {
+    matcherDef = {
+      pattern: matcherDef,
+      static: matcherDef.static,
     };
+  }
+  validateMatcherDef(matcherDef);
+  return matcherDef;
+}
 
-// TODO verify that regex does not have a capture group!!
+export function parseMatchers(matchersDef: MatchersDef): Matchers {
+  const matchers: Matchers = {};
+  for (const [key, matcher] of Object.entries(matchersDef)) {
+    matchers[key] = parseMatcher(matcher);
+  }
+  return matchers;
+}
 
-export default MatcherDef;
+export function validateMatcherDef(matcherDef: MatcherDef) {
+  if (containsCaptureGroup(matcherDef.pattern)) {
+    throw new Error(
+      `matcher pattern ${matcherDef.pattern.source} contains an illegal capture group`
+    );
+  }
+}

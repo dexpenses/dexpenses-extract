@@ -1,4 +1,4 @@
-import { regexTrim, getAllMatches } from './regex-utils';
+import { regexTrim, getAllMatches, containsCaptureGroup } from './regex-utils';
 
 describe('regex-utils/regexTrim', () => {
   it('should trim correctly', () => {
@@ -31,4 +31,26 @@ describe('regex-utils/getAllMatches', () => {
 
     expect(getAllMatches(/\s*/, '     ')).toEqual(['     '.match(/\s*/)]);
   });
+});
+
+describe('regex-utils/containsCaptureGroup', () => {
+  it.each([
+    [/(foo)/],
+    [/foo(bar)/],
+    [/(foo)bar/],
+    [/^(foo|bar)/],
+    [/(foo|bar)$/],
+    [/^(foo|bar)$/],
+    [/(foo)(bar)/],
+    [/(\()/],
+  ])('should be true for "%s"', (regex) => {
+    expect(containsCaptureGroup(regex)).toBe(true);
+  });
+
+  it.each([[/(?:foo)/], [/(?!foo)/], [/(?<!foo)/], [/(?=foo)/], [/(?<=foo)/]])(
+    'should be false for "%s"',
+    (regex) => {
+      expect(containsCaptureGroup(regex)).toBe(false);
+    }
+  );
 });

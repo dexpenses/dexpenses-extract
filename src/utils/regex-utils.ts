@@ -19,3 +19,7 @@ export function regexTrim(s: string, r: RegExp): string {
     .replace(new RegExp(`^${r.source}`, r.flags), '')
     .replace(new RegExp(`${r.source}$`, r.flags), '');
 }
+
+export function containsCaptureGroup(regex: RegExp): boolean {
+  return !!regex.source.match(/\((?!\?(:|<?[=!]))/);
+}

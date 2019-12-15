@@ -1,12 +1,7 @@
 import { getAllMatches } from '../regex-utils';
 import tokenize from './tokenize';
-import MatcherDef from './matcher-def';
-import Token, {
-  whitespaceToken,
-  textToken,
-  regexToken,
-  matcherToken,
-} from './token';
+import { Matchers, parseMatchers, MatchersDef } from './matcher-def';
+import Token, { whitespaceToken, textToken, matcherToken } from './token';
 
 interface Format {
   format: string;
@@ -22,8 +17,10 @@ export interface Match {
 
 export default class Matcher {
   formats: Format[];
+  matchers: Matchers;
 
-  constructor(private matchers: Record<string, MatcherDef>, formats: string[]) {
+  constructor(matchers: MatchersDef, formats: string[]) {
+    this.matchers = parseMatchers(matchers);
     const matcherChars = new Set(Object.keys(matchers).map(([c]) => c));
     this.formats = formats.map((format) => {
       const tokens = this._tokenize(format, matcherChars);
@@ -78,9 +75,6 @@ export default class Matcher {
 
   private _matcher(token: string) {
     const matcher = this.matchers[token];
-    if (matcher instanceof RegExp) {
-      return regexToken(token, matcher, matcher.static, matcher.sanityCheck);
-    }
     return matcherToken(
       token,
       matcher.pattern,
