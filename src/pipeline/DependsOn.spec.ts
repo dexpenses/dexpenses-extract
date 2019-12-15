@@ -1,5 +1,5 @@
 import { checkDependencies, DependsOn } from './DependsOn';
-import { Extractor } from './extractor/extractor';
+import { Extractor } from '../extractor/extractor';
 import { Receipt } from '@dexpenses/core';
 
 class ExtractorA extends Extractor<any> {

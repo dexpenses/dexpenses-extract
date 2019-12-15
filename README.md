@@ -17,8 +17,8 @@ or
 
 ## Polyfill
 
-Uses `Array.prototype.flatMap` which means a polyfill may be needed:
+Uses `Array.prototype.flatMap` and `Array.prototype.flat` which means a polyfill may be needed:
 
 `yarn add core-js`
 
-Then `import 'core-js/modules/es.array.flat-map';` at some point.
+Then `import 'core-js/modules/es.array.flat-map';` and `import 'core-js/features/array/flat';` at some point.

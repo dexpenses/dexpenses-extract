@@ -1,4 +1,4 @@
-import { DependsOn } from '../DependsOn';
+import { DependsOn } from '../pipeline/DependsOn';
 import { Extractor } from './extractor';
 import { HeaderExtractor } from './header';
 import { Receipt } from '@dexpenses/core';
@@ -11,7 +11,6 @@ import {
 import { PhoneNumberExtractor } from './phone';
 import { DateExtractor } from './date';
 import { TimeExtractor } from './time';
-import HeaderCleanUpPostProcessor from '../postprocess/HeaderCleanUpPostProcessor';
 
 export type Place = GeocodingResult & PlaceDetailsResult;
 
@@ -31,11 +30,12 @@ export class PlaceExtractor extends Extractor<Place> {
     if (!extracted.header || extracted.header.length === 0) {
       return null;
     }
-    const cleanedHolder = { header: [...extracted.header] };
-    new HeaderCleanUpPostProcessor().touch(cleanedHolder);
-    const address = cleanedHolder.header.join(',');
+    const address = extracted.header.join(',');
     const res = await this.client.geocode({ address }).asPromise();
     const result = res.json.results[0];
+    if (res.json.status === 'ZERO_RESULTS') {
+      return null;
+    }
     if (!result.place_id) {
       return result as Place;
     }

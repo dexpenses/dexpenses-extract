@@ -1,8 +1,8 @@
 import { DateTime } from 'luxon';
 import model from './date.model.de';
-import { DependsOn } from '../DependsOn';
+import { DependsOn } from '../pipeline/DependsOn';
 import { Extractor } from './extractor';
-import { cleanHeaders, HeaderExtractor } from './header';
+import { HeaderExtractor } from './header';
 import { Receipt } from '@dexpenses/core';
 import matchers from './date-time-matchers';
 import Matcher from '../utils/matcher';
@@ -23,8 +23,6 @@ export class DateExtractor extends Extractor<Date> {
     }
     for (const match of matches) {
       const fullDate = match.result;
-
-      cleanHeaders(extracted, fullDate);
       return DateTime.fromFormat(fullDate, match.format, {
         zone: 'Europe/Berlin',
       })

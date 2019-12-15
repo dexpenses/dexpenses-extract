@@ -1,6 +1,6 @@
 import { Extractor } from './extractor';
 import { Receipt, Amount } from '@dexpenses/core';
-import { DependsOn } from '../DependsOn';
+import { DependsOn } from '../pipeline/DependsOn';
 import { PaymentMethodExtractor } from './paymentMethod';
 import {
   getAllMatches,

@@ -37,7 +37,6 @@ describe('Phonenumber extractor', () => {
       };
       const extractedPhone = extractor.extract('', lines, extracted);
       expect(extractedPhone).toBe(phonenumber);
-      expect(extracted.header).toEqual(['Some Store']);
     }
   });
 });

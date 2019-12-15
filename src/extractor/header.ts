@@ -44,7 +44,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       if (!line.trim() || this._isHeaderDelimiter(line, i - firstHeaderLine)) {
         break;
       }
-      headerLines.push(HeaderExtractor.trim(line));
+      headerLines.push(this.trim(line));
     }
     const wrapper = { header: [...new Set(headerLines)] };
     let ht = wrapper.header.join('\n');
@@ -62,7 +62,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       });
   }
 
-  static isIrrelevantLine(line: string, index: number): boolean {
+  public isIrrelevantLine(line: string, index: number): boolean {
     return line.length < model.minLineLength;
   }
 
@@ -73,6 +73,13 @@ export class HeaderExtractor extends Extractor<string[]> {
    * @example '**** Header****' -> 'Header'
    * @example '*xxx Header*xx*' -> 'Header'
    */
+  public trim(line: string): string {
+    let trimmed = line.trim();
+    for (const trimmer of model.trimPatterns) {
+      trimmed = trimmed.replace(trimmer, '');
+    }
+    return trimmed.trim();
+  }
   static trim(line: string): string {
     let trimmed = line.trim();
     for (const trimmer of model.trimPatterns) {
@@ -103,7 +110,7 @@ export class HeaderExtractor extends Extractor<string[]> {
 
   private _firstHeaderLine(lines: string[]): number {
     for (let i = 0; i < lines.length; i += 1) {
-      const line = HeaderExtractor.trim(lines[i]);
+      const line = this.trim(lines[i]);
       if (
         line &&
         line.length >= this.options.minLineLength &&
@@ -114,60 +121,68 @@ export class HeaderExtractor extends Extractor<string[]> {
     }
     return -1;
   }
-}
 
-function _cleanHeaders(
-  header: string[] | undefined,
-  value: string | RegExp,
-  sliceAfterMatch: boolean | ((index: number) => boolean) = false
-): string[] | undefined {
-  if (!header || header.length === 0) {
-    return header;
-  }
-  if (!sliceAfterMatch) {
-    return header
-      .map((line) => _sanitize(line, value))
-      .filter((line) => !!line);
-  }
-  for (const [i, line] of header.entries()) {
-    if (
-      (typeof value === 'string' && line.includes(value)) ||
-      line.match(value)
-    ) {
-      const newHeaders = header.slice(0, i);
-      const l = _sanitize(line, value);
-      if (l) {
-        newHeaders.push(l);
-      }
-      if (sliceAfterMatch === true || sliceAfterMatch(i)) {
+  private _cleanHeaders(
+    header: string[] | undefined,
+    value: string | RegExp,
+    sliceAfterMatch: boolean | ((index: number) => boolean) = false
+  ): string[] | undefined {
+    if (!header || header.length === 0) {
+      return header;
+    }
+    if (!sliceAfterMatch) {
+      return header
+        .map((line) => this._sanitize(line, value))
+        .filter((line) => !!line);
+    }
+    for (const [i, line] of header.entries()) {
+      if (
+        (typeof value === 'string' && line.includes(value)) ||
+        line.match(value)
+      ) {
+        const newHeaders = header.slice(0, i);
+        const l = this._sanitize(line, value);
+        if (l) {
+          newHeaders.push(l);
+        }
+        if (sliceAfterMatch === true || sliceAfterMatch(i)) {
+          return newHeaders;
+        }
+        const rest = this._cleanHeaders(
+          header.slice(i + 1),
+          value,
+          sliceAfterMatch
+        );
+        rest!.forEach((r) => newHeaders.push(r));
         return newHeaders;
       }
-      const rest = _cleanHeaders(header.slice(i + 1), value, sliceAfterMatch);
-      rest!.forEach((r) => newHeaders.push(r));
-      return newHeaders;
     }
+    return header;
   }
-  return header;
-}
 
-export function cleanHeaders(
-  extracted: Receipt,
-  value: string | RegExp,
-  sliceAfterMatch: boolean | ((index: number) => boolean) = false
-) {
-  if (!extracted.header) {
-    return;
+  public cleanHeaders(
+    extracted: Receipt,
+    value: string | RegExp,
+    sliceAfterMatch: boolean | ((index: number) => boolean) = false
+  ) {
+    if (!extracted.header) {
+      return;
+    }
+    extracted.header = this._cleanHeaders(
+      extracted.header,
+      value,
+      sliceAfterMatch
+    );
   }
-  extracted.header = _cleanHeaders(extracted.header, value, sliceAfterMatch);
-}
 
-function _sanitize(line: string, value?: string | RegExp): string {
-  if (!value) {
-    return line;
+  private _sanitize(line: string, value?: string | RegExp): string {
+    if (!value) {
+      return line;
+    }
+    const sanitizedLine = line.replace(value, '');
+    if (sanitizedLine === line) {
+      return line;
+    }
+    return HeaderExtractor.trim(sanitizedLine);
   }
-  const sanitizedLine = line.replace(value, '');
-  if (sanitizedLine === line) {
-    return line;
-  }
-  return HeaderExtractor.trim(sanitizedLine);
 }

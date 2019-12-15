@@ -1,6 +1,6 @@
-import { DependsOn } from '../DependsOn';
+import { DependsOn } from '../pipeline/DependsOn';
 import { Extractor } from './extractor';
-import { HeaderExtractor, cleanHeaders } from './header';
+import { HeaderExtractor } from './header';
 import { Receipt } from '@dexpenses/core';
 import {
   createPhoneNumberPattern,
@@ -8,12 +8,16 @@ import {
   phoneNumberPatternEquals,
 } from './phone-utils';
 
-const phoneRegex = /(?:^|[.,: ])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?(?:([ \-–\/]?)([\doOg]+))+)/;
+export const phoneRegex = /(?:^|[.,: ])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?(?:([ \-–\/]?)([\doOg]+))+)/;
 const prefixRegex = /(?:[Tl]el(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?\s?:?/i;
-const prefixedRegex = new RegExp(
+export const prefixedRegex = new RegExp(
   `${prefixRegex.source}${phoneRegex.source}`,
   'i'
 );
+const fixes = [
+  { pattern: /o/gi, replaceWith: '0' },
+  { pattern: /g/g, replaceWith: '9' },
+];
 
 const illegalPhoneNumberLinePrefixes = [/St\.?Nr\.?\s*$/i, /^UID\sNr\.?/i];
 
@@ -35,22 +39,23 @@ export class PhoneNumberExtractor extends Extractor<string> {
   }
 
   private extractFromHeader(extracted: Receipt) {
-    for (const [i, line] of extracted.header!.entries()) {
+    for (const [, line] of extracted.header!.entries()) {
       const m = line.match(phoneRegex);
       if (m) {
         const prefix = line.substring(0, line.indexOf(m[0]));
         if (this.isIllegalPhoneNumberLine(prefix)) {
           continue;
         }
-        const extractedNumber = m[1]
-          .trim()
-          .replace(/o/gi, '0')
-          .replace(/g/g, '9');
+        let extractedNumber = m[1].trim();
+        for (const fix of fixes) {
+          extractedNumber = extractedNumber.replace(
+            fix.pattern,
+            fix.replaceWith
+          );
+        }
         if (this.isOwnNumber(extractedNumber)) {
           continue;
         }
-        cleanHeaders(extracted, prefixedRegex, i > 0);
-        cleanHeaders(extracted, phoneRegex, i > 0);
         return extractedNumber;
       }
     }
@@ -58,14 +63,19 @@ export class PhoneNumberExtractor extends Extractor<string> {
   }
 
   private extractFromWholeReceipt(lines: string[], extracted: Receipt) {
-    for (const [i, line] of lines.entries()) {
+    for (const [, line] of lines.entries()) {
       const m = line.match(prefixedRegex);
       if (m) {
-        const extractedNumber = m[1].trim().replace(/o/gi, '0');
+        let extractedNumber = m[1].trim();
+        for (const fix of fixes) {
+          extractedNumber = extractedNumber.replace(
+            fix.pattern,
+            fix.replaceWith
+          );
+        }
         if (this.isOwnNumber(extractedNumber)) {
           continue;
         }
-        cleanHeaders(extracted, m[0], i > 0);
         return extractedNumber;
       }
     }

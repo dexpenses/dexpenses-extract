@@ -1,6 +1,7 @@
 import HeaderCleanUpPostProcessor, {
   containsMostlyNumbers,
 } from './HeaderCleanUpPostProcessor';
+import { HeaderExtractor } from '../extractor/header';
 
 describe('ContainsMostNumbers', () => {
   it('should match if at least 6 digits and more than 80% are digits', () => {
@@ -13,6 +14,6 @@ describe('ContainsMostNumbers', () => {
 
 describe('HeaderCleanUpPostProcessor', () => {
   it('should not fail if header is absent', () => {
-    new HeaderCleanUpPostProcessor().touch({});
+    new HeaderCleanUpPostProcessor([new HeaderExtractor()]).touch({});
   });
 });

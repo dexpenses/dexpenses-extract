@@ -1,4 +1,4 @@
-import { DependsOn } from '../DependsOn';
+import { DependsOn } from '../pipeline/DependsOn';
 import { Extractor } from './extractor';
 import { HeaderExtractor } from './header';
 import { Receipt, Time } from '@dexpenses/core';
