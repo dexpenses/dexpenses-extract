@@ -10,7 +10,7 @@
     "noImplicitAny": false,
     "target": "es2018",
     "experimentalDecorators": true,
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
     "types": ["node", "jest"]
   },
   "compileOnSave": true,
