@@ -5081,6 +5081,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hi-galeria-kaufhof-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 152.89,
+      },
+      "date": 2018-04-13T22:00:00.000Z,
+      "header": Array [
+        "GALERIA KAUFHOF",
+        "kaufhof.de",
+        "Hildesheim",
+        "Almsstr.41",
+        "31134 Hildesheim",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05121-107-0",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2018-04-14T12:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hm-s-oliver-debit.txt' 1`] = `
 Object {
   "result": Object {
