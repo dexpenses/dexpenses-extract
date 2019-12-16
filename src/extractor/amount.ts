@@ -69,7 +69,7 @@ export class AmountExtractor extends Extractor<Amount> {
       }
     }
     amount = this._tryMatch(text, [
-      /(?:gesa[mn]t)?summe(?: EUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
+      /(?:gesa[mn]t)?summe(?:\sEUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
     ]);
     if (amount != null) {
       return amount;

@@ -4837,6 +4837,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-real-kaufpark-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 33.26,
+      },
+      "date": 2017-12-06T23:00:00.000Z,
+      "header": Array [
+        "real",
+        "real,- SB-Warenhaus GmbH",
+        "37079 Göttingen",
+        "Am Kauf Park 2",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05 51/99 90 70",
+      "place": null,
+      "time": Object {
+        "hour": 17,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2017-12-07T16:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-rossmann-kaufpark-cash.txt' 1`] = `
 Object {
   "result": Object {

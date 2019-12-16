@@ -43,6 +43,10 @@ export default class Matcher {
           .slice(1)
           .map((group, i) => format.tokens[i].getMatch(group));
 
+        if (format.tokens.some((token, i) => !token.check(groups[i]))) {
+          continue;
+        }
+
         matches.push({
           match,
           format: format.format,
