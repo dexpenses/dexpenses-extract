@@ -6139,6 +6139,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-tamaris-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 25.95,
+      },
+      "date": 2018-06-08T22:00:00.000Z,
+      "header": Array [
+        "Tamaris Wolfenbüt tel",
+        "Lange Herzogstraße 56",
+        "38300 Wolfenbüttel",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "05331 9451818",
+      "place": null,
+      "time": Object {
+        "hour": 12,
+        "minute": 55,
+        "second": 28,
+      },
+      "timestamp": 2018-06-09T10:55:28.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'wf-wurst-basar.txt' 1`] = `
 Object {
   "result": Object {
