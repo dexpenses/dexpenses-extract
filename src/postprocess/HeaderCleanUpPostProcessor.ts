@@ -5,7 +5,7 @@ import matchers from '../extractor/date-time-matchers';
 import { formats as timeFormats } from '../extractor/time';
 import dateModel from '../extractor/date.model.de';
 import Matcher from '../utils/matcher';
-import { prefixedRegex, phoneRegex } from '../extractor/phone';
+import { prefixedRegex, phoneRegex, prefixRegex } from '../extractor/phone';
 import Inject from '../pipeline/Inject';
 
 export default class HeaderCleanUpPostProcessor extends PostProcessor {
@@ -33,6 +33,11 @@ export default class HeaderCleanUpPostProcessor extends PostProcessor {
     this.headerExtractor.cleanHeaders(
       extracted,
       phoneRegex,
+      (index) => index > 0
+    );
+    this.headerExtractor.cleanHeaders(
+      extracted,
+      new RegExp(`(^| )${prefixRegex.source}( |$)`),
       (index) => index > 0
     );
     /*

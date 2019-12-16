@@ -9,10 +9,9 @@ import {
 } from './phone-utils';
 
 export const phoneRegex = /(?:^|[.,: ])(\(?(?=\+49|\(?0)((\([\doOg \-\–\+\/]+\)|[\doOg \-\–\+\/])+){6,}\)?(?:([ \-–\/]?)([\doOg]+))+)/;
-const prefixRegex = /(?:[Tl]el(?:efon)?|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?\s?:?/i;
+export const prefixRegex = /(?:[Tl](?:EL(?:EFON)?|el(?:efon)?)|Fon|(?:^|\s)el)\.?(?:\s?gratis\s?)?\s?:?/;
 export const prefixedRegex = new RegExp(
-  `${prefixRegex.source}${phoneRegex.source}`,
-  'i'
+  `${prefixRegex.source}${phoneRegex.source}`
 );
 const fixes = [
   { pattern: /o/gi, replaceWith: '0' },
