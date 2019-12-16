@@ -7,7 +7,7 @@ import {
   anyMatches as anyRegexMatches,
 } from '../utils/regex-utils';
 import { anyMatches } from './util';
-import { desc } from '../utils/array';
+import { desc, getMostFrequent, max } from '../utils/array';
 
 @DependsOn(PaymentMethodExtractor)
 export class AmountExtractor extends Extractor<Amount> {
@@ -30,21 +30,23 @@ export class AmountExtractor extends Extractor<Amount> {
     };
   }
 
+  private _tryMatch(text: string, patterns: RegExp[]) {
+    return anyMatches(text, patterns).then((m) => looselyParseFloat(m[1]));
+  }
+
   private _extract(
     text: string,
     lines: string[],
     extracted: Receipt
   ): number | null {
-    let amount = anyMatches(text, [
+    let amount = this._tryMatch(text, [
       /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
       /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
-      // /^geg(?:\.|eben)(?:\sVISA)?$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
       /^geg(?:\.|eben)\sVISA$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
       /^(\d+,\d\d)$\n^Total in EUR$/im,
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
-      // /total:?(?:$\n)?^(\d+,\d\d)$/im,
       /^total:?(?:$\n)?^(?:€\s?)?(\d+[,\.]\s?\d\d)(?:\s?(?:€|EUR))?$/im,
-    ]).then((m) => looselyParseFloat(m[1]));
+    ]);
     if (amount != null) {
       return amount;
     }
@@ -59,33 +61,30 @@ export class AmountExtractor extends Extractor<Amount> {
       extracted.paymentMethod !== 'ONLINE' &&
       extracted.paymentMethod !== 'PAYPAL'
     ) {
-      amount = anyMatches(text, [
+      amount = this._tryMatch(text, [
         /zu zahlen:?\s?(?:EUR\s)?(\d+[,.]\d\d)(?: |$)?/im,
-      ]).then((m) => looselyParseFloat(m[1]));
+      ]);
       if (amount != null) {
         return amount;
       }
     }
-    amount = anyMatches(text, [
+    amount = this._tryMatch(text, [
       /(?:gesa[mn]t)?summe(?: EUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
-    ]).then((m) => looselyParseFloat(m[1]));
+    ]);
     if (amount != null) {
       return amount;
     }
     if (amountValues.some((v) => v < 0)) {
-      const [mostFrequent, mostFrequent2] = Object.entries(
-        amountValues.reduce((acc, cur) => {
-          acc[cur] = (acc[cur] || 0) + 1;
-          return acc;
-        }, {} as Record<number, number>)
-      ).sort(([, f1], [, f2]) => f2 - f1);
-      if (!mostFrequent2 || mostFrequent[1] !== mostFrequent2[1]) {
-        return Number(mostFrequent[0]);
+      const mostFrequent = getMostFrequent(amountValues);
+      if (
+        mostFrequent &&
+        mostFrequent.max > 1 &&
+        mostFrequent.values.length === 1
+      ) {
+        return mostFrequent.values[0];
       }
     }
-    const maxAmount = amountValues.reduce((max: number | null, cur) => {
-      return !max || cur > max ? cur : max;
-    }, null);
+    const maxAmount = amountValues.reduce(max(), null);
     if (maxAmount != null) {
       return maxAmount;
     }
