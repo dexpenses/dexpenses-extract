@@ -19,7 +19,7 @@ export abstract class Extractor<T> implements Stage {
     } catch (e) {
       data.extracted[this.field] = {
         error: e.message || (typeof e === 'string' && e) || 'unknown',
-      }; // TODO save errors separately on the receipt object!
+      };
     }
   }
 }
