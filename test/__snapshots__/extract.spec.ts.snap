@@ -1978,6 +1978,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-bierothek-credit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 48.21,
+      },
+      "date": 2019-07-26T22:00:00.000Z,
+      "header": Array [
+        "DIE BIEROTHEK",
+        "Untere Konigsstraße 1- 96052",
+        "Bamberg",
+      ],
+      "paymentMethod": null,
+      "phone": null,
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 1,
+        "second": null,
+      },
+      "timestamp": 2019-07-27T14:01:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-city-market.txt' 1`] = `
 Object {
   "result": Object {

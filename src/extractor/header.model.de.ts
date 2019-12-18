@@ -17,6 +17,7 @@ export default {
     /^€/i,
     /^\d+\sCashier$/i,
     { pattern: /(Quittung|Rechnung)/i, minLine: 5 },
+    /mo-(fr|sa|so):? ?([01]\d|2[0-4])( ?:? ?[0-5]\d)? ?(-|bis) ?([01]\d|2[0-4])( ?:? ?[0-5]\d)? ?(uhr)?/i,
   ],
   irrelevantPatterns: [
     /(^| )[*XжN ]*(Karten|K[uv]nden|H(ä|ae?)ndler)bele[gqa][*XжN]*( |$)/gim,
@@ -48,7 +49,7 @@ export default {
     /(^| )Rechnung( |$)/gim,
     / ?-? ?Q ?-? ?U ?-? ?I ?-? ?T ?-? ?T ?-? ?U ?-? ?N ?-? ?G ?-? ?/gim,
     /Bedienung:? ?/,
-    /USt[ \-]?(ID)?(Nr)?\.?:? ?(DE ?)?\d+/i,
+    /(Steuer|USt)[ \-]?(ID)?(Nr)?\.?:? ?(DE ?)?[\d\/]+/i,
     /^Lieferzeit$/gim,
     /Tankstellen-?Nr\.?:? ?\d+/gi,
     /^\d{1,4}$/gm,
