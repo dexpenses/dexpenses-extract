@@ -5260,6 +5260,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-schuhmann-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 85.9,
+      },
+      "date": 2017-12-08T23:00:00.000Z,
+      "header": Array [
+        "SCHUHMANN",
+        "Lange Straße 63",
+        "34346 Hann Münden",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "05541-4022",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2017-12-09T14:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hmue-stoff-und-stoeffchen-cash.txt' 1`] = `
 Object {
   "result": Object {
