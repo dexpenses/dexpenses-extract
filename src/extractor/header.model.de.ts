@@ -75,7 +75,11 @@ export default {
   ],
   fixes: [
     {
-      pattern: /(^|\s)(?:6mbH|GabH)(\s|$)/gi,
+      pattern: /(^|\s)(?:6mbH|GabH|Gmbh)(\s|$)/g,
+      replaceWith: '$1GmbH$2',
+    },
+    {
+      pattern: /^(.*[a-z].*)GMBH(\s|$)/g,
       replaceWith: '$1GmbH$2',
     },
   ],

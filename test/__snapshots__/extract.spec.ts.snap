@@ -2350,6 +2350,35 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-osiandersche-buchhandlung-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 21,
+      },
+      "date": 2019-07-23T22:00:00.000Z,
+      "header": Array [
+        "Osiandersche Buchhandlung GmbH",
+        "Grüner Markt 16",
+        "96047 Bamberg",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "+49 951 297925 0",
+      "place": null,
+      "time": Object {
+        "hour": 14,
+        "minute": 14,
+        "second": null,
+      },
+      "timestamp": 2019-07-24T12:14:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bamberg-restaurant-tivoli.txt' 1`] = `
 Object {
   "result": Object {
@@ -3543,7 +3572,7 @@ Object {
       },
       "date": 2019-07-11T22:00:00.000Z,
       "header": Array [
-        "real GMBH",
+        "real GmbH",
         "real",
         "38114 Braunschweig",
         "Hamburger Straße 250",
@@ -6947,7 +6976,7 @@ Object {
       "header": Array [
         "MedlaMarkt",
         "MEDIA MARKT WOLFSBURG",
-        "TV-HIFI ELEKTRO Gmbh",
+        "TV-HIFI ELEKTRO GmbH",
         "Wolfsburg-Brandgehaege 3",
       ],
       "paymentMethod": "CREDIT",
@@ -6977,7 +7006,7 @@ Object {
       "header": Array [
         "MediaMarkt",
         "MEDIA MARKT WOLFSBURG",
-        "TV-HIFI-ELEKTRO Gmbh",
+        "TV-HIFI-ELEKTRO GmbH",
         "Wolfsburg-Brandgehaege 3",
       ],
       "paymentMethod": "CASH",
