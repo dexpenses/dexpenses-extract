@@ -4895,6 +4895,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-s-oliver-kaufpark-debit.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 31.99,
+      },
+      "date": 2017-12-06T23:00:00.000Z,
+      "header": Array [
+        "s.0liver Store",
+        "UNO retail GmbH & Co. KG",
+        "Am Kaufpark 2",
+        "37079 Gottingen",
+      ],
+      "paymentMethod": "DEBIT",
+      "phone": "0551-9899754",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 52,
+        "second": null,
+      },
+      "timestamp": 2017-12-07T15:52:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'goe-thalia-kaufpark-debit.txt' 1`] = `
 Object {
   "result": Object {
