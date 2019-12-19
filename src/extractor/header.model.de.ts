@@ -23,7 +23,8 @@ export default {
     /(^| )[*XжN ]*(Karten|K[uv]nden|H(ä|ae?)ndler)bele[gqa][*XжN]*( |$)/gim,
     /(^| ) ?-? ?K ?-? ?[a-z0-9\- ]+B ?-? ?E ?-? ?L ?-? ?E ?-? ?[Gqa] ?-? ?/gim, // Kundenbeleg with " ?-? ?" between letter matchers
     /Bedient von: [a-z]+/i,
-    /www?\s?\.\s?[a-z\-]+\s?\.\s?[a-z]+(\/[a-z\-_\d%]+)*\/?/i,
+    /www? ?\. ?[a-z\- ]+\. ?[a-z]+(\/[a-z\-_\d%]+)*\/?/i,
+    /([a-z\-\d]\.)*[a-z\-\d]+\.de/i,
     /Vielen Dank\s?(,[a-z\s&äüö]+[\?!.])?/gim,
     /Bis bald!?/i,
     /Obj(\.|ekt)-?Nr\.?:?\s?\d+(\s|$)/i,

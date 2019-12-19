@@ -85,6 +85,12 @@ export class AmountExtractor extends Extractor<Amount> {
         return mostFrequent.values[0];
       }
     }
+    if (!anyRegexMatches(text, [/(^| )7([,.] ?0 ?0?)? ?%( |$)/m])) {
+      amount = findVATPattern(amountValues);
+      if (amount != null) {
+        return amount;
+      }
+    }
     const maxAmount = amountValues.reduce(max(), null);
     if (maxAmount != null) {
       return maxAmount;
@@ -163,6 +169,31 @@ export function findAmountFromCashPaymentValues(values: number[]) {
     const [amount, given, back] = values.slice(i, i + 3);
     if (equal(amount + (back < 0 ? -back : back), given)) {
       possibleAmounts.push(amount);
+    }
+  }
+  if (possibleAmounts.length === 0) {
+    return null;
+  }
+  possibleAmounts.sort(desc());
+  return possibleAmounts[0];
+}
+
+function floor(r: number): number {
+  return Math.floor(r * 100) / 100;
+}
+
+export function findVATPattern(values: number[]): number | null {
+  const possibleAmounts: number[] = [];
+  for (let i = values.length - 2; i >= 0; i -= 1) {
+    const [v1, v2] = values.slice(i, i + 2);
+    if (v1 === 0 || v2 === 0) {
+      continue;
+    }
+    if (
+      values.includes(v1 + v2) &&
+      (equal(floor(v1 * 0.19), v2) || equal(floor(v2 * 0.19), v1))
+    ) {
+      possibleAmounts.push(v1 + v2);
     }
   }
   if (possibleAmounts.length === 0) {

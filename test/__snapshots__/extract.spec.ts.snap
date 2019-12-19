@@ -5219,6 +5219,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-galeria-kaufhof-seilwinderstr-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 6.79,
+      },
+      "date": 2019-08-02T22:00:00.000Z,
+      "header": Array [
+        "GALERIA KAUFHOF",
+        "Hannover Marktkirche",
+        "Seilwinderstrasse 8",
+        "30159 Hannover",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0511-3666-0",
+      "place": null,
+      "time": Object {
+        "hour": 16,
+        "minute": 9,
+        "second": null,
+      },
+      "timestamp": 2019-08-03T14:09:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-goertz-debit.txt' 1`] = `
 Object {
   "result": Object {
@@ -5322,7 +5352,6 @@ Object {
       "date": 2018-04-13T22:00:00.000Z,
       "header": Array [
         "GALERIA KAUFHOF",
-        "kaufhof.de",
         "Hildesheim",
         "Almsstr.41",
         "31134 Hildesheim",
@@ -5724,7 +5753,6 @@ Object {
       "date": 2019-09-06T22:00:00.000Z,
       "header": Array [
         "MM",
-        "Manga-Mafia.de",
         "Dein Anime und Manga Online-Shop",
         "1 Herr der Ringe Ring Der E 25,00",
       ],
@@ -6937,7 +6965,6 @@ Object {
       },
       "date": 2019-05-21T22:00:00.000Z,
       "header": Array [
-        "Lieferando.de",
         "Hey Pizza",
         "Porschestraße 48-50",
         "38440 Wolfsburg",
@@ -7147,7 +7174,7 @@ Object {
       "header": Array [
         "k *k",
         "k k",
-        "d dem Balken 2 Www.nypa pizza.de",
+        "d dem Balken 2",
         "38448 Wolfsburg",
       ],
       "paymentMethod": "ONLINE",
