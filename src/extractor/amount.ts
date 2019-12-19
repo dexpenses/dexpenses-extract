@@ -47,14 +47,15 @@ export class AmountExtractor extends Extractor<Amount> {
       /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
       /^total:?(?:$\n)?^(?:€\s?)?(\d+[,\.]\s?\d\d)(?:\s?(?:€|EUR))?$/im,
     ]);
+
     if (amount != null) {
       return amount;
     }
     const amountValues = getAmountValues(lines);
     if (extracted.paymentMethod === 'CASH') {
-      const amountValue = findAmountFromCashPaymentValues(amountValues);
-      if (amountValue != null) {
-        return amountValue;
+      amount = findAmountFromCashPaymentValues(amountValues);
+      if (amount != null) {
+        return amount;
       }
     }
     if (
@@ -111,6 +112,7 @@ const illegalAmountPrefixPatterns = [
   /PFAND\s?$/i,
   /Nachlass:?\s?$/i,
   /Netto:? ?$/i,
+  /statt:? ?$/i,
 ];
 
 const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];

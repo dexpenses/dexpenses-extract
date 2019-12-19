@@ -61,7 +61,7 @@ export default {
     /(^| )Zwischensumme( |$)/gim,
     /(?<=\n)\d+ ?total ?\d*( |$)/gim,
 
-    /(^| )Fax[.:]?( ?[\dog\-\/]+)?( |$)/gim,
+    /(^| )Fax[.:]?( ?[\dog\-\/ ]+)?( |$)/gim,
     /(^| )\(?\s?[O0]rtstarif\s?\)?( |$)/gim,
 
     /^[a-z][^a-z\d]$/gim, // indicate wrongly detected text
