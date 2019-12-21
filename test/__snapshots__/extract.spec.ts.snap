@@ -5158,6 +5158,37 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-dinea-cash.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 11.1,
+      },
+      "date": 2019-08-02T22:00:00.000Z,
+      "header": Array [
+        "DINEA",
+        "CAE&RESTAKPANI",
+        "Hannover",
+        "Seilwinderstraße 8",
+        "30159 Hannover",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0511-3666234",
+      "place": null,
+      "time": Object {
+        "hour": 15,
+        "minute": 23,
+        "second": null,
+      },
+      "timestamp": 2019-08-03T13:23:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'hannover-elbenwald-cash.txt' 1`] = `
 Object {
   "result": Object {
