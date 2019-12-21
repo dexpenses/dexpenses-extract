@@ -3357,6 +3357,36 @@ Object {
 }
 `;
 
+exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-l-osteria.txt' 1`] = `
+Object {
+  "result": Object {
+    "data": Object {
+      "amount": Object {
+        "currency": "EUR",
+        "value": 28.9,
+      },
+      "date": 2019-08-09T22:00:00.000Z,
+      "header": Array [
+        "L'Osteria",
+        "Braunschweig",
+        "BraWo Allee 1",
+        "D-38102 Braunschweig",
+      ],
+      "paymentMethod": "CASH",
+      "phone": "0531 - 70 74 71 90",
+      "place": null,
+      "time": Object {
+        "hour": 13,
+        "minute": 57,
+        "second": null,
+      },
+      "timestamp": 2019-08-10T11:57:00.000Z,
+    },
+    "state": "ready",
+  },
+}
+`;
+
 exports[`Extract receipt cloud function (offline) for "normal" receipts should successfully extract info from 'bs-liebeskuh-debit.txt' 1`] = `
 Object {
   "result": Object {
