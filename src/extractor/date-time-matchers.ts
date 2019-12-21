@@ -6,8 +6,8 @@ function currentYear() {
 }
 
 export default {
-  d: /(?:[1-9]|[12]\d|3[01])/,
-  dd: /(?:0[1-9]|[12]\d|3[01])/,
+  d: { pattern: /(?:[l1-9]|[l12]\d|3[01l])/, replacements: [['l', 1]] },
+  dd: { pattern: /(?:0[l1-9]|[l12]\d|3[01l])/, replacements: [['l', 1]] },
   M: /(?:[1-9]|1[0-2])/,
   MM: /(?:0[1-9]|1[0-2])/,
   MMM: /(?:jan|feb|märz|apr|mai|jun|jul|aug|sep|okt|nov|dez)/i,
