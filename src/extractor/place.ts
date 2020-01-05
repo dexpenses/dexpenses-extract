@@ -37,7 +37,7 @@ export class PlaceExtractor extends Extractor<Place> {
       return null;
     }
     if (!result.place_id) {
-      return result as Place;
+      return { value: result as Place };
     }
     const pdr = await this.client
       .place({
@@ -45,6 +45,6 @@ export class PlaceExtractor extends Extractor<Place> {
         fields: ['name', 'formatted_phone_number', 'website'],
       })
       .asPromise();
-    return { ...result, ...pdr.json.result } as Place;
+    return { value: { ...result, ...pdr.json.result } as Place };
   }
 }

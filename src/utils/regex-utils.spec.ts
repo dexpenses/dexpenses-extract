@@ -1,4 +1,10 @@
-import { regexTrim, getAllMatches, containsCaptureGroup } from './regex-utils';
+import {
+  regexTrim,
+  getAllMatches,
+  containsCaptureGroup,
+  captureGroupCount,
+  getMatchingPatterns,
+} from './regex-utils';
 
 describe('regex-utils/regexTrim', () => {
   it('should trim correctly', () => {
@@ -33,24 +39,51 @@ describe('regex-utils/getAllMatches', () => {
   });
 });
 
-describe('regex-utils/containsCaptureGroup', () => {
+describe('regex-utils/containsCaptureGroup+captureGroupCount', () => {
   it.each([
-    [/(foo)/],
-    [/foo(bar)/],
-    [/(foo)bar/],
-    [/^(foo|bar)/],
-    [/(foo|bar)$/],
-    [/^(foo|bar)$/],
-    [/(foo)(bar)/],
-    [/(\()/],
-  ])('should be true for "%s"', (regex) => {
+    [/(foo)/, 1],
+    [/foo(bar)/, 1],
+    [/(foo)bar/, 1],
+    [/^(foo|bar)/, 1],
+    [/(foo|bar)$/, 1],
+    [/^(foo|bar)$/, 1],
+    [/(foo)(bar)/, 2],
+    [/(\()/, 1],
+    [/(\(\))(\))/, 2],
+    [/a(bc)d(ef)g\(h\)i(j)k/, 3],
+  ])('should be true for "%s"', (regex, noOfCaptureGroups) => {
     expect(containsCaptureGroup(regex)).toBe(true);
+    expect(captureGroupCount(regex)).toBe(noOfCaptureGroups);
   });
 
-  it.each([[/(?:foo)/], [/(?!foo)/], [/(?<!foo)/], [/(?=foo)/], [/(?<=foo)/]])(
-    'should be false for "%s"',
-    (regex) => {
-      expect(containsCaptureGroup(regex)).toBe(false);
-    }
-  );
+  it.each([
+    [/\(/],
+    [/\(\)/],
+    [/(?:\()/],
+    [/(?:foo)/],
+    [/(?!foo)/],
+    [/(?<!foo)/],
+    [/(?=foo)/],
+    [/(?<=foo)/],
+  ])('should be false for "%s"', (regex) => {
+    expect(containsCaptureGroup(regex)).toBe(false);
+    expect(captureGroupCount(regex)).toBe(0);
+  });
+});
+
+describe('regex-utils/getMatchingPatterns', () => {
+  it('should return all the matching patterns', () => {
+    const matchingPatterns = getMatchingPatterns(
+      [
+        { pattern: /foo/, name: 'foo' },
+        { pattern: /bar/, name: 'bar' },
+        { pattern: /\s/, name: 'space' },
+      ],
+      'my foo is cool'
+    );
+    expect(matchingPatterns.map(({ pattern: { name } }) => name)).toEqual([
+      'foo',
+      'space',
+    ]);
+  });
 });

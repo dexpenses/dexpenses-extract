@@ -49,16 +49,23 @@ export class TimeExtractor extends Extractor<Time> {
       if (!hasNoIllegalPrefix(text)(match.match)) {
         continue;
       }
-      const pt = DateTime.fromFormat(match.result, match.format, {
+      const time = DateTime.fromFormat(match.result, match.format, {
         zone: 'Europe/Berlin',
       });
-      if (!pt.isValid) {
+      if (!time.isValid) {
         throw new Error('invalid time parsing result should not happen');
       }
       return {
-        hour: pt.hour,
-        minute: pt.minute,
-        second: match.format.includes('ss') ? pt.second : null,
+        value: {
+          hour: time.hour,
+          minute: time.minute,
+          second: match.format.includes('ss') ? time.second : null,
+        },
+        meta: {
+          format: match.format,
+          index: match.match.index,
+          length: match.match[0].length,
+        },
       };
     }
     return null;

@@ -33,7 +33,7 @@ export class HeaderExtractor extends Extractor<string[]> {
       headerText = headerText.replace(irrelevantPattern, '');
     }
     headerLines = [...new Set(headerText.split('\n'))];
-    return headerLines
+    const value = headerLines
       .filter((s, i) => !this.isIrrelevantLine(s, i))
       .map((line) => {
         for (const fix of this.options.fixes) {
@@ -41,6 +41,7 @@ export class HeaderExtractor extends Extractor<string[]> {
         }
         return line;
       });
+    return { value };
   }
 
   public isIrrelevantLine(line: string, index: number): boolean {

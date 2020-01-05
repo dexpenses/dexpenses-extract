@@ -1,0 +1,8877 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Amount values extractor for "ec" receipts should only extract a single value for receipt "wob-sausalitos-2017.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 26.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "bs-star-neustadtring-30-dkv_card.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 62.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 46.46,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 62.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 62.67,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "esso-rueden.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 46.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 46.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 46.18,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "gf-hem-alt.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 16.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.47,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "goe-jet.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 45.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 66.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 66.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 66.19,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "goe-jet-bar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 20.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.97,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "hem-cremlingen.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 43.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 53.04,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 53.04,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 53.04,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "hmue-aral-hedemuendener-str-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 48.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 68.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 75.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 75.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 63.37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 75.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 75.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 75.41,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "wob-bft.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 39.17,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.15,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "wob-bft-waesche.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "gas_station" receipts should extract all relevant amount values from "wob-sb_tankstelle.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 47.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 42.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 47.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-asian-shop.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-bierothek-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 46.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 48.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 48.21,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-city-market.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-comixart.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.48,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-cunda.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.92,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-denns-biomarkt.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.57,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.76,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.66,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-dunkin-donuts.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-eberls-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.76,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-edeka-graf-stauffenberg-platz-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -7.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-karstadt.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 16.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.71,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-karstadt-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 59.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 68.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.92,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-karstadt-gutschein-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 59.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 42.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 30.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 38.04,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.07,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-licht-und-design.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 38.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 32.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 38.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 38.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-mayerische.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.28,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-mueller.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.94,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-osianderische-buchhandlung.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-osiandersche-buchhandlung-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.04,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.96,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-restaurant-tivoli.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.39,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-rewe.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.91,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-rewe-lange-str-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.34,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.07,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.82,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-stoffideen.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.05,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-tedi.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.93,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-tegut-bad-quality-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.51,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-welcome-kongress-hotel-plueckers.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 107.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.34,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 40.1,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-wollstudio.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.15,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-wong-asia-markt.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.89,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-zeis-restaurant.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 32.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 38.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bamberg-zeis-restaurant-2.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bielefeld-rancho-steakhouse.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-aldi-kastanienallee-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.88,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.86,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.17,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-aldi-kastanienallee-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-aldi-kastanienallee-small-amount-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-burger-king-berliner-platz.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.48,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-c-und-a-muenzstr-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.77,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-decathlon-2-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-decathlon-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 12.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.03,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-decathlon-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-edeka-kastanienallee.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.22,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.78,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-edeka-kastanienallee-2-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 41.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 41.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 41.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.17,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-edeka-kastanienallee-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.88,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 50,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -35,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.46,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.33,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.79,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-edeka-kastanienallee-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.83,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.83,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.83,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-edeka-kastanienallee-small-amount-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.96,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.94,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-elbenwald.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-h-und-m-bohlweg-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.03,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-ikea.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 5.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.61,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.38,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-jack-jones-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 30,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 30,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 30,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 30,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-jack-jones-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-l-osteria.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-liebeskuh-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.5,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-mcdonalds-hamburger-str-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 11.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.96,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.96,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-oil_and_vinegar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 15.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.04,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-peek-cloppenburg-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-penny.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.83,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.34,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.53,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-penny-kastanienallee.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.82,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-penny-kastanienallee-bar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.22,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-penny-kastanienallee-bar-2.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.56,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.04,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-penny-kastanienallee-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.22,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.84,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-real-hamburger.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 56.57,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-real-hamburger-str-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.66,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.66,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.32,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-real-otto-guericke.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 21.11,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-rewe-goslarsche.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.73,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.17,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 52.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 52.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 52.52,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-rewe-schloss.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 22.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 22.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 22.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.48,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-rewe-schlossarkaden-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.88,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 52.33,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 59.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.62,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 61.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.17,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.65,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-rossmann-berliner-platz-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-saturn.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 74.93,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-tee-gschwendner.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-tommy-hilfiger.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 119.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 99.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 219.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 219.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 219.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-triple-s-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 18.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 58.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 70,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 58.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.33,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.37,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "bs-zara-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 54.57,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 64.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 64.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 64.93,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "coe-ernstings-family-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "dbahn-bistro.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.02,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "dransfeld-raiffeisen-markt-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.96,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.74,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.74,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "dransfeld-rewe-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.21,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "dresden-butlers.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "duesseldorf-le-crobag.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.64,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-deutsche-post.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-la-taverna.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-liesegang-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.86,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.35,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.35,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-pizzeria-strandgut-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.74,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-the-cave.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.88,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eck-unknown-restaurant.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.8,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "eltmann-cafe-sauer-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.15,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-becker-modehaus-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 20.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.3,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-dm-steinweg-2-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.45,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-dm-steinweg-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.35,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -30,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.31,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-e-center-raiffeisenstr-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.3,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-edeka-weyhausen-2-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.43,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-edeka-weyhausen-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.33,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.73,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.34,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-netto-celler-str-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -6.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.91,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-penny-lehmweg-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.49,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-real-bad-print.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 26.94,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-real-eysselheideweg-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.53,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 50,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 34.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.53,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-real-eysselheideweg-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.62,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.34,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.61,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.75,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-real-eysselheideweg-small-receipt-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 41.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.35,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 41.65,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "gf-toom-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.26,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-bonita-kaufpark-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 89.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 119.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 119.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 119.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 100.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 109.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 119.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-cafe-del-sol.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 55.04,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 65.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 65.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 65.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 65.5,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-deichmann-otto-brenner-str-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.18,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-goertz.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 69.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-goertz-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 89.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -17.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 81.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 81.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 68.83,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 81.91,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-karstadt-groner-str.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.46,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.45,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-karstadt-umtausch.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": -27.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-obi-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.96,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 57.37,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.67,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-real-kaufpark-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.35,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-rossmann-kaufpark-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.81,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.46,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.11,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-s-oliver-kaufpark-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 31.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "goe-thalia-kaufpark-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.18,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "ha-vielhabers-brot-cafe-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.06,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-akia-handyshop.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 17.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-central-hotel-kaiserhof-gastro.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.57,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-dinea-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.57,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.56,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.33,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.24,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-elbenwald-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.82,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-esprit-hbf-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 45.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 45.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 45.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.34,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-galeria-kaufhof-seilwinderstr-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.2,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-goertz-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 16.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-marche.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.74,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.56,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hannover-zoo-gastro.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hi-galeria-kaufhof-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 89.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 152.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 152.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 152.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 128.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hm-s-oliver-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 30.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.75,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-edeka-daube-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 84.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 99.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 79.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.73,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 91.91,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-naturkost-faubel-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 33.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.19,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-schuhmann-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 79.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 85.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 85.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 85.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-stoff-und-stoeffchen-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.94,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.45,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-vockeroth-bad-print-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hmue-vockerroth-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 17.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 22.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 40.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 40.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hog-tierpark-sababurg-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.71,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "hog-tierpark-sababurg-long-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 36.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.93,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 43.4,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "kassel-ikea-full.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 230.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 40,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 190.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 190.69,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "ks-kamps-bhf-wilhemshoehe-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.12,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "leipzip-messebuchhandlung.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 12.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.85,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "messe-lebe-gesund-versand.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 23.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.85,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "messe-manga-mafia-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 50,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -25,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "unknown-tode.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 24.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 37.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.85,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-apotheke.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 27.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 27.87,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-barrique.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 13.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 13.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-buecher-behr.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.49,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-depot.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.08,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-dm.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-edeka.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.22,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.22,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.11,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.13,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 44.13,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-edeka-neuer-weg.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.31,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-edeka-neuer-weg-2-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.76,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.76,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-edeka-neuer-weg-3-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -18.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.28,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-edeka-neuer-weg-bar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -0.74,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.26,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-fleischerei-hass.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 7.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-fleischerei-heine.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-hellweg.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.24,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-jack-wolfskin-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 129.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -64.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 64.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 65,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.02,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-kienast-schuhe-1.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 69.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 69.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 11.17,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-kienast-schuhe-2.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 69.99,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-klier.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-nanu-nana.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 50,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 45.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.71,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-post.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.6,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-rewe-rodeland.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.97,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.97,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-rewe-rodeland-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 11.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-s-oliver-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 28.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 35.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -23.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 20.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 23.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 93.56,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 100,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.44,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 93.56,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 78.62,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-tamaris-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 25.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.14,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 25.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 50,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.05,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wf-wurst-basar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 12.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.91,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-altes-brauhaus-zu-fallersleben-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.64,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.16,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-burger-me-online.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.98,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-burgerme.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 17.26,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.21,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.47,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-daenisches-bettenlager.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 7.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 24.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 34.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 179,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 34.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 301.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 294.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 294.54,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 47.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 247.51,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-daenisches-bettenlager-bar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.48,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.51,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-daenisches-bettenlager-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5.03,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-e-center-raiffeisenstr-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.87,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.87,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-eat-with-heart.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.51,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.75,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 56.65,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-edeka.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.32,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.32,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-edeka-berliner-ring-bad-quality-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.18,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.69,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-globus-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.63,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.32,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-hornbach.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 8.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-hornbach-2.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 21.23,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-hornbach-small-amount-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.48,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-lieferando-hey-pizza.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 9.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.8,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 18.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-lieferando-quan-bao_thao.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.5,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-lieferando-smileys-online.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.68,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-lindt-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.49,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-media_markt.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 34.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 34.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 34.9,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-media_markt-bar.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.1,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.48,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-moemax.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.27,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.7,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-nypd-pizza.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 17.2,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.07,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.13,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-puma-outlet-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 31,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 67.23,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.77,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 80,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-real.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 83.89,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-real-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.58,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.38,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 55.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 55.03,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.88,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 28.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 22.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 26.91,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 55.03,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-real-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 39.95,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-real-full.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 13.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.74,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.25,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.59,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 32.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.7,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.9,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.19,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.98,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 112.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 112.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 56.3,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.02,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.68,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-rewe-braunschweiger-str-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.69,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 3.42,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 14.41,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.67,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 19.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.36,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 16.47,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 15.66,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-rewe-laagbergstr-cash.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.06,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 5,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.55,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.29,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.16,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.45,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-rewe-laagbergstr-credit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.99,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.78,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.89,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.05,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.79,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.05,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-rewe-laagbergstr-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 1.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 2.49,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.39,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.15,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.52,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.43,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.09,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 6.09,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-smileys.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.84,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.01,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-smileys-debit.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.4,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 9.72,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.68,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-smileys-paypal.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": -12.85,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.01,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.84,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12.85,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-subway.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 6,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 12,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 1.92,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 10.08,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0.31,
+  },
+]
+`;
+
+exports[`Amount values extractor for "normal" receipts should extract all relevant amount values from "wob-vw-arena-weihnachtsessen.txt" 1`] = `
+Array [
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 29.95,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 0,
+  },
+  Object {
+    "taxRelated": false,
+    "value": 4.78,
+  },
+]
+`;

@@ -1,4 +1,4 @@
-import Stage from './Stage';
+import Stage, { StageData } from './Stage';
 import { Receipt } from '@dexpenses/core';
 
 export type ReceiptResultState = 'no-text' | 'unreadable' | 'partial' | 'ready';
@@ -6,6 +6,9 @@ export type ReceiptResultState = 'no-text' | 'unreadable' | 'partial' | 'ready';
 export interface ExtractedReceipt {
   state: ReceiptResultState;
   data?: Receipt;
+  meta?: {
+    [name: string]: any;
+  };
 }
 
 export function isReceiptReady({ header, date, amount }: Receipt): boolean {
@@ -43,7 +46,7 @@ export default class Pipeline {
       };
     }
     const extracted: Receipt = {};
-    const data = { text, extracted, lines: text.split('\n') };
+    const data: StageData = { text, extracted, lines: text.split('\n') };
     for (const stage of this.pipeline) {
       if (Array.isArray(stage)) {
         await Promise.all(stage.map((s) => s.process(data)));
@@ -55,11 +58,13 @@ export default class Pipeline {
       return {
         state: 'unreadable',
         data: extracted, // could contains errors
+        meta: data.meta,
       };
     }
     return {
       state: isReceiptReady(extracted) ? 'ready' : 'partial',
       data: extracted,
+      meta: data.meta,
     };
   }
 }

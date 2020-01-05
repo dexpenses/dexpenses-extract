@@ -35,8 +35,12 @@ describe('Phonenumber extractor', () => {
       const extracted = {
         header: lines,
       };
-      const extractedPhone = extractor.extract('', lines, extracted);
-      expect(extractedPhone).toBe(phonenumber);
+      const extractedPhone = extractor.extract(
+        lines.join('\n'),
+        lines,
+        extracted
+      );
+      expect(extractedPhone).toEqual({ value: phonenumber });
     }
   });
 });

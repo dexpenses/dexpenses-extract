@@ -36,11 +36,7 @@ export class PaymentMethodExtractor extends Extractor<PaymentMethod> {
     super('paymentMethod');
   }
 
-  public extract(
-    text: string,
-    lines: string[],
-    extracted: Receipt
-  ): PaymentMethod | null {
+  public extract(text: string, lines: string[], extracted: Receipt) {
     for (const [method, identifiers] of Object.entries(
       paymentMethodIdentifiers
     )) {
@@ -48,7 +44,7 @@ export class PaymentMethodExtractor extends Extractor<PaymentMethod> {
         if (
           anyLineMatches(lines, (line) => line.match(identifier)).isPresent()
         ) {
-          return method as PaymentMethod;
+          return { value: method as PaymentMethod };
         }
       }
     }

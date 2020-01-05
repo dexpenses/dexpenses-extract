@@ -1,4 +1,14 @@
-import { desc, descBy, max, maxBy, getMostFrequent } from './array';
+import { desc, descBy, max, maxBy, getMostFrequent, range } from './array';
+
+describe('utils/array/range', () => {
+  it.each([
+    [0, []],
+    [1, [0]],
+    [2, [0, 1]],
+  ])('range(%s) should be %s', (exclusiveEnd, expected) => {
+    expect(range(exclusiveEnd)).toEqual(expected);
+  });
+});
 
 describe('utils/array/sort', () => {
   it('should work for plain numbers', () => {

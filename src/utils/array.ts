@@ -1,3 +1,7 @@
+export function range(exclusiveEnd: number) {
+  return [...Array(exclusiveEnd).keys()];
+}
+
 export function desc() {
   return descBy((x: number) => x);
 }

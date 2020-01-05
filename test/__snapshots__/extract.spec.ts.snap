@@ -24,6 +24,18 @@ Object {
       },
       "timestamp": 2019-07-29T11:33:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "^dd MM yyyy$",
+        "index": 119,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 142,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -52,6 +64,18 @@ Object {
         "second": 40,
       },
       "timestamp": 2019-07-30T19:18:40.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 90,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm ss 'Uhr'",
+        "index": 101,
+        "length": 12,
+      },
     },
     "state": "ready",
   },
@@ -82,6 +106,18 @@ Object {
       },
       "timestamp": 2019-04-27T17:00:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 213,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 213,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -110,6 +146,18 @@ Object {
         "second": 48,
       },
       "timestamp": 2018-08-11T17:42:48.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 97,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm:ss",
+        "index": 108,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -140,6 +188,18 @@ Object {
       },
       "timestamp": 2018-08-27T18:43:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 223,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 223,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -168,6 +228,18 @@ Object {
         "second": 49,
       },
       "timestamp": 2019-05-13T18:30:49.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 68,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 79,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -198,6 +270,18 @@ Object {
       },
       "timestamp": 2019-08-09T19:50:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 248,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 248,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -226,6 +310,18 @@ Object {
         "second": 32,
       },
       "timestamp": 2019-05-06T18:33:32.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 60,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 72,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -256,6 +352,18 @@ Object {
       },
       "timestamp": 2019-07-15T12:18:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 367,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 367,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -284,6 +392,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-06T13:33:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 367,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 367,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -314,6 +434,18 @@ Object {
       },
       "timestamp": 2018-12-20T14:57:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 241,
+        "length": 16,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 241,
+        "length": 16,
+      },
+    },
     "state": "ready",
   },
 }
@@ -341,6 +473,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-08T12:14:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 357,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 357,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -370,6 +514,18 @@ Object {
         "second": 11,
       },
       "timestamp": 2019-07-19T11:23:11.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 89,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm:ss",
+        "index": 100,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -402,6 +558,18 @@ Object {
       },
       "timestamp": 2019-08-10T11:57:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "^dd MM yyyy$",
+        "index": 146,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 257,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -428,6 +596,18 @@ Object {
         "second": 17,
       },
       "timestamp": 2019-06-10T18:36:17.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 170,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 32,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -459,6 +639,18 @@ Object {
       },
       "timestamp": 2019-07-08T15:18:08.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 83,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm:ss",
+        "index": 94,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -488,6 +680,18 @@ Object {
       },
       "timestamp": 2018-12-20T15:37:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 262,
+        "length": 16,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 262,
+        "length": 16,
+      },
+    },
     "state": "ready",
   },
 }
@@ -516,6 +720,18 @@ Object {
         "second": 21,
       },
       "timestamp": 2019-08-15T15:39:21.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 113,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 124,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -547,6 +763,18 @@ Object {
       },
       "timestamp": 2019-06-16T19:26:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 145,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 130,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -576,6 +804,18 @@ Object {
         "second": 48,
       },
       "timestamp": 2018-06-16T23:20:48.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 142,
+        "length": 12,
+      },
+      "time": Object {
+        "format": "^HH mm:ss",
+        "index": 155,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -607,6 +847,18 @@ Object {
       },
       "timestamp": 2019-07-31T20:31:05.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 108,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 119,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -635,6 +887,18 @@ Object {
         "second": 47,
       },
       "timestamp": 2019-07-04T11:37:47.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 93,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm ss 'Uhr'",
+        "index": 140,
+        "length": 12,
+      },
     },
     "state": "ready",
   },
@@ -666,6 +930,18 @@ Object {
       },
       "timestamp": 2016-12-08T10:56:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 114,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 114,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -695,6 +971,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-17T16:07:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 152,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 250,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -726,6 +1014,18 @@ Object {
       },
       "timestamp": 2019-08-05T14:40:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 238,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 238,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -755,6 +1055,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-11T14:18:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 139,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 162,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -786,6 +1098,18 @@ Object {
       },
       "timestamp": 2018-05-23T17:47:44.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 121,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 133,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -814,6 +1138,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-21T10:27:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 107,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 195,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -844,6 +1180,18 @@ Object {
       },
       "timestamp": 2019-09-14T16:18:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 114,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 208,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -871,6 +1219,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-21T06:49:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 443,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 443,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -902,6 +1262,18 @@ Object {
       },
       "timestamp": 2019-08-03T15:20:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 390,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 314,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -932,6 +1304,18 @@ Object {
       },
       "timestamp": 2019-08-03T15:16:43.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 77,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 88,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -960,6 +1344,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-04-13T11:03:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 100,
+        "length": 15,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 100,
+        "length": 15,
+      },
     },
     "state": "ready",
   },
@@ -991,6 +1387,18 @@ Object {
       },
       "timestamp": 2019-04-13T12:03:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 278,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 278,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1021,6 +1429,18 @@ Object {
       },
       "timestamp": 2019-04-13T13:01:06.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 131,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 99,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1044,6 +1464,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-04-19T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 150,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -1074,6 +1501,18 @@ Object {
       },
       "timestamp": 2019-08-01T15:24:50.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 120,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm ss 'Uhr'",
+        "index": 131,
+        "length": 12,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1102,6 +1541,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-05T14:43:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 126,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 198,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -1133,6 +1584,18 @@ Object {
       },
       "timestamp": 2019-08-06T15:46:39.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 103,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm ss$",
+        "index": 114,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1162,6 +1625,18 @@ Object {
       },
       "timestamp": 2018-08-05T13:38:23.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 85,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 132,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1188,6 +1663,18 @@ Object {
         "second": 48,
       },
       "timestamp": 2018-05-23T16:58:48.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 172,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 183,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -1218,6 +1705,18 @@ Object {
       },
       "timestamp": 2018-08-28T16:02:51.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 75,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 102,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1241,6 +1740,7 @@ Object {
       "place": null,
       "time": null,
     },
+    "meta": undefined,
     "state": "partial",
   },
 }
@@ -1271,6 +1771,18 @@ Object {
       },
       "timestamp": 2018-12-13T06:45:08.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 81,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm ss 'Uhr'",
+        "index": 107,
+        "length": 12,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1294,6 +1806,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2017-08-30T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 145,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -1322,6 +1841,18 @@ Object {
         "second": 46,
       },
       "timestamp": 2018-12-13T07:12:46.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 81,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 92,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -1352,6 +1883,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-10T17:21:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 145,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 238,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -1385,6 +1928,18 @@ Object {
       },
       "timestamp": 2018-12-16T16:36:47.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 134,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 146,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1414,6 +1969,18 @@ Object {
         "second": 31,
       },
       "timestamp": 2018-12-15T17:10:31.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 69,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 80,
+        "length": 9,
+      },
     },
     "state": "ready",
   },
@@ -1445,6 +2012,18 @@ Object {
       },
       "timestamp": 2019-08-23T14:23:53.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 64,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm:ss",
+        "index": 109,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1473,6 +2052,18 @@ Object {
       },
       "timestamp": 2019-06-22T19:35:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 68,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 139,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1500,6 +2091,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-22T19:33:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 80,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 232,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -1531,6 +2134,18 @@ Object {
       },
       "timestamp": 2019-09-02T15:31:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 257,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 257,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1559,6 +2174,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-18T15:08:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 113,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 107,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -1590,6 +2217,18 @@ Object {
       },
       "timestamp": 2017-08-28T18:33:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 91,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 91,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1620,6 +2259,18 @@ Object {
       },
       "timestamp": 2018-08-30T18:28:35.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 85,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 97,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1649,6 +2300,18 @@ Object {
       },
       "timestamp": 2019-03-14T17:53:57.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 84,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm ss 'Uhr'",
+        "index": 95,
+        "length": 12,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1677,6 +2340,18 @@ Object {
         "second": 57,
       },
       "timestamp": 2019-08-03T18:30:57.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 114,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 125,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -1708,6 +2383,18 @@ Object {
       },
       "timestamp": 2019-08-31T16:58:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 284,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 284,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1737,6 +2424,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-17T21:14:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 150,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 150,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -1769,6 +2468,18 @@ Object {
       },
       "timestamp": 2019-04-19T07:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 150,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 161,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1798,6 +2509,18 @@ Object {
         "second": 16,
       },
       "timestamp": 2019-05-30T16:14:16.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 784,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 426,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -1829,6 +2552,18 @@ Object {
       },
       "timestamp": 2019-05-12T17:22:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 571,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 571,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1858,6 +2593,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-02T08:16:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 293,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 293,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -1889,6 +2636,18 @@ Object {
       },
       "timestamp": 2018-08-01T04:24:29.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 516,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 314,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1918,6 +2677,18 @@ Object {
         "second": 58,
       },
       "timestamp": 2019-08-01T15:31:58.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 159,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 756,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -1949,6 +2720,18 @@ Object {
       },
       "timestamp": 2019-05-25T07:58:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 216,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 227,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -1978,6 +2761,18 @@ Object {
         "second": 1,
       },
       "timestamp": 2019-06-06T15:45:01.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 216,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 384,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -2009,6 +2804,18 @@ Object {
       },
       "timestamp": 2019-04-30T15:37:08.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 316,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 327,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2033,6 +2840,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-01-17T23:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 128,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -2063,6 +2877,18 @@ Object {
       },
       "timestamp": 2019-07-27T14:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 1094,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 1105,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2091,6 +2917,18 @@ Object {
       },
       "timestamp": 2018-11-06T15:16:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 386,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 386,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2116,6 +2954,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-04-26T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 142,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -2145,6 +2990,18 @@ Object {
         "second": 53,
       },
       "timestamp": 2019-01-31T12:54:53.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 883,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 185,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -2176,6 +3033,18 @@ Object {
       },
       "timestamp": 2018-11-07T15:14:29.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 114,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 125,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2205,6 +3074,18 @@ Object {
       },
       "timestamp": 2019-04-27T13:26:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 232,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 217,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2233,6 +3114,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-26T14:46:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 143,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 154,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2266,6 +3159,18 @@ Object {
       },
       "timestamp": 2019-08-07T17:22:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 610,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 610,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2295,6 +3200,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-02-08T09:59:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 194,
+        "length": 12,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 231,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2326,6 +3243,18 @@ Object {
       },
       "timestamp": 2019-07-24T11:58:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 523,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 517,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2356,6 +3285,18 @@ Object {
       },
       "timestamp": 2019-07-24T11:56:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 648,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 642,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2380,6 +3321,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-07-28T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 219,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -2410,6 +3358,18 @@ Object {
       },
       "timestamp": 2019-04-02T10:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 145,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 159,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2438,6 +3398,18 @@ Object {
       },
       "timestamp": 2019-04-24T07:32:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 551,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 562,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2464,6 +3436,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-02-08T10:07:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 723,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 723,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -2494,6 +3478,18 @@ Object {
       },
       "timestamp": 2019-07-24T12:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1057,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1057,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2521,6 +3517,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-29T17:59:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 76,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 520,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2551,6 +3559,18 @@ Object {
       },
       "timestamp": 2019-04-27T13:22:13.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 243,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 255,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2579,6 +3599,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-31T17:21:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 334,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 315,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2612,6 +3644,18 @@ Object {
       },
       "timestamp": 2018-12-17T13:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 255,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 255,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2643,6 +3687,18 @@ Object {
       },
       "timestamp": 2018-12-17T13:30:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 356,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 366,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2671,6 +3727,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-31T10:11:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 556,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH mm",
+        "index": 556,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -2702,6 +3770,18 @@ Object {
       },
       "timestamp": 2019-07-26T19:34:52.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 180,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 171,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2728,6 +3808,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2018-11-26T23:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 162,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -2757,6 +3844,18 @@ Object {
         "second": null,
       },
       "timestamp": 2013-01-18T10:55:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 55,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 66,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2789,6 +3888,18 @@ Object {
       },
       "timestamp": 2019-04-26T18:54:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 123,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 134,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2820,6 +3931,18 @@ Object {
       },
       "timestamp": 2019-07-21T16:56:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 149,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 160,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2850,6 +3973,18 @@ Object {
       },
       "timestamp": 2019-02-25T19:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 79,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 90,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2877,6 +4012,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-14T17:59:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 471,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 465,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -2907,6 +4054,18 @@ Object {
       },
       "timestamp": 2019-08-29T15:13:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 536,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 536,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2934,6 +4093,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-19T13:40:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 468,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 468,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -2963,6 +4134,18 @@ Object {
       },
       "timestamp": 2019-05-29T18:32:47.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 93,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 104,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -2991,6 +4174,18 @@ Object {
         "second": 6,
       },
       "timestamp": 2019-07-08T14:12:06.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 342,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 353,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3022,6 +4217,18 @@ Object {
       },
       "timestamp": 2019-07-15T12:19:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yy",
+        "index": 283,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 292,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3052,6 +4259,18 @@ Object {
       },
       "timestamp": 2019-08-06T13:20:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yy",
+        "index": 314,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 323,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3081,6 +4300,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-06T13:33:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yy",
+        "index": 229,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 238,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -3113,6 +4344,18 @@ Object {
       },
       "timestamp": 2019-05-28T17:06:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 412,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 412,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3143,6 +4386,18 @@ Object {
       },
       "timestamp": 2019-06-08T13:14:33.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 522,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 533,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3172,6 +4427,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-02T12:32:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1187,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1187,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -3204,6 +4471,18 @@ Object {
       },
       "timestamp": 2019-07-01T16:16:18.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 328,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 339,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3234,6 +4513,18 @@ Object {
         "second": 55,
       },
       "timestamp": 2019-08-19T13:44:55.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 767,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 260,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3267,6 +4558,18 @@ Object {
       },
       "timestamp": 2018-12-20T14:58:12.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 385,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 396,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3298,6 +4601,18 @@ Object {
       },
       "timestamp": 2019-07-08T11:21:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 210,
+        "length": 12,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 229,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3327,6 +4642,18 @@ Object {
       },
       "timestamp": 2019-01-05T09:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 750,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 750,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3355,6 +4682,18 @@ Object {
       },
       "timestamp": 2019-07-15T11:49:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 323,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 334,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3382,6 +4721,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-08T12:15:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 406,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 417,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -3413,6 +4764,18 @@ Object {
       },
       "timestamp": 2019-08-10T11:57:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 132,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 143,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3443,6 +4806,18 @@ Object {
       },
       "timestamp": 2019-07-29T18:27:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 148,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 159,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3471,6 +4846,18 @@ Object {
         "second": 18,
       },
       "timestamp": 2019-06-10T18:36:18.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 133,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 144,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3503,6 +4890,18 @@ Object {
       },
       "timestamp": 2018-12-20T15:37:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "ddMMyyyy",
+        "index": 404,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 413,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3531,6 +4930,18 @@ Object {
         "second": 1,
       },
       "timestamp": 2019-08-15T15:39:01.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 241,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 252,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3561,6 +4972,18 @@ Object {
       },
       "timestamp": 2018-08-11T10:13:48.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 290,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 301,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3589,6 +5012,18 @@ Object {
         "second": 22,
       },
       "timestamp": 2019-05-13T18:00:22.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 376,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 387,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3619,6 +5054,18 @@ Object {
       },
       "timestamp": 2019-05-15T17:02:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 375,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 397,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3648,6 +5095,18 @@ Object {
       },
       "timestamp": 2019-06-04T15:21:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 448,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 408,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3676,6 +5135,18 @@ Object {
         "second": 27,
       },
       "timestamp": 2019-08-19T13:49:27.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 280,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 291,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3707,6 +5178,18 @@ Object {
       },
       "timestamp": 2019-05-24T16:01:46.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 75,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 86,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3736,6 +5219,18 @@ Object {
         "second": 2,
       },
       "timestamp": 2019-07-12T18:14:02.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 688,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 699,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3767,6 +5262,18 @@ Object {
       },
       "timestamp": 2019-05-29T18:05:28.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 80,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 91,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3796,6 +5303,18 @@ Object {
       },
       "timestamp": 2018-08-03T17:43:04.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 503,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 515,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3824,6 +5343,18 @@ Object {
         "second": 22,
       },
       "timestamp": 2018-12-08T14:59:22.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 413,
+        "length": 12,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 426,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3855,6 +5386,18 @@ Object {
       },
       "timestamp": 2019-08-06T16:13:09.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 431,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 442,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3883,6 +5426,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-07T12:48:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 31,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 42,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -3913,6 +5468,18 @@ Object {
       },
       "timestamp": 2018-12-20T15:31:06.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 664,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 675,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -3940,6 +5507,18 @@ Object {
         "second": 14,
       },
       "timestamp": 2018-12-20T15:44:14.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 103,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 122,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -3971,6 +5550,18 @@ Object {
       },
       "timestamp": 2018-12-08T14:39:22.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 379,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 390,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4001,6 +5592,18 @@ Object {
       },
       "timestamp": 2019-07-11T14:13:21.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 158,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 169,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4028,6 +5631,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-08T13:03:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 123,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 134,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4060,6 +5675,18 @@ Object {
       },
       "timestamp": 2019-09-11T09:50:30.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 143,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 154,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4088,6 +5715,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-06-06T18:03:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "ddMM-yyyy",
+        "index": 166,
+        "length": 9,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 176,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4118,6 +5757,18 @@ Object {
       },
       "timestamp": 2019-08-22T11:01:22.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 136,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 145,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4146,6 +5797,18 @@ Object {
         "second": 35,
       },
       "timestamp": 2019-08-14T11:19:35.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 933,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 944,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -4177,6 +5840,18 @@ Object {
       },
       "timestamp": 2016-12-09T12:09:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 661,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 661,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4207,6 +5882,18 @@ Object {
       },
       "timestamp": 2019-04-01T16:35:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 126,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 138,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4234,6 +5921,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-22T17:42:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 41,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 52,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4265,6 +5964,18 @@ Object {
       },
       "timestamp": 2019-08-17T12:59:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 122,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 133,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4295,6 +6006,18 @@ Object {
       },
       "timestamp": 2019-08-22T16:11:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 204,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 218,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4324,6 +6047,18 @@ Object {
         "second": 0,
       },
       "timestamp": 2019-08-20T17:35:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 142,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 153,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -4356,6 +6091,18 @@ Object {
       },
       "timestamp": 2019-08-22T17:18:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 171,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 182,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4383,6 +6130,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-17T13:31:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MMM.yy",
+        "index": 36,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 47,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4414,6 +6173,18 @@ Object {
       },
       "timestamp": 2019-07-23T09:30:05.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 88,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 99,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4443,6 +6214,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-05T13:35:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 178,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 189,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4474,6 +6257,18 @@ Object {
       },
       "timestamp": 2019-08-05T13:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 96,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 107,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4503,6 +6298,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-05T11:44:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 98,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 109,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4534,6 +6341,18 @@ Object {
         "second": 20,
       },
       "timestamp": 2019-08-31T16:16:20.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 369,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 380,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -4567,6 +6386,18 @@ Object {
       },
       "timestamp": 2019-09-06T11:54:51.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1023,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 507,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4599,6 +6430,18 @@ Object {
       },
       "timestamp": 2019-09-07T07:34:58.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 1318,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 886,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4628,6 +6471,18 @@ Object {
       },
       "timestamp": 2019-07-29T10:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 74,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 923,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4656,6 +6511,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-29T16:01:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 289,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 311,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4687,6 +6554,18 @@ Object {
       },
       "timestamp": 2019-05-17T16:53:48.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 96,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 107,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4716,6 +6595,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-28T15:37:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 319,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 319,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -4747,6 +6638,18 @@ Object {
       },
       "timestamp": 2019-08-02T14:45:17.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 551,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 562,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4776,6 +6679,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-07-06T19:27:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "d.MM.yy",
+        "index": 234,
+        "length": 7,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 242,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -4808,6 +6723,18 @@ Object {
       },
       "timestamp": 2019-07-30T10:36:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 351,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 362,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4839,6 +6766,18 @@ Object {
       },
       "timestamp": 2017-08-14T10:31:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "yyyy-MM-dd",
+        "index": 107,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 118,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4863,6 +6802,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-11T14:19:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MMM-yy",
+        "index": 74,
+        "length": 9,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 84,
+        "length": 5,
+      },
     },
     "state": "partial",
   },
@@ -4893,6 +6844,18 @@ Object {
         "second": 40,
       },
       "timestamp": 2019-08-13T08:39:40.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 281,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 297,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -4925,6 +6888,18 @@ Object {
       },
       "timestamp": 2018-03-29T10:23:14.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 370,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 395,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4955,6 +6930,18 @@ Object {
       },
       "timestamp": 2018-03-29T10:28:40.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 442,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 453,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -4980,6 +6967,7 @@ Object {
       "place": null,
       "time": null,
     },
+    "meta": undefined,
     "state": "partial",
   },
 }
@@ -5009,6 +6997,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-01-07T11:43:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 897,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 908,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5040,6 +7040,18 @@ Object {
       },
       "timestamp": 2018-05-26T12:25:48.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 284,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 295,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5070,6 +7082,18 @@ Object {
       },
       "timestamp": 2017-12-07T16:01:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "d.MM.yy",
+        "index": 316,
+        "length": 7,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 324,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5097,6 +7121,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-13T10:06:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 28,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 39,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5127,6 +7163,18 @@ Object {
         "second": null,
       },
       "timestamp": 2017-12-07T15:52:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 136,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 147,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5159,6 +7207,18 @@ Object {
       },
       "timestamp": 2019-08-13T08:01:15.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 331,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 342,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5188,6 +7248,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-21T06:53:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "d.M.yyyy",
+        "index": 334,
+        "length": 9,
+      },
+      "time": Object {
+        "format": "h:mm",
+        "index": 329,
+        "length": 4,
+      },
     },
     "state": "ready",
   },
@@ -5220,6 +7292,18 @@ Object {
       },
       "timestamp": 2017-09-01T13:23:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 247,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 258,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5243,6 +7327,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-08-02T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 121,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -5274,6 +7365,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-03T13:23:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 561,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 586,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5307,6 +7410,18 @@ Object {
       },
       "timestamp": 2019-08-02T12:20:59.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 542,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 553,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5335,6 +7450,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-02-06T08:02:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 351,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 362,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5366,6 +7493,18 @@ Object {
       },
       "timestamp": 2019-08-03T14:09:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 524,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 549,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5395,6 +7534,18 @@ Object {
         "second": 0,
       },
       "timestamp": 2019-08-03T11:14:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 471,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 462,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -5427,6 +7578,18 @@ Object {
       },
       "timestamp": 2019-03-17T09:06:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 101,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 112,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5458,6 +7621,18 @@ Object {
       },
       "timestamp": 2019-05-25T11:40:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 325,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 293,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5488,6 +7663,18 @@ Object {
       },
       "timestamp": 2018-04-14T12:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 658,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 375,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5516,6 +7703,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-06-23T11:10:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 92,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 103,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5548,6 +7747,18 @@ Object {
       },
       "timestamp": 2019-08-01T15:25:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 1737,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 1731,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5576,6 +7787,18 @@ Object {
         "second": 53,
       },
       "timestamp": 2019-08-14T15:32:53.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 83,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 94,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -5606,6 +7829,18 @@ Object {
       },
       "timestamp": 2017-12-09T14:14:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 176,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 170,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5630,6 +7865,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2019-08-04T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 194,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -5662,6 +7904,18 @@ Object {
       },
       "timestamp": 2018-05-18T08:12:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 140,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 151,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5693,6 +7947,18 @@ Object {
       },
       "timestamp": 2017-12-17T14:25:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 141,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 152,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5720,6 +7986,18 @@ Object {
       },
       "timestamp": 2019-08-12T11:26:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 243,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 254,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5746,6 +8024,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-12T11:29:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 540,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 551,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5775,6 +8065,18 @@ Object {
       },
       "timestamp": 2018-12-22T13:38:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 722,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 722,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5801,6 +8103,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-02T06:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "ddMMM yy",
+        "index": 72,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 220,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5831,6 +8145,18 @@ Object {
       },
       "timestamp": 2019-03-23T15:20:46.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 279,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 290,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5858,6 +8184,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-05-31T11:47:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 82,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 93,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5888,6 +8226,18 @@ Object {
       },
       "timestamp": 2019-09-07T13:48:39.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "d-M-yyyy",
+        "index": 164,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "^HH mm ss$",
+        "index": 172,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5916,6 +8266,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-06-15T15:27:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd-MM-yyyy",
+        "index": 66,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 210,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -5947,6 +8309,18 @@ Object {
       },
       "timestamp": 2017-09-27T15:16:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 524,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 535,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -5976,6 +8350,18 @@ Object {
       },
       "timestamp": 2018-12-01T09:48:28.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 126,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 137,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6002,6 +8388,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2018-08-27T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 170,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -6035,6 +8428,18 @@ Object {
       },
       "timestamp": 2018-12-01T09:35:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 586,
+        "length": 15,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 586,
+        "length": 15,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6063,6 +8468,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-12-05T16:21:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 110,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 121,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -6093,6 +8510,18 @@ Object {
         "second": 16,
       },
       "timestamp": 2018-05-26T10:05:16.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 799,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 810,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6126,6 +8555,18 @@ Object {
       },
       "timestamp": 2019-05-21T11:40:33.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 432,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 443,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6157,6 +8598,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-20T08:19:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 480,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 480,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -6190,6 +8643,18 @@ Object {
       },
       "timestamp": 2019-06-28T11:21:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 424,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 424,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6221,6 +8686,18 @@ Object {
       },
       "timestamp": 2019-05-27T11:49:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 448,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 448,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6251,6 +8728,18 @@ Object {
       },
       "timestamp": 2017-09-23T10:22:59.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "d-M-yyyy",
+        "index": 161,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "^HH mm ss$",
+        "index": 171,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6279,6 +8768,18 @@ Object {
         "second": 42,
       },
       "timestamp": 2017-09-28T13:47:42.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 78,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 321,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6311,6 +8812,18 @@ Object {
       },
       "timestamp": 2018-10-27T10:17:32.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 200,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 211,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6342,6 +8855,18 @@ Object {
       },
       "timestamp": 2018-06-09T12:11:27.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 183,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 199,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6371,6 +8896,18 @@ Object {
       },
       "timestamp": 2018-12-08T11:39:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 390,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 390,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6399,6 +8936,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-12-08T11:42:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 200,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 200,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -6431,6 +8980,18 @@ Object {
       },
       "timestamp": 2018-12-19T16:23:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 220,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 210,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6461,6 +9022,18 @@ Object {
       },
       "timestamp": 2018-08-28T16:03:25.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 489,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 480,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6484,6 +9057,13 @@ Object {
       "place": null,
       "time": null,
       "timestamp": 2018-07-27T22:00:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 45,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6514,6 +9094,18 @@ Object {
       },
       "timestamp": 2018-11-06T16:07:21.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 180,
+        "length": 12,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 193,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6542,6 +9134,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-26T07:46:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 266,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 247,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -6574,6 +9178,18 @@ Object {
       },
       "timestamp": 2018-06-09T11:56:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 754,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 754,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6602,6 +9218,18 @@ Object {
         "second": 28,
       },
       "timestamp": 2018-06-09T10:55:28.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 150,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 141,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6632,6 +9260,18 @@ Object {
         "second": 17,
       },
       "timestamp": 2018-12-08T11:43:17.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 121,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 132,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6665,6 +9305,18 @@ Object {
       },
       "timestamp": 2019-07-10T17:22:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "d.M.yyyy",
+        "index": 353,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 347,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6696,6 +9348,18 @@ Object {
       },
       "timestamp": 2019-06-27T16:26:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 210,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 223,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6724,6 +9388,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-04-05T16:56:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 184,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 195,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -6756,6 +9432,18 @@ Object {
         "second": 49,
       },
       "timestamp": 2018-12-15T17:10:49.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 959,
+        "length": 11,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 976,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6790,6 +9478,18 @@ Object {
       },
       "timestamp": 2019-06-04T16:24:54.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 399,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 415,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6823,6 +9523,18 @@ Object {
       },
       "timestamp": 2019-08-23T14:23:27.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 483,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 499,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6854,6 +9566,18 @@ Object {
       },
       "timestamp": 2019-08-16T18:10:42.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 851,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 287,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6880,6 +9604,18 @@ Object {
         "second": 12,
       },
       "timestamp": 2019-08-25T14:34:12.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 73,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 84,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -6915,6 +9651,18 @@ Object {
       },
       "timestamp": 2019-02-22T15:58:57.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 420,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 431,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6947,6 +9695,18 @@ Object {
       },
       "timestamp": 2019-06-22T19:57:04.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 338,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 349,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -6975,6 +9735,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-09-06T16:15:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 518,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 518,
+        "length": 14,
+      },
     },
     "state": "ready",
   },
@@ -7008,6 +9780,18 @@ Object {
       },
       "timestamp": 2019-01-19T16:46:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 821,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 879,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7039,6 +9823,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-06-04T16:15:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy",
+        "index": 624,
+        "length": 8,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 640,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7072,6 +9868,18 @@ Object {
       },
       "timestamp": 2019-03-23T15:18:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 932,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 567,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7100,6 +9908,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-05-22T13:02:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "yyyy-MM-dd",
+        "index": 86,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 100,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7130,6 +9950,18 @@ Object {
       },
       "timestamp": 2019-05-08T12:10:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 44,
+        "length": 15,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 44,
+        "length": 15,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7158,6 +9990,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-22T16:36:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 165,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 176,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7191,6 +10035,18 @@ Object {
       },
       "timestamp": 2019-09-02T15:32:43.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 125,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 243,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7220,6 +10076,18 @@ Object {
         "second": 38,
       },
       "timestamp": 2019-03-16T16:18:38.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 267,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 278,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -7251,6 +10119,18 @@ Object {
       },
       "timestamp": 2019-06-06T15:32:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 490,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 501,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7278,6 +10158,18 @@ Object {
         "second": null,
       },
       "timestamp": 2018-12-15T13:25:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 215,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 226,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7309,6 +10201,18 @@ Object {
       },
       "timestamp": 2018-12-18T17:34:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 254,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 265,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7338,6 +10242,18 @@ Object {
         "second": 38,
       },
       "timestamp": 2019-07-18T15:01:38.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "M/dd/yyyy",
+        "index": 186,
+        "length": 9,
+      },
+      "time": Object {
+        "format": "h:mm:ss a",
+        "index": 196,
+        "length": 10,
+      },
     },
     "state": "ready",
   },
@@ -7369,6 +10285,18 @@ Object {
       },
       "timestamp": 2019-03-30T18:10:28.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 95,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 106,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7398,6 +10326,18 @@ Object {
         "second": 51,
       },
       "timestamp": 2019-08-24T18:23:51.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 763,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 1002,
+        "length": 8,
+      },
     },
     "state": "ready",
   },
@@ -7429,6 +10369,18 @@ Object {
       },
       "timestamp": 2018-12-15T17:42:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 185,
+        "length": 14,
+      },
+      "time": Object {
+        "format": "dd.MM.yy HH:mm",
+        "index": 185,
+        "length": 14,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7457,6 +10409,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-05-04T18:11:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "d.MM.yy",
+        "index": 936,
+        "length": 7,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 944,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7487,6 +10451,18 @@ Object {
       },
       "timestamp": 2019-09-06T15:14:07.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 283,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 294,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7515,6 +10491,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-08-16T13:38:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 281,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 292,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7545,6 +10533,18 @@ Object {
       },
       "timestamp": 2019-06-19T16:57:51.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 310,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 321,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7574,6 +10574,18 @@ Object {
       },
       "timestamp": 2019-08-20T15:13:39.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 232,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 243,
+        "length": 9,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7601,6 +10613,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-03-14T17:27:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 214,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 225,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7631,6 +10655,18 @@ Object {
       },
       "timestamp": 2019-08-03T17:51:00.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 230,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 224,
+        "length": 5,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7658,6 +10694,18 @@ Object {
         "second": null,
       },
       "timestamp": 2019-04-03T18:19:00.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 219,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm",
+        "index": 230,
+        "length": 5,
+      },
     },
     "state": "ready",
   },
@@ -7688,6 +10736,18 @@ Object {
       },
       "timestamp": 2018-10-20T16:14:05.000Z,
     },
+    "meta": Object {
+      "date": Object {
+        "format": "dd/MM/yyyy",
+        "index": 108,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 119,
+        "length": 8,
+      },
+    },
     "state": "ready",
   },
 }
@@ -7717,6 +10777,18 @@ Object {
         "second": 11,
       },
       "timestamp": 2018-12-13T20:32:11.000Z,
+    },
+    "meta": Object {
+      "date": Object {
+        "format": "dd.MM.yyyy",
+        "index": 236,
+        "length": 10,
+      },
+      "time": Object {
+        "format": "HH:mm:ss",
+        "index": 247,
+        "length": 8,
+      },
     },
     "state": "ready",
   },

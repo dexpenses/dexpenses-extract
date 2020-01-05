@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`amount-value.model should throw error if amountValuePattern does not have the global flag 1`] = `"amountValuePattern must have global flag"`;
+
+exports[`amount-value.model should throw error if amountValuePattern has multiple capture group 1`] = `"amountValuePattern must have a single capture group"`;
+
+exports[`amount-value.model should throw error if amountValuePattern has no capture group 1`] = `"amountValuePattern must have a single capture group"`;
+
+exports[`amount-value.model should throw error if empty original string occurs in replacements 1`] = `"empty replacement pattern is not allowed"`;
+
+exports[`amount-value.model should throw error if illegalAmountPrefixPattern does not end in $ 1`] = `"illegal pattern source /ha\\\\$ha ?/ does not match regex /(?<!\\\\\\\\)\\\\$$/"`;
+
+exports[`amount-value.model should throw error if illegalAmountPrefixPattern ends with literal "\\$" 1`] = `"illegal pattern source /ha\\\\$/ does not match regex /(?<!\\\\\\\\)\\\\$$/"`;
+
+exports[`amount-value.model should throw error if illegalAmountSuffixPattern does not start with ^ 1`] = `"illegal pattern source /ha\\\\^ha ?/ does not match regex /^\\\\^/"`;
+
+exports[`amount-value.model should throw error if illegalAmountSuffixPattern starts with literal ^ 1`] = `"illegal pattern source /\\\\^ha ?/ does not match regex /^\\\\^/"`;

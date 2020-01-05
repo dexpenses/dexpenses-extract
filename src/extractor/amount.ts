@@ -2,14 +2,73 @@ import { Extractor } from './extractor';
 import { Receipt, Amount } from '@dexpenses/core';
 import { DependsOn } from '../pipeline/DependsOn';
 import { PaymentMethodExtractor } from './paymentMethod';
-import {
-  getAllMatches,
-  anyMatches as anyRegexMatches,
-} from '../utils/regex-utils';
-import { anyMatches } from './util';
+import { anyMatches as anyRegexMatches } from '../utils/regex-utils';
 import { desc, getMostFrequent, max } from '../utils/array';
+import FirstHitPipeline from '../utils/first-hit-pipeline';
+import AmountExtractionInput from './amount/AmountExtractionInput';
+import RegexMatchStage from './amount/RegexMatchStage';
+import { fn, processIf } from '../utils/first-hit-pipeline/Stage';
+import { equal, floor } from './amount/utils';
+import { DateExtractor } from './date';
+import { AmountValuesExtractor } from './amount/amount-values';
+import { AmountValuePatternStage } from './amount/amount-value-pattern';
+import cashPattern from './amount/cash-pattern';
 
-@DependsOn(PaymentMethodExtractor)
+const amountValuesExtractor = new AmountValuesExtractor();
+
+const pipeline = new FirstHitPipeline<AmountExtractionInput, number>([
+  new RegexMatchStage(
+    [
+      /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
+      /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
+      /^geg(?:\.|eben)\sVISA$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
+      /^(\d+,\d\d)$\n^Total in EUR$/im,
+      /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
+      /^total:?(?:$\n)?^(?:€\s?)?(\d+[,\.]\s?\d\d)(?:\s?(?:€|EUR))?$/im,
+    ],
+    (m) => amountValuesExtractor.parse(m[1])
+  ),
+  new AmountValuePatternStage(
+    cashPattern,
+    ({ paymentMethod }) => paymentMethod === 'CASH'
+  ),
+  new RegexMatchStage(
+    [/zu zahlen:?\s?(?:EUR\s)?(\d+[,.]\d\d)(?: |$)?/im],
+    (m) => amountValuesExtractor.parse(m[1]),
+    ({ paymentMethod }) =>
+      paymentMethod !== 'ONLINE' && paymentMethod !== 'PAYPAL'
+  ),
+  new RegexMatchStage(
+    [
+      /(?:gesa[mn]t)?summe(?:\sEUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
+    ],
+    (m) => amountValuesExtractor.parse(m[1])
+  ),
+  processIf(
+    ({ taxUnrelatedAmountValues }) =>
+      taxUnrelatedAmountValues.some((v) => v < 0),
+    ({ taxUnrelatedAmountValues }) => {
+      const mostFrequent = getMostFrequent(taxUnrelatedAmountValues);
+      if (
+        mostFrequent &&
+        mostFrequent.max > 1 &&
+        mostFrequent.values.length === 1
+      ) {
+        return mostFrequent.values[0];
+      }
+      return null;
+    }
+  ),
+  processIf(
+    ({ text }) => !anyRegexMatches(text, [/(^| )7([,.] ?0 ?0?)? ?%( |$)/m]),
+    ({ taxUnrelatedAmountValues }) => findVATPattern(taxUnrelatedAmountValues)
+  ),
+  fn(({ taxUnrelatedAmountValues }) =>
+    taxUnrelatedAmountValues.reduce(max(), null)
+  ),
+]);
+
+@DependsOn(PaymentMethodExtractor, DateExtractor)
 export class AmountExtractor extends Extractor<Amount> {
   constructor() {
     super('amount');
@@ -18,168 +77,29 @@ export class AmountExtractor extends Extractor<Amount> {
   public extract(
     text: string,
     lines: string[],
-    extracted: Receipt
-  ): Amount | null {
-    const result = this._extract(text, lines, extracted);
+    extracted: Receipt,
+    meta?: Record<string, any>
+  ) {
+    const amountValues = amountValuesExtractor
+      .extract(text, meta?.date)
+      .filter(({ taxRelated }) => !taxRelated); // TODO WIP
+    const result = pipeline.run({
+      text,
+      lines,
+      paymentMethod: extracted.paymentMethod,
+      amountValues,
+      taxUnrelatedAmountValues: amountValues.map(({ value }) => value),
+    });
     if (result == null) {
-      return result;
+      return null;
     }
     return {
-      value: result,
-      currency: 'EUR',
+      value: {
+        value: result,
+        currency: 'EUR',
+      },
     };
   }
-
-  private _tryMatch(text: string, patterns: RegExp[]) {
-    return anyMatches(text, patterns).then((m) => looselyParseFloat(m[1]));
-  }
-
-  private _extract(
-    text: string,
-    lines: string[],
-    extracted: Receipt
-  ): number | null {
-    let amount = this._tryMatch(text, [
-      /(?:gesamt|summe)(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
-      /betrag(?:\s+EUR)?\s*(\d+,\d\d).*$/i,
-      /^geg(?:\.|eben)\sVISA$(?:\s+EUR)?\s*(\d+,\d\d).*$/im,
-      /^(\d+,\d\d)$\n^Total in EUR$/im,
-      /(\d+,\d\d)(?:$\n^eur)?$\n^zu zahlen/im,
-      /^total:?(?:$\n)?^(?:€\s?)?(\d+[,\.]\s?\d\d)(?:\s?(?:€|EUR))?$/im,
-    ]);
-
-    if (amount != null) {
-      return amount;
-    }
-    const amountValues = getAmountValues(lines);
-    if (extracted.paymentMethod === 'CASH') {
-      amount = findAmountFromCashPaymentValues(amountValues);
-      if (amount != null) {
-        return amount;
-      }
-    }
-    if (
-      extracted.paymentMethod !== 'ONLINE' &&
-      extracted.paymentMethod !== 'PAYPAL'
-    ) {
-      amount = this._tryMatch(text, [
-        /zu zahlen:?\s?(?:EUR\s)?(\d+[,.]\d\d)(?: |$)?/im,
-      ]);
-      if (amount != null) {
-        return amount;
-      }
-    }
-    amount = this._tryMatch(text, [
-      /(?:gesa[mn]t)?summe(?:\sEUR)?\s?(?:EC(?:[ -]Karte)?(?: EUR)?\s)?(\d+[.,]\d\d)$/im,
-    ]);
-    if (amount != null) {
-      return amount;
-    }
-    if (amountValues.some((v) => v < 0)) {
-      const mostFrequent = getMostFrequent(amountValues);
-      if (
-        mostFrequent &&
-        mostFrequent.max > 1 &&
-        mostFrequent.values.length === 1
-      ) {
-        return mostFrequent.values[0];
-      }
-    }
-    if (!anyRegexMatches(text, [/(^| )7([,.] ?0 ?0?)? ?%( |$)/m])) {
-      amount = findVATPattern(amountValues);
-      if (amount != null) {
-        return amount;
-      }
-    }
-    const maxAmount = amountValues.reduce(max(), null);
-    if (maxAmount != null) {
-      return maxAmount;
-    }
-
-    return null;
-  }
-}
-
-/*
- 1. line start or space
- 2. optionally negative number (, and . match as decimal point with optional space after decimal point)
- with no leading zero where S also matches as 5
- 3. line end, space or dash
- */
-const amountValuePattern = /(?:^|\s|\*)(-?(?:[1-9]\d+|\d)\s?[,.]\s?[\dS]{2})(?:[\-\s€]|$)/gim;
-
-const illegalPreviousLinePatterns = [/MwSt\.?\s?%?$/i, /Nachlass:?\s?$/i];
-
-const illegalAmountPrefixPatterns = [
-  /AS(-|\s)Zeit:?\s?$/i,
-  /punktestand entspricht:?\s?$/i,
-  /MwSt:?\s?$/i,
-  /(Original|Einzel)preis:?\s?$/i,
-  /PFAND\s?$/i,
-  /Nachlass:?\s?$/i,
-  /Netto:? ?$/i,
-  /statt:? ?$/i,
-];
-
-const illegalAmountSuffixPatterns = [/^\s?%/, /^\s?Uhr/i];
-
-export function getAmountValues(lines: string[]): number[] {
-  return lines
-    .flatMap((line, lineIndex) =>
-      getAllMatches(amountValuePattern, line).map((match) => ({
-        match,
-        lineIndex,
-      }))
-    )
-    .filter(
-      ({ match, lineIndex }) =>
-        (lineIndex === 0 ||
-          !anyRegexMatches(
-            lines[lineIndex - 1],
-            illegalPreviousLinePatterns
-          )) &&
-        !anyRegexMatches(
-          match.input.slice(0, match.index),
-          illegalAmountPrefixPatterns
-        ) &&
-        !anyRegexMatches(
-          match.input.slice(match.index + match[0].length),
-          illegalAmountSuffixPatterns
-        )
-    )
-    .map(({ match: [_, amount] }) => looselyParseFloat(amount));
-}
-
-function looselyParseFloat(s: string): number {
-  return parseFloat(
-    s
-      .replace(/\s/g, '')
-      .replace(/S/g, '5')
-      .replace(',', '.')
-  );
-}
-
-function equal(x: number, y: number) {
-  return Number(Math.abs(x - y).toFixed(2)) < Number.EPSILON;
-}
-
-export function findAmountFromCashPaymentValues(values: number[]) {
-  const possibleAmounts: number[] = [];
-  for (let i = values.length - 3; i >= 0; i -= 1) {
-    const [amount, given, back] = values.slice(i, i + 3);
-    if (equal(amount + (back < 0 ? -back : back), given)) {
-      possibleAmounts.push(amount);
-    }
-  }
-  if (possibleAmounts.length === 0) {
-    return null;
-  }
-  possibleAmounts.sort(desc());
-  return possibleAmounts[0];
-}
-
-function floor(r: number): number {
-  return Math.floor(r * 100) / 100;
 }
 
 export function findVATPattern(values: number[]): number | null {

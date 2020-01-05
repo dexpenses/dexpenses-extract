@@ -3,19 +3,19 @@ import { Extractor } from '../extractor/extractor';
 import { Receipt } from '@dexpenses/core';
 
 class ExtractorA extends Extractor<any> {
-  public extract(text: string, lines: string[], extracted: Receipt) {
+  public extract(text: string, lines: string[], extracted: Receipt): undefined {
     throw new Error('Method not implemented.');
   }
 }
 @DependsOn(ExtractorA)
 class ExtractorB extends Extractor<any> {
-  public extract(text: string, lines: string[], extracted: Receipt) {
+  public extract(text: string, lines: string[], extracted: Receipt): undefined {
     throw new Error('Method not implemented.');
   }
 }
 @DependsOn(ExtractorA, ExtractorB)
 class ExtractorC extends Extractor<any> {
-  public extract(text: string, lines: string[], extracted: Receipt) {
+  public extract(text: string, lines: string[], extracted: Receipt): undefined {
     throw new Error('Method not implemented.');
   }
 }

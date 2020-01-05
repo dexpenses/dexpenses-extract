@@ -5,6 +5,7 @@ export interface StageData {
   text: string;
   lines: string[];
   extracted: Receipt;
+  meta?: Record<string, any>;
 }
 
 export default interface Stage extends Injectable {

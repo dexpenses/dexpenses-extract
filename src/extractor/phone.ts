@@ -31,10 +31,13 @@ export class PhoneNumberExtractor extends Extractor<string> {
   }
 
   public extract(text: string, lines: string[], extracted: Receipt) {
-    return (
+    const value =
       this.extractFromHeader(extracted) ||
-      this.extractFromWholeReceipt(lines, extracted)
-    );
+      this.extractFromWholeReceipt(lines, extracted);
+    if (!value) {
+      return null;
+    }
+    return { value };
   }
 
   private extractFromHeader(extracted: Receipt) {
