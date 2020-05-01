@@ -21,7 +21,7 @@
     "build": "rimraf lib/ && tsc --project tsconfig.build.json",
     "test": "jest",
     "test:coverage": "jest --silent --coverage --collect-coverage-from=src/**/* --collect-coverage-from=!**/__snapshots__/**",
-    "prepare": "yarn snyk-protect && yarn build",
+    "prepare": "yarn run snyk-protect && yarn snyk-protect && yarn build",
     "prepublishOnly": "yarn test && yarn lint",
     "preversion": "yarn lint",
     "snyk-protect": "snyk protect"
@@ -38,7 +38,7 @@
     "@dexpenses/core": "^1.2.2",
     "@google/maps": "^1.0.1",
     "luxon": "^1.16.1",
-    "snyk": "^1.263.0"
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/google__maps": "^0.5.6",
