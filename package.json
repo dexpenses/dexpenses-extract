@@ -37,7 +37,7 @@
   "dependencies": {
     "@dexpenses/core": "^1.2.2",
     "@google/maps": "^1.0.1",
-    "luxon": "^1.16.1",
+    "luxon": "^1.28.1",
     "snyk": "^1.263.0"
   },
   "devDependencies": {
