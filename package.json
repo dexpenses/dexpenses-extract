@@ -38,7 +38,7 @@
     "@dexpenses/core": "^1.2.2",
     "@google/maps": "^1.0.1",
     "luxon": "^1.16.1",
-    "snyk": "^1.263.0"
+    "snyk": "^1.429.0"
   },
   "devDependencies": {
     "@types/google__maps": "^0.5.6",
